@@ -62,7 +62,7 @@
   <div id="repstatus">&nbsp;</div>
   <script>
   document.addEventListener("DOMContentLoaded", function(event) {
-    $.get('https://raw.githubusercontent.com/DARIAH-DE/textgridrep-status/master/repstatus.html', function(data) {
+    $.get('textgrid/repstatus.html', function(data) {
       var statusHtml = $(data).filter('.repstatus, .status').not('.ok');
       console.log(statusHtml)
       $(statusHtml).each(function (id, val) { 
