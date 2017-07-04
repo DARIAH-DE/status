@@ -1,0 +1,31 @@
+.status {       
+  background-color: #f8f8f8;
+  font-size: 12px;
+  font-family: 'ArialMT', 'Arial', sans-serif;
+  text-align: center;
+  color: black;
+  margin: 1em;
+  padding: 1em;
+}
+.error {
+  background-color: #fcc !important;
+  border: 1px solid red !important;
+}
+.warning {
+  background-color: #ffc !important;
+  border: 1px solid yellow !important;
+  color: black;
+}
+.failed {
+  border: 2px solid red;
+}
+.ok {
+  background-color: #cfc !important;
+  display: none; 
+}
+.pending {
+  background-color: white !important;
+}
+.info {
+  border: 1px solid blue;
+}
