@@ -14,15 +14,22 @@
 		</div>
 		-->
 		
+		<!-- set the last class to warning in case of an information to prepare users for a downtime -->
+		<!-- set the last class to error in case of an unplaned service outage -->
 		<div class="status repstatus warning">
+			<!--
+			  provide a message in german an in english with the corresponding @lang.
+			  provide a short description incl. the <time> element for dateTime values according to ISO8601,
+			  see https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element
+			-->
 			<p lang="de">
 				Aufgrund von Wartungsarbeiten im Rechenzentrum (Unterbrechung der Energieversorgung) wird das TextGrid
-				Repository am Samstag, den 22. Juli (neuer Termin!) nicht erreichbar sein.
+				Repository am Samstag, den <time datetime="2017-07-22">22. Juli</time> (neuer Termin!) nicht erreichbar sein.
 				<a href="https://info.gwdg.de/news/de/information-unterbrechung-der-energieversorgung-am-max-planck-campus-und-fmz/">GWDG-Betriebsmeldung</a>
 			</p>
 			<p lang="en">
 				Due to maintanance work at the computing center (interruption of the power supply) the TextGrid Repository
-				will not be available on Saturday, July 22 (new date!).
+				will not be available on Saturday, <time datetime="2017-07-22">July 22</time> (new date!).
 				<a href="https://info.gwdg.de/news/en/information-interruption-of-the-power-supply-at-the-max-planck-campus-and-fmz/">GWDG Announcement</a>
 		  	</p>
 		</div>
