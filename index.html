@@ -33,12 +33,12 @@
           <h1>DARIAH-DE :: Status</h1>
 
           <div class="status info">
-            <h3>Current notifications</h3>
-            <!--<div class="alert alert-error">Service Disruption!</div>-->
+            <h2>Current notifications</h2>
             <p>Latest update: <strong>04.07.2017 19:14</strong></p>
-            <!-- <div class="alert alert-warn">Service Problem!</div> -->
+            <!-- <div class="alert alert-warning">Service Problem!</div> -->
             <div class="alert alert-success">All services are available</div>
-      			<!--p lang="en">The following DARIAH-DE Services are currently down due to maintenance:
+            <!--<div class="alert alert-error">Service Disruption!</div>
+      			<p lang="en">The following DARIAH-DE Services are currently down due to maintenance:
               <ul>
                 <li>DARIAH-DE Etherpad</li>
                 <li>DARIAH-DE Generic Search</li>
@@ -53,46 +53,34 @@
                 <li>DARIAH-DE CollateX</li>
                 <li>Fontane Notizbücher</li>
               </ul>
-            </p-->
+            </p>-->
             <a href="mailto:support@de.dariah.eu?subject=Service down"><p><i class="fa fa-envelope" aria-hidden="true"></i> Is there a service missing? Please contact us.</p></a>
-      		</div>
+
+            <div id="TextGridError" display="none">
+              <div id="repstatusError">&nbsp;</div>
+            </div>
+          </div>
 
 	<br/>
-	
-  <div id="repstatus">&nbsp;</div>
-  <script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    $.get('textgrid/repstatus.html', function(data) {
-      var statusHtml = $(data).filter('.repstatus, .status').not('.ok');
-      console.log(statusHtml)
-      $(statusHtml).each(function (id, val) { 
-        $("#repstatus").prepend(val);
-        var status;
-        if($(val).hasClass('warning')) {
-          status='<div class="alert alert-warn">TextGrid Warning</div>';
-        } else if ($(val).hasClass('error')) {
-          status='<div class="alert alert-error">TextGrid Error</div>';
-        } else if ($(val).hasClass('info')) {
-          status='<h3>TextGrid Info</h3>';
-        }
-        $("#repstatus").prepend(status);
-      });
 
-    }, "html")
-  });
-  </script>
+  <div class="status info">
+		<h2>Scheduled maintenance (upcoming)</h2>
+		<div class="alert alert-warning">
+      <h3>DARIAH Service Downtime on Saturday, July 22</h3>
+  		<p lang="en">
+  			Due to maintanance work at the computing center (interruption of the power supply) DARIAH-DE Services
+  			will not be available on Saturday, July 22 (new date!).
+  			<a href="https://info.gwdg.de/news/en/information-interruption-of-the-power-supply-at-the-max-planck-campus-and-fmz/">GWDG Announcement</a>
+  		</p>
+    </div>
 
-	<div class="status info">
-		<h3>Upcoming notifications</h3>
+    <br/>
 
-		<div class="alert alert-warn">Service Downtime on Saturday, July 22</div>
-		<p lang="en">
-			Due to maintanance work at the computing center (interruption of the power supply) DARIAH-DE Services
-			will not be available on Saturday, July 22 (new date!).
-			<a href="https://info.gwdg.de/news/en/information-interruption-of-the-power-supply-at-the-max-planck-campus-and-fmz/">GWDG Announcement</a>
-		</p>
-	</div>		
-		
+    <div id="TextGridWarning" display="none">
+      <div id="repstatusWarning">&nbsp;</div>
+    </div>
+	</div>
+
 	<br/>
 
     <a class="twitter-timeline" data-height="600" href="https://twitter.com/DARIAHdeTech">Tweets by DARIAHdeTech</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -109,5 +97,30 @@
     </div>
     <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      $.get('textgrid/repstatus.html', function(data) {
+        var statusHtml = $(data).filter('.repstatus, .status').not('.ok');
+        console.log(statusHtml)
+        $(statusHtml).each(function (id, val) {
+          $("#repstatus").prepend(val);
+          var status;
+          if($(val).hasClass('warning')) {
+            document.getElementById("TextGridWarning").style.display="";
+            status='<div class="alert alert-warning"><h3>TextGrid Service Warning</h3></div>';
+            $("#repstatusWarning").prepend(status);
+          } else if ($(val).hasClass('error')) {
+            document.getElementById("TextGridError").style.display="";
+            status='<div class="alert alert-error"><h3>TextGrid Service Error</h3></div>';
+            $("#repstatusError").prepend(status);
+          } else if ($(val).hasClass('info')) {
+            document.getElementById("TextGridWarning").style.display="";
+            status='<h3>TextGrid Info</h3>';
+            $("#repstatusWarning").prepend(status);
+          }
+        });
+      }, "html")
+    });
+    </script>
   </body>
 </html>
