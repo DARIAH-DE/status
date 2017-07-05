@@ -57,7 +57,8 @@
             <a href="mailto:support@de.dariah.eu?subject=Service down"><p><i class="fa fa-envelope" aria-hidden="true"></i> Is there a service missing? Please contact us.</p></a>
 
             <div id="TextGridError" display="none">
-              <div id="repstatusError">&nbsp;</div>
+              <br/>
+              <div id="repstatusError"></div>
             </div>
           </div>
 
@@ -109,7 +110,7 @@
             $("#repstatusWarning").prepend(status);
           } else if ($(val).hasClass('error')) {
             document.getElementById("TextGridError").style.display="";
-            status='<div class="alert alert-error"><h3>TextGrid Service Error</h3><p id="TGtext"></p></div>';
+            status='<div class="alert alert-error">TextGrid Service Error<p id="TGtext"></p></div>';
             $("#repstatusError").prepend(status);
           } else if ($(val).hasClass('info')) {
             document.getElementById("TextGridWarning").style.display="";
