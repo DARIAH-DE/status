@@ -74,8 +74,6 @@
   		</p>
     </div>
 
-    <br/>
-
     <div id="TextGridWarning" display="none">
       <div id="repstatusWarning">&nbsp;</div>
     </div>
@@ -103,19 +101,19 @@
         var statusHtml = $(data).filter('.repstatus, .status').not('.ok');
         console.log(statusHtml)
         $(statusHtml).each(function (id, val) {
-          $("#repstatus").prepend(val);
+          //$("#repstatus").prepend(val);
           var status;
           if($(val).hasClass('warning')) {
             document.getElementById("TextGridWarning").style.display="";
-            status='<div class="alert alert-warning"><h3>TextGrid Service Warning</h3></div>';
+            status='<div class="alert alert-warning"><h3>TextGrid Service Warning</h3><p>'+val+'</p></div>';
             $("#repstatusWarning").prepend(status);
           } else if ($(val).hasClass('error')) {
             document.getElementById("TextGridError").style.display="";
-            status='<div class="alert alert-error"><h3>TextGrid Service Error</h3></div>';
+            status='<div class="alert alert-error"><h3>TextGrid Service Error<p>'+val+'</p></h3></div>';
             $("#repstatusError").prepend(status);
           } else if ($(val).hasClass('info')) {
             document.getElementById("TextGridWarning").style.display="";
-            status='<h3>TextGrid Info</h3>';
+            status='<h3>TextGrid Info</h3><p>'+val+'</p>';
             $("#repstatusWarning").prepend(status);
           }
         });
