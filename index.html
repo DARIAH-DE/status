@@ -105,17 +105,18 @@
           var status;
           if($(val).hasClass('warning')) {
             document.getElementById("TextGridWarning").style.display="";
-            status='<div class="alert alert-warning"><h3>TextGrid Service Warning</h3><p>'+val+'</p></div>';
+            status='<div class="alert alert-warning"><h3>TextGrid Service Warning</h3><p id="TGtext">&nbsp;</p></div>';
             $("#repstatusWarning").prepend(status);
           } else if ($(val).hasClass('error')) {
             document.getElementById("TextGridError").style.display="";
-            status='<div class="alert alert-error"><h3>TextGrid Service Error<p>'+val+'</p></h3></div>';
+            status='<div class="alert alert-error"><h3>TextGrid Service Error</h3><p id="TGtext">&nbsp;</p></div>';
             $("#repstatusError").prepend(status);
           } else if ($(val).hasClass('info')) {
             document.getElementById("TextGridWarning").style.display="";
-            status='<h3>TextGrid Info</h3><p>'+val+'</p>';
+            status='<h3>TextGrid Info</h3><p id="TGtext">&nbsp;</p>';
             $("#repstatusWarning").prepend(status);
           }
+          $("#TGtext").prepend(val);
         });
       }, "html")
     });
