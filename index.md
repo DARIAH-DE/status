@@ -4,7 +4,7 @@ layout: status
 
 <div class="status info">
 <h2>Current notifications</h2>
-<p>Latest update: <strong>02.08.2017 10:30</strong></p>
+<p>Latest update: <strong>{{ site.time | date: '%c' }}</strong></p>
 <!-- <div class="alert alert-warning">Performance Issues!</div>
 <p lang="en">Due to hardware issues, performance issues for all DARIAH services are possible <a href="https://info.gwdg.de/news/wartungsarbeiten-netapp/">throughout the week</a>.</p> -->
 <div class="alert alert-success">All services are available</div>

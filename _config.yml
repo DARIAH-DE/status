@@ -1,6 +1,8 @@
 # DARIAH-DE status page
 title: DARIAH-DE Status
-
+timezone: Europe/Berlin
+impressum_url: 'https://de.dariah.eu/Impressum'
+  
 # Build settings
 markdown: kramdown
 #plugins:
