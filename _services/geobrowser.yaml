@@ -1,0 +1,7 @@
+---
+title: 'Geo-Browser'
+url: 'https://geobrowser.de.dariah.eu'
+dependencies:
+  - '/infrastructure/dariahstorage'
+  - '/servers/ref'
+---

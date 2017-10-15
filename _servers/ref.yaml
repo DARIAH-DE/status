@@ -1,0 +1,5 @@
+---
+fqdn: 'ref.dariah.eu'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+---

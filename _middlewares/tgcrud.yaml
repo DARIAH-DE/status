@@ -1,0 +1,5 @@
+---
+title: 'TG-crud'
+dependencies:
+  - '/servers/textgrid-esx2'
+---

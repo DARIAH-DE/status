@@ -1,0 +1,18 @@
+checkservice: {{ include.service.id }}
+{% if include.service.id == include.affected_item %}
+yepp
+{% endif %}
+{% for dependency in include.service.dependencies %}
+  {% if dependency contains '/apis/' %}
+    {% assign next_service = site.apis | where:"id", dependency | first %}
+  {% endif %}
+  {% if dependency contains '/servers/' %}
+    {% assign next_service = site.servers | where:"id", dependency | first %}
+  {% endif %}
+  {% if dependency contains '/infrastructure/' %}
+    {% assign next_service = site.infrastructure | where:"id", dependency | first %}
+  {% endif %}
+  {% if next_service %}
+    {% include check_service.html service=next_service affected_item=include.affected_item %}
+  {% endif %}
+{% endfor %}

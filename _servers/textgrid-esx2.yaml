@@ -1,0 +1,6 @@
+---
+fqdn: 'textgrid-esx2.gwdg.de'
+dependencies:
+  - '/infrastructure/gwdg-storenext'
+  - '/infrastructure/gwdg-esx'
+---

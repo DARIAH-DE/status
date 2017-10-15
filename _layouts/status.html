@@ -6,11 +6,21 @@ layout: index
   <h2>Current notifications</h2>
     <p>Latest update: <strong>{{ site.time | date: '%c' }}</strong></p>
 
-{% if site.data.errors.size > 0 %}
+{% if site.data.outages.size > 0 %}
+  <div class="alert alert-error">Service Disruption!</div>
+
+  {% for outage in site.data.outages %}
+    {% include single_status_message.html item=outage %}
+  {% endfor %}
 
 {% assign have_messages = true %}
 {% endif %}
-{% if site.data.warnings.size > 0 %}
+{% if site.data.announcements.size > 0 %}
+  <div class="alert alert-warning">Announcements.</div>
+
+  {% for announcement in site.data.announcements %}
+    {% include single_status_message.html item=announcement %}
+  {% endfor %}
 
 {% assign have_messages = true %}
 {% endif %}

@@ -1,0 +1,6 @@
+---
+title: 'DARIAH Repository'
+url: 'https://repository.de.dariah.eu'
+dependencies:
+  - '/infrastructure/dariahstorage'
+---

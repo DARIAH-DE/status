@@ -1,0 +1,25 @@
+{% assign list_announced_affected = "" | split: ", " %}
+
+{% for affected_item in include.affected %}
+
+  {% for service in site.services %}
+
+    {% capture service_is_affected %}{% include check_service.html service=service affected_item=affected_item %}{% endcapture %}
+
+    {% if service_is_affected contains "yepp" %}
+      {% assign newservice = service.title | split: ", " %}
+      {% assign list_announced_affected = list_announced_affected | concat: newservice %}
+    {% endif %}
+
+  {% endfor %}
+
+{% endfor %}
+
+<ul>
+  {% assign sortedlist = list_announced_affected | uniq | sort %}
+  {% for servicename in sortedlist %}
+    <li>{{ servicename }}</li>
+  {% endfor %}
+</ul>
+
+

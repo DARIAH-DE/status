@@ -1,0 +1,6 @@
+---
+title: 'TextGridLab'
+url: 'https://textgrid.de'
+dependencies:
+  - '/servers/textgrid-esx2'
+---

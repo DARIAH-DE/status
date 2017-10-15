@@ -1,0 +1,6 @@
+---
+title: 'Fontane Notizbücher'
+dependencies:
+  - '/middlewares/tgcrud'
+  - '/infrastructure/gwdg-cloud'
+---
