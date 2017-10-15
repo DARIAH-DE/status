@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DARIAH-DE :: Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DARIAH-DE">
+    <link rel="alternate" type="application/atom+xml" title="Commits as RSS Feed" href="{{ site.github.repository_url }}/commits/master.atom" />
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/application.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/bootstrap-customization.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/bootstrap-modal.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/dariah_portal.css" type="text/css" media="screen, projection" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
+    <link rel="shortcut icon" type="image/png" href="img/page_icon.png" />
+    <style>
+
+       p:lang(de) {
+        display: none;
+       }
+
+    </style>
+  </head>
+  <body>
+    <div id="content_layout">
+      <div class="span8 main-content-wrapper">
+        <div id="content" class="primary-area">
+          <h1>DARIAH-DE :: Status</h1>
+
+          {{ content }}
+
+        </div>
+        <div class="row">
+          <div class="central_logo_de"></div>
+          <div class="pull-right" style="margin-bottom:5px;margin-right:5px">
+            <a href="{{ site.github.repository_url }}">
+              <span class="">View on GitHub</span>
+              <img width="20px" src="img/GitHub-Mark/PNG/GitHub-Mark-32px.png"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row dfooter footer">
+        <div class="span7">
+          <!--<div class="row">-->
+            <hr/>
+            <p>
+              Digital Research Infrastructure for the Arts and Humanities.
+              <a class="pull-right" href="{{ site.impressum_url }}">Imprint</a>
+            </p>
+
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      $.get('textgrid/repstatus.html', function(data) {
+        var statusHtml = $(data).filter('.repstatus, .status').not('.ok');
+        console.log(statusHtml)
+        $(statusHtml).each(function (id, val) {
+          //$("#repstatus").prepend(val);
+          var status;
+          if($(val).hasClass('warning')) {
+            document.getElementById("TextGridWarning").style.display="";
+            status='<div class="alert alert-warning"><h3>TextGrid Service Warning</h3><p id="TGtext"></p></div>';
+            $("#repstatusWarning").prepend(status);
+          } else if ($(val).hasClass('error')) {
+            document.getElementById("TextGridError").style.display="";
+            status='<div class="alert alert-error">TextGrid Service Error<p id="TGtext"></p></div>';
+            $("#repstatusError").prepend(status);
+          } else if ($(val).hasClass('info')) {
+            document.getElementById("TextGridWarning").style.display="";
+            status='<h3>TextGrid Info</h3><p id="TGtext"></p>';
+            $("#repstatusWarning").prepend(status);
+          }
+          $("#TGtext").prepend(val);
+        });
+      }, "html")
+    });
+    </script>
+  </body>
+</html>

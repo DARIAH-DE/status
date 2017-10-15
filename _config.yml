@@ -2,8 +2,15 @@
 title: DARIAH-DE Status
 timezone: Europe/Berlin
 impressum_url: 'https://de.dariah.eu/Impressum'
-  
+support_mail: 'support@de.dariah.eu'
+
 # Build settings
 markdown: kramdown
 #plugins:
+
+collections:
+  - services
+  - middlewares
+  - servers
+  - infrastructure
 
