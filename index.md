@@ -1,4 +1,5 @@
 ---
+title: 'DARIAH-DE :: Status'
 layout: status
 ---
 
