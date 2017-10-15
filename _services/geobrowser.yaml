@@ -1,6 +1,7 @@
 ---
 title: 'Geo-Browser'
-url: 'https://geobrowser.de.dariah.eu'
+description: 'The Geo-Browser is a web-based tool for analyzing and visualizing space-time relations of data and source collections.'
+website: 'https://geobrowser.de.dariah.eu'
 dependencies:
   - '/infrastructure/dariahstorage'
   - '/servers/ref'

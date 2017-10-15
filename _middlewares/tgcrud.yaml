@@ -1,5 +1,8 @@
 ---
 title: 'TG-crud'
+description: 'TG-crud is the CREATE, RETRIEVE, UPDATE and DELETE service of TextGrid, that is responsible for creating, retrieving, updating, and deleting TextGrid resources, i.e. TextGrid objects including TextGrid metadata.'
+website: 'https://textgridlab.org/doc/services/submodules/tg-crud/service/tgcrud-webapp/docs/index.html'
+teresah_included: true
 dependencies:
   - '/servers/textgrid-esx2'
 ---

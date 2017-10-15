@@ -20,12 +20,17 @@ Any item is described by a collection entry with the following metadata preamble
 ---
 title: 'Item Title for display'
 description: 'This is a sample entry'
-url: 'http://item.url/'
+website: 'http://item.url/'
+teresah_included: true
 dependencies:
   - '/infrastructure/otheritem'
   - '/servers/machine'
 ---
 ```
+
+The `title` is required for all entries and used in status messages.
+
+The fields `description` and `website` are used for the entries in the list harvested by teresah. The key `teresah_included` defaults to `true` for services, unless explicity set to `false`.
 
 The `dependencies` must be stated using the `id` of the collection entry, i.e. `/:collection/:name` where `:collection` is the name of the collection and `:name` if the filename without extension of the entry.
 
@@ -44,4 +49,8 @@ All service disruptions and announcements are registered in [Jekyll Data Files](
 
 Using [Liquid](https://shopify.github.io/liquid/) processing, all services depending on (or listed as) item in the `affected` array are shown on the status page. The array items use the same `id` schema as the infrastructure components dependencies.
 
+## TERESAH
+
+The DARIAH-DE Status Jekyll page also includes the page with all DARIAH-DE services to be harvested by TERESAH.
+This includes all services except those explicitly excluded and all middlewares that are explicitly included, as long they have a `title`, `description` and `website` element.
 

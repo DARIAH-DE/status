@@ -1,6 +1,7 @@
 ---
 title: 'TextGridLab'
-url: 'https://textgrid.de'
+description: 'Open source tools and services to support the entire research process and create digital editions.'
+website: 'https://de.dariah.eu/textgridlab'
 dependencies:
   - '/servers/textgrid-esx2'
 ---

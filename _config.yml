@@ -6,15 +6,19 @@ support_mail: 'support@de.dariah.eu'
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 #plugins:
 
 collections:
-  - services
-  - middlewares
-  - servers
-  - infrastructure
+  services:
+  middlewares:
+  servers:
+  infrastructure:
 
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
+exclude: 
+  - 'README.md'
+  - 'Gemfile'
+  - 'Gemfile.lock'
 
 defaults:
   -
