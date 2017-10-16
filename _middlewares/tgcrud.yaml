@@ -4,5 +4,7 @@ description: 'TG-crud is the CREATE, RETRIEVE, UPDATE and DELETE service of Text
 website: 'https://textgridlab.org/doc/services/submodules/tg-crud/service/tgcrud-webapp/docs/index.html'
 teresah_included: true
 dependencies:
+  - '/middlewares/tgauth'
+  - '/middlewares/dariahldap'
   - '/servers/textgrid-esx2'
 ---

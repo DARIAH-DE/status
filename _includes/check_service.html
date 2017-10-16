@@ -2,8 +2,11 @@
 yepp
 {% endif %}
 {% for dependency in include.service.dependencies %}
-  {% if dependency contains '/apis/' %}
-    {% assign next_service = site.apis | where:"id", dependency | first %}
+  {% if dependency contains '/services/' %}
+    {% assign next_service = site.services | where:"id", dependency | first %}
+  {% endif %}
+  {% if dependency contains '/middlewares/' %}
+    {% assign next_service = site.middlewares | where:"id", dependency | first %}
   {% endif %}
   {% if dependency contains '/servers/' %}
     {% assign next_service = site.servers | where:"id", dependency | first %}

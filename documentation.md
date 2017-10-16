@@ -12,8 +12,6 @@ The infrastructure is modelled using four layers:
 3. Servers
 4. Infrastructure
 
-The model is top down, in that an item can depend on other items from lower layers.
-
 Any item is described by a collection entry with the following metadata preamble.
 
 ```yaml
@@ -47,7 +45,13 @@ All service disruptions and announcements are registered in [Jekyll Data Files](
     - '/servers/machine'
 ```
 
-Using [Liquid](https://shopify.github.io/liquid/) processing, all services depending on (or listed as) item in the `affected` array are shown on the status page. The array items use the same `id` schema as the infrastructure components dependencies.
+Using [Liquid](https://shopify.github.io/liquid/) processing, all services depending on any (or listed as) item in the `affected` array are shown on the status page. The array items use the same `id` schema as the infrastructure components dependencies.
+
+Please note, that cycles in the dependencies will result in a
+
+```
+Liquid Exception: Liquid error: Nesting too deep
+```
 
 ## TERESAH
 
