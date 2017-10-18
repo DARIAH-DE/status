@@ -26,11 +26,13 @@ dependencies:
 ---
 ```
 
-The `title` is required for all entries and used in status messages.
+The `title` is required for all entries and used in status messages, for servers this should be the `fqdn`.
 
 The fields `description` and `website` are used for the entries in the list harvested by teresah. The key `teresah_included` defaults to `true` for services, unless explicity set to `false`.
 
 The `dependencies` must be stated using the `id` of the collection entry, i.e. `/:collection/:name` where `:collection` is the name of the collection and `:name` if the filename without extension of the entry.
+
+The full list of all resolved dependencies can be found [here](fulllist.html).
 
 ## Outages and Announcements
 

@@ -1,5 +1,5 @@
 ---
-fqdn: 'auth.dariah.eu'
+title: 'auth.dariah.eu'
 dependencies:
   - '/infrastructure/gwdg-esx'
 ---
