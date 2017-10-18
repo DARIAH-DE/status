@@ -2,6 +2,8 @@
 yepp
 {% endif %}
 {% for dependency in include.service.dependencies %}
+  {% comment %} Make sure the dependency exists {% endcomment %}
+  {% include validate_item_exists.html item=dependency %}
   {% if dependency contains '/services/' %}
     {% assign next_service = site.services | where:"id", dependency | first %}
   {% endif %}

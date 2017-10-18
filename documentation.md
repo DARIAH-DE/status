@@ -31,7 +31,17 @@ The `title` is required for all entries and used in status messages, for servers
 The fields `description` and `website` are used for the entries in the list harvested by teresah. The key `teresah_included` defaults to `true` for services, unless explicity set to `false`.
 
 The `dependencies` must be stated using the `id` of the collection entry, i.e. `/:collection/:name` where `:collection` is the name of the collection and `:name` if the filename without extension of the entry.
+If a dependency is listed that does not exist, the follwing error occurs:
+```
+Liquid Exception: Liquid error (line 6): divided by 0 in fulllist.md
+```
+
 Dependency cycles, i.e. circular dependencies, are not allowed[^1].
+Cycles in the dependencies will result in the following error:
+
+```
+Liquid Exception: Liquid error (line xx): Nesting too deep in fulllist.md
+```
 
 [^1]: Limiting recursion depth doesn't help, as than by the current design all services connected to the cycle would be affected by any outage.
 
@@ -50,13 +60,9 @@ All service disruptions and announcements are registered in [Jekyll Data Files](
     - '/servers/machine'
 ```
 
-Using [Liquid](https://shopify.github.io/liquid/) processing, all services depending on any (or listed as) item in the `affected` array are shown on the status page. The array items use the same `id` schema as the infrastructure components dependencies.
-
-Please note, that cycles in the dependencies will result in a
-
-```
-Liquid Exception: Liquid error: Nesting too deep
-```
+Using [Liquid](https://shopify.github.io/liquid/) processing, all services depending on any (or listed as) item in the `affected` array are shown on the status page.
+The array items use the same `id` schema as the infrastructure components dependencies.
+In case a nonexisting item is listed, the same division by zero will be caused.
 
 ## TERESAH
 
