@@ -1,0 +1,5 @@
+---
+title: 'DARIAH-DE Annotation Sandbox'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+---
