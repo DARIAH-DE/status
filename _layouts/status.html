@@ -8,29 +8,29 @@ layout: index
   <h2>Current notifications</h2>
     <p>Latest update: <strong>{{ site.time | date: '%c' }}</strong></p>
 
-{% if site.data.outages.size > 0 %}
+{% assign outages_array = site.data.outages | where_exp: "item", "item.hide != true"  %}
+{% assign outages_array = outages_array | where_exp: "item", "item.date_end == nil"  %}
+
+{% if outages_array.size > 0 %}
   <div class="alert alert-error">Service Disruption!</div>
 
-  {% for outage in site.data.outages %}
+  {% for outage in outages_array %}
     {% include single_status_message.html item=outage %}
   {% endfor %}
-
-{% assign have_messages = true %}
+{% else %}
+  <div class="alert alert-success">All services are available</div>
 {% endif %}
-{% if site.data.announcements.size > 0 %}
+
+{% assign announcements_array = site.data.announcements | where_exp: "item", "item.hide != true"  %}
+
+{% if announcements_array.size > 0 %}
   <div class="alert alert-warning">Announcements.</div>
 
-  {% for announcement in site.data.announcements %}
+  {% for announcement in announcements_array %}
     {% include single_status_message.html item=announcement %}
   {% endfor %}
 
-{% assign have_messages = true %}
 {% endif %}
-
-
-{% unless have_messages %}
-    <div class="alert alert-success">All services are available</div>
-{% endunless %}
 
 
 </div>

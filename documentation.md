@@ -55,14 +55,20 @@ All service disruptions and announcements are registered in [Jekyll Data Files](
 ---
 - title: 'This is the heading on the status page'
   description: 'This describes what the entry is about.'
+  hide: false
+  date_start: '2017-10-01 11:01'
+  date_end: '2017-10-02 14:38'
   affected:
     - '/infrastructure/otheritem'
     - '/servers/machine'
 ```
 
 Using [Liquid](https://shopify.github.io/liquid/) processing, all services depending on any (or listed as) item in the `affected` array are shown on the status page.
-The array items use the same `id` schema as the infrastructure components dependencies.
+The items of the `affected` array use the same `id` schema as the infrastructure components dependencies.
 In case a nonexisting item is listed, the same division by zero will be caused.
+
+The field `hide` defaults to `false` if absent, but can be used to hide messages from the status page.
+Outages with a set `date_end` will also not be shown on the status page.
 
 ## TERESAH
 

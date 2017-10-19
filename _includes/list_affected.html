@@ -1,4 +1,4 @@
-{% assign list_announced_affected = "" | split: ", " %}
+{% assign list_announced_affected = "" | split: "; " %}
 
 {% for affected_item in include.affected %}
 
@@ -10,7 +10,7 @@
     {% capture service_is_affected %}{% include check_service.html service=service affected_item=affected_item %}{% endcapture %}
 
     {% if service_is_affected contains "yepp" %}
-      {% assign newservice = service.title | split: ", " %}
+      {% assign newservice = service.title | split: "; " %}
       {% assign list_announced_affected = list_announced_affected | concat: newservice %}
     {% endif %}
 
