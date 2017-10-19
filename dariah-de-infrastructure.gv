@@ -1,21 +1,36 @@
 digraph {
-	label="DARIAH-DE Infrastructure"
-	fontsize=20
-	"/services/repository" [label="DARIAH Repository"]
-	"/services/geobrowser" [label="Geo-Browser"]
-	"/services/tglab" [label=TextGridLab]
-	"/services/fontane" [label="Fontane Notizbücher"]
-	"/services/annotation_sandbox" [label="DARIAH-DE Annotation Sandbox"]
-	"/middlewares/dariahldap" [label="DARIAH LDAP"]
-	"/middlewares/dariahstorage" [label="DARIAH Storage"]
-	"/middlewares/tgauth" [label="TG-auth"]
-	"/middlewares/tgcrud" [label="TG-crud"]
-	"/servers/textgrid-esx2" [label="textgrid-esx2.gwdg.de"]
-	"/servers/ref" [label="ref.dariah.eu"]
-	"/servers/auth" [label="auth.dariah.eu"]
-	"/infrastructure/gwdg-esx" [label="GWDG ESX Cluster"]
-	"/infrastructure/gwdg-storenext" [label="GWDG StoreNext"]
-	"/infrastructure/gwdg-cloud" [label="GWDG ComputeCloud"]
+	fontname=helvetica fontsize=20 label="DARIAH-DE Infrastructure"
+	subgraph cluster_services {
+		node [color=forestgreen fontname=helvetica shape=oval style="rounded,bold"]
+		color=white label=""
+		"/services/repository" [label="DARIAH Repository"]
+		"/services/geobrowser" [label="Geo-Browser"]
+		"/services/tglab" [label=TextGridLab]
+		"/services/fontane" [label="Fontane Notizbücher"]
+		"/services/annotation_sandbox" [label="DARIAH-DE Annotation Sandbox"]
+	}
+	subgraph cluster_middlewares {
+		node [color=red fontname=helvetica shape=hexagon style="rounded,bold"]
+		color=white label=""
+		"/middlewares/dariahldap" [label="DARIAH LDAP"]
+		"/middlewares/dariahstorage" [label="DARIAH Storage"]
+		"/middlewares/tgauth" [label="TG-auth"]
+		"/middlewares/tgcrud" [label="TG-crud"]
+	}
+	subgraph cluster_servers {
+		node [color=blue3 fontname=helvetica shape=house style="rounded,bold"]
+		color=white label=""
+		"/servers/textgrid-esx2" [label="textgrid-esx2.gwdg.de"]
+		"/servers/ref" [label="ref.dariah.eu"]
+		"/servers/auth" [label="auth.dariah.eu"]
+	}
+	subgraph cluster_infrastructure {
+		node [color=blue3 fontname=helvetica shape=box style="rounded,bold"]
+		color=white label=""
+		"/infrastructure/gwdg-esx" [label="GWDG ESX Cluster"]
+		"/infrastructure/gwdg-storenext" [label="GWDG StoreNext"]
+		"/infrastructure/gwdg-cloud" [label="GWDG ComputeCloud"]
+	}
 	"/services/repository" -> "/middlewares/dariahstorage"
 	"/services/geobrowser" -> "/middlewares/dariahstorage"
 	"/services/geobrowser" -> "/servers/ref"

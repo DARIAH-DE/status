@@ -19,6 +19,9 @@ exclude:
   - 'README.md'
   - 'Gemfile'
   - 'Gemfile.lock'
+  - 'venv/'
+  - 'requirements.txt'
+  - 'render_graph.py'
 
 defaults:
   -

@@ -8,6 +8,8 @@ The status page is powered by [Jekyll](https://jekyllrb.com/) using its features
 
 See the [documentation](documentation.md).
 
+To compile the graph, you need `graphviz` and the python dependencies from `requirements.txt`.
+
 ## Development
 
 To test the functionally locally, do
