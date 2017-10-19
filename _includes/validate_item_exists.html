@@ -1,10 +1,14 @@
+{% assign collection_found = false %}
 {% for coll in site.collections %}
   {% if include.item contains coll.label | append: '/' | prepend: '/' %}
+    {% assign collection_found = true %}
     {% assign found_item = coll.docs | where: "id", include.item | first %}
     {% unless found_item %}
     {% comment %} Break compilation if the object was not found. {% endcomment %}
-      {{ 1 | divided_by: 0 }}
+      {{ 2 | divided_by: 0 }}
     {% endunless %}
   {% endif %}
 {% endfor %}
-
+{% unless collection_found %}
+  {{ 1 | divided_by: 0 }}
+{% endunless %}
