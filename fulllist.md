@@ -20,10 +20,11 @@ Liquid Exception: Liquid error (line xx): Nesting too deep in fulllist.md
 ## {{ coll.label | capitalize }}
 
 {% for item in coll.docs %}
+{% capture headline %}Outage of **{{ item.title }}** affects:{% endcapture %}
 
-Outage of **{{ item.title }}** affects:
-
-{% include list_affected.html affected=item.id %}
+{%- capture list_affected %}{% include list_affected.html affected=item.id %}{% endcapture %}
+{%- assign array_affected = list_affected | split: ";" %}
+{%- include render_affected.html affected_services=array_affected headline=headline %}
 
 {% endfor %}
 

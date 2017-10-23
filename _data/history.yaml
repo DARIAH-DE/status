@@ -1,0 +1,56 @@
+---
+- title: 'Performance Issues'
+  description: 'Due to hardware issues, performance issues for all DARIAH services are possible [throughout the week](https://info.gwdg.de/news/wartungsarbeiten-netapp/).'
+  date_start: '2017-07-24 15:20'
+  date_end: '2017-08-02'
+  affected_services:
+    - 'DARIAH Repository'
+    - 'DARIAH Wiki'
+    - 'DARIAH-DE Website'
+    - 'Fontane Notizbücher'
+    - 'Geo-Browser'
+    - 'TextGrid Laboratory'
+    - 'TextGrid Repository'
+- title: 'Maintenance Complications'
+  description: 'Due to unforseen complications during maintenance, many DARIAH services are currently not available.'
+  date_start: '2017-06-22'
+  date_end: '2017-06-27'
+  affected_services:
+    - 'DARIAH-DE Annotation Sandbox'
+    - 'Fontane Notizbücher'
+    - 'Geo-Browser'
+- title: 'DARIAH Service Downtime on Saturday, July 22'
+  description: 'Due to maintanance work at the computing center 
+    ([interruption of the power supply](https://info.gwdg.de/news/en/information-interruption-of-the-power-supply-at-the-max-planck-campus-and-fmz/)) 
+    most DARIAH-DE Services will not available from July 21 to July 24.'
+  date_start: '2017-07-21'
+  date_end: '2017-07-24'
+  hide: true
+  affected_services:
+    - 'DARIAH Repository'
+    - 'DARIAH Wiki'
+    - 'DARIAH-DE Annotation Sandbox'
+    - 'DARIAH-DE Website'
+    - 'Fontane Notizbücher'
+    - 'Geo-Browser'
+    - 'TextGrid Laboratory'
+    - 'TextGrid Repository'
+- title: 'Filesystem maintenance'
+  description: 'On July 4 from 16:00, the file services at the computing center will be updated.'
+  date_start: '2017-07-04 16:00'
+  hide: true
+  affected_services:
+    - 'DARIAH Repository'
+    - 'Fontane Notizbücher'
+    - 'Geo-Browser'
+    - 'TextGrid Laboratory'
+    - 'TextGrid Repository'
+- title: 'Maintenance'
+  date_start: '2017-06-22'
+  date_end: '2017-06-23'
+  hide: true
+  affected_services:
+    - 'DARIAH-DE Annotation Sandbox'
+    - 'Fontane Notizbücher'
+    - 'Geo-Browser'
+

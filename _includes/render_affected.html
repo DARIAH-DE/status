@@ -1,0 +1,8 @@
+<p lang="en">{{ include.headline | default: 'Affected services:' | markdownify }}
+  <ul>
+    {% for servicename in include.affected_services %}
+      <li>{{ servicename }}</li>
+    {% endfor %}
+  </ul>
+</p>
+

@@ -18,11 +18,4 @@
 
 {% endfor %}
 
-<ul>
-  {% assign sortedlist = list_announced_affected | uniq | sort %}
-  {% for servicename in sortedlist %}
-    <li>{{ servicename }}</li>
-  {% endfor %}
-</ul>
-
-
+{{ list_announced_affected | uniq | sort | join: '; ' }}

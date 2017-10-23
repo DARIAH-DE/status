@@ -1,0 +1,16 @@
+- title: '{{ include.item["title"] }}'
+  description: '{{ include.item["description"] }}'
+{% if include.item["date_start"] %}  date_start: '{{ include.item["date_start"] }}'{% endif %}
+{% if include.item["date_end"] %}  date_end: '{{ include.item["date_end"] }}'{% endif %}
+{% if include.item["hide"] != nil %}  hide: '{{ include.item["hide"] }}'{% endif %}
+{% if include.item.affected.size > 0 -%}
+{%- capture list_affected -%}{%- include list_affected.html affected=include.item.affected -%}{% endcapture -%}
+  {%- assign array_affected = list_affected | split: ";" %}
+  affected_services:
+  {%- for servicename in array_affected -%}
+    {%- if servicename.size > 0 %}
+    - '{{ servicename | strip }}'
+    {%- endif %}
+  {%- endfor %}
+{% endif %}
+
