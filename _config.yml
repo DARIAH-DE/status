@@ -22,6 +22,7 @@ exclude:
   - 'venv/'
   - 'requirements.txt'
   - 'render_graph.py'
+  - 'render_graph.rb'
 
 defaults:
   -
