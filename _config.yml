@@ -23,6 +23,7 @@ exclude:
   - 'requirements.txt'
   - 'render_graph.py'
   - 'render_graph.rb'
+  - 'dariah_infrastructure.gv'
 
 defaults:
   -

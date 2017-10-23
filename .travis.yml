@@ -1,0 +1,22 @@
+sudo: required
+dist: trusty
+language: ruby
+install:
+- sudo apt-get update
+- sudo apt-get -y install graphviz
+- bundle install
+script:
+- ruby render_graph.rb
+- bundle exec jekyll build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  local_dir: "_site"
+  email: "travis@de.dariah.eu"
+  name: "Travis deploy"
+  on:
+    branch: travis
+env:
+  global:
+    secure: T4rImm6OEQOrs47ZaK/0iXZLOKrO8uS5ZYJZB+m5l6U5QfyQorqWobykmOV7IiozBu8Ajmc3k00Exwest/3VMPn/zUxzRuKyzMqwrvNqk8DM47/GbLv6kL0Lrk8EO5gb0epv1ADDNMY3WP2/hI+uX7w9NkDpNVzmINossFhawvyz54aher0iTld7fGBWfYaU5zdBya0SXsD2/e5iJCs7CUTN+XZeMOxayG7K8/KvEkGm4GjR4E9KK2uAYLy/8rw2IUvOjULMoGmXv/h5XgW9bUGCq8phAcjbJzLJjLRHgVGqfT68pdYGfQiCP4GWZIzqvgmV7SC4lbcAdp/VxgT+HR8i2ax/jJMeye2cZOmNdFsJrpJ9ERNje7PG5MO7BSwVjBLTKb42NvOo1xevioQgq+lhgde3c+qw9tzoUQOjE0FSdaEU3bB+EpCXMM80hmfbxgqUhOCBCHZex6Tj1Ays/rH2be+sNykf5c9Aptrj7MZDJ1+wNUSoZG4oYBWqSVlPZZZIzN+g1ibD1hfXTce7caVvRGMzNsfoGAPLmfz7RZFcqFKNcP4iGLyaat+9sv+zR1GgmryLImq0hn5kQLfwfc88SB95IBBDyJ9key/uXeCG0xVfGwsv4SAks7cxOeLZXHsz2mh/rMJpQpAzSsHRWJHUVHu9tP26fy0Yd/tsjkg=
