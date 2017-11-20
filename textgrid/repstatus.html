@@ -7,14 +7,31 @@
 		<link rel="stylesheet" type="text/css" href="repstatus.css"/>
 	</head>
 	<body>
-		
+<!--
 		<div class="status repstatus ok">
 			<p>Alles OK mit dem Lab. Aber diese Seite sollte trotzdem nicht angezeigt werden.</p>
 		</div>
-		
+-->
 		<!-- set the last class to warning in case of an information to prepare users for a downtime -->
 		<!-- set the last class to error in case of an unplaned service outage -->
-		
+
+		<div class="status repstatus error">
+			<p lang="de">
+				Nach einer Störung bei der GWDG sind einzelne Dienste noch nicht wieder voll verfügbar.
+				Während des Speicherns von Objekten treten kritische Fehler auf. Der Speicherprozess wird NICHT abgeschlossen.
+				Wir bitten um Entschuldigung!
+				<a href="https://info.gwdg.de/news/en/stoerung-ausfall-fileservice/">Betriebsmeldung der GWDG</a>
+				<a href="https://projects.gwdg.de/projects/tg/work_packages/22900/">Ticket im Bug Tracker</a>
+			</p>
+			<p lang="en">
+				After storage problems at GWDG TextGridLab and TextGridRep are not fully available.
+				You might encounter critical issues while storing objects.
+				We apologize for the inconvenience!
+				<a href="https://info.gwdg.de/news/en/stoerung-ausfall-fileservice/">GWDG News</a>
+				<a href="https://projects.gwdg.de/projects/tg/work_packages/22900/">Ticket</a>
+			</p>
+		</div>
+
 		<!--
 		<div class="status repstatus error">
 			<p lang="de">
@@ -63,7 +80,7 @@
 			</p>
 		</div>
 		-->
-		
+
 		<!--
 		<div class="status repstatus warning">
 			<p lang="de">Aufgrund von Wartungsarbeiten am Filesystem wird das TextGrid Repository ab Freitag,
@@ -76,14 +93,14 @@
 			</p>
 		</div>
 		-->
-		
+
 		<!--
 		<div class="status info">
 			<p lang="de">Bei Login-Problemen mit dem DARIAH-Account, klicken Sie zunächst auf "Heimateinrichtung wählen" am unteren Rand des Login-Fensters und wählen dann erneut "Anmelden über DARIAH". Sollten die Probleme danach weiterhin bestehen kann es helfen ein Neu-Laden dieses Fensters mit druck auf die Taste F5 zu erzwingen.</p>
 			<p lang="en">If you experience problems when logging in with your DARIAH account, please click on "Choose your institution" at the bottom of the login window and than again choose "Login via DARIAH". In Case this does not work force reload of this Screen by hitting the F5 key.</p>
 		</div>
 		-->
-		
+
 		<!--
 		<div class="status repstatus warning" style="overflow:hidden;">
 			<img src="https://raw.githubusercontent.com/DARIAH-DE/textgridrep-status/master/img/christmas.png" style="float:right; height: 120px;" />
@@ -93,7 +110,7 @@
 			Mitternacht nicht erreichbar. Wir entschuldigen uns für die Strapazen und wünschen Frohe Weihnachten!</p>
 		</div>
 		-->
-				
+
 		<!--
 		<div class="status repstatus warning">
 			<p lang="en">Due to TextGridRep service updates starting on Friday, 5. February 2016, publishing from TextGridLab will not
@@ -102,7 +119,7 @@
 			will be fully available again on Tuesday, 9. February, 8 am.</p>
 		</div>
 		-->
-		
+
 		<!--
 		<div class="status repstatus warning">
 			<p lang="en">Due to network problems there may be trouble with accessing resources via TextGridLab, TextGridRep, and the
