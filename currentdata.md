@@ -2,7 +2,7 @@
 layout: index
 ---
 
-# Current entries
+# Current data
 
 All listed outages:
 

@@ -9,7 +9,7 @@ hr { border-top: 1px solid  #7a7188; margin: 0px 0 5px 0; opacity: 0.5; }
 input{ margin: -3px 0 10px 0; border-radius: 4px; border: 1px solid #7a7188; width: 93%; }
 label { color: #504462; font-family: museo, sans-serif; font-size: 15px; }
 ul li { list-style: none; }
-a { color: #504462; }
+a { color: #504462; font-weight: bold; }
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { margin: 2px 0 20px 0; background-color: #f9f8f9; }
 button { font-family: museo, sans-serif; }
 #content_layout { position: absolute; top: 25px; left: 50%; margin-left: -320px; max-width: 1024px; }
