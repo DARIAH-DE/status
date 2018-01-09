@@ -8,5 +8,5 @@ install:
 script:
 - bundle exec jekyll build
 - ruby render_graph.rb
-- git diff-index --no-ext-diff --quiet HEAD -- dariah_infrastructure.gv
+- git diff --no-ext-diff --exit-code HEAD -- dariah_infrastructure.gv
 
