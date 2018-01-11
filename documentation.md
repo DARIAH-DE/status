@@ -29,11 +29,11 @@ dependencies:
 The `title` is required for all entries and used in status messages, for servers this should be the `fqdn`.
 
 The fields `description` and `website` are used for the entries in the list harvested by teresah.
-The key `teresah_included` defaults to `true` for services, unless explicity set to `false`.
+The key `teresah_included` defaults to `true` for services, unless explicitly set to `false`.
 
 The `dependencies` must be stated using the `id` of the collection entry,
 i.e. `/:collection/:name` where `:collection` is the name of the collection and `:name` if the filename without extension of the entry.
-If a dependency is listed that does not exist, the follwing error occurs:
+If a dependency is listed that does not exist, the following error occurs:
 ```
 Liquid Exception: Liquid error (line 6): divided by 0 in fulllist.md
 ```
@@ -73,7 +73,7 @@ in`_data/outages.yaml` and `_data/announcements.yaml` respectively.
 Using [Liquid](https://shopify.github.io/liquid/) processing,
 all services depending on any (or listed as) item in the `affected` array are shown on the status page.
 The items of the `affected` array use the same `id` schema as the infrastructure components dependencies.
-In case a nonexisting item is listed, the same division by zero will be caused.
+In case a non-existing item is listed, the same division by zero will be caused.
 
 Explicit listing using the `affected_services` is discouraged in favour of dynamic catalogue resolution
 and it will be ignored if the `affected` array is present.
@@ -98,7 +98,7 @@ are listed on the [current data]({{ site.baseurl }}{% link currentdata.md %}) pa
 
 A graph providing an overview of the entire infrastructure is provided in this graph:
 
-[![Infrastrcuture Overview](dariah_infrastructure.gv.png)](dariah_infrastructure.gv.png)
+[![Infrastructure Overview](dariah_infrastructure.gv.png)](dariah_infrastructure.gv.png)
 
 ## TERESAH
 
