@@ -1,2 +1,3 @@
-frontmatter
 graphviz
+python-frontmatter
+networkx
