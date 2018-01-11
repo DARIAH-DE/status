@@ -1,8 +1,14 @@
 #!/usr/bin/env python
 from graphviz import Digraph
+import argparse
 import glob
 import re
 import frontmatter
+
+parser = argparse.ArgumentParser(description='Render collections into graph')
+parser.add_argument('-f', '--file', dest='outputfilename', default='dariah_infrastructure.gv',
+                    help='File of the graphviz output file, default: dariah_infrastructure.gv')
+args = parser.parse_args()
 
 dot = Digraph(format='png')
 dot.attr(label=r'DARIAH-DE Infrastructure', fontsize='20', fontname='helvetica')
@@ -30,5 +36,5 @@ for coll in collections:
                 for dependency in itemdata['dependencies']:
                     dot.edge(itemkey,dependency)
 
-dot.render(filename='dariah-de-infrastructure.gv')
+dot.render(filename=args.outputfilename)
 

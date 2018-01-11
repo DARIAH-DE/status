@@ -88,7 +88,7 @@ To facilitate maintenance of the history, resolved outages and announcements (ev
 
 A graph providing an overview of the entire infrastructure is provided in this graph:
 
-[![Infrastrcuture Overview](dariah_infrastructure.png)](dariah_infrastructure.png)
+[![Infrastrcuture Overview](dariah_infrastructure.png)](dariah_infrastructure.gv.png)
 
 ## TERESAH
 

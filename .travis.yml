@@ -12,4 +12,6 @@ install:
 script:
 - bundle exec jekyll build
 - python3 render_graph.py
+- python3 render_graph.py -f travis-built-graph.gv
+- python3 compare_graph.py -g travis-built-graph.gv
 

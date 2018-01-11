@@ -1,168 +1,64 @@
-digraph G {
-	graph [fontname=helvetica,
-		fontsize=20,
-		label="DARIAH-DE Infrastructure"
-	];
-	node [label="\N"];
+digraph {
+	fontname=helvetica fontsize=20 label="DARIAH-DE Infrastructure"
 	subgraph cluster_services {
-		graph [color=white,
-			label=""
-		];
-		node [color=forestgreen,
-			fontname=helvetica,
-			shape=oval,
-			style="rounded,bold"
-		];
-		"/services/annotation_sandbox"		 [color=forestgreen,
-			fontname=helvetica,
-			label="DARIAH-DE Annotation Sandbox",
-			shape=oval,
-			style="rounded,bold"];
-		"/services/confluence"		 [color=forestgreen,
-			fontname=helvetica,
-			label="DARIAH Wiki",
-			shape=oval,
-			style="rounded,bold"];
-		"/services/fontane"		 [color=forestgreen,
-			fontname=helvetica,
-			label="Fontane Notizbücher",
-			shape=oval,
-			style="rounded,bold"];
-		"/services/geobrowser"		 [color=forestgreen,
-			fontname=helvetica,
-			label="Geo-Browser",
-			shape=oval,
-			style="rounded,bold"];
-		"/services/repository"		 [color=forestgreen,
-			fontname=helvetica,
-			label="DARIAH Repository",
-			shape=oval,
-			style="rounded,bold"];
-		"/services/tglab"		 [color=forestgreen,
-			fontname=helvetica,
-			label="TextGrid Laboratory",
-			shape=oval,
-			style="rounded,bold"];
-		"/services/tgrep"		 [color=forestgreen,
-			fontname=helvetica,
-			label="TextGrid Repository",
-			shape=oval,
-			style="rounded,bold"];
-		"/services/website"		 [color=forestgreen,
-			fontname=helvetica,
-			label="DARIAH-DE Website",
-			shape=oval,
-			style="rounded,bold"];
+		node [color=forestgreen fontname=helvetica shape=oval style="rounded,bold"]
+		color=white label=""
+		"/services/annotation_sandbox" [label="DARIAH-DE Annotation Sandbox"]
+		"/services/confluence" [label="DARIAH Wiki"]
+		"/services/fontane" [label="Fontane Notizbücher"]
+		"/services/geobrowser" [label="Geo-Browser"]
+		"/services/repository" [label="DARIAH Repository"]
+		"/services/tglab" [label="TextGrid Laboratory"]
+		"/services/tgrep" [label="TextGrid Repository"]
+		"/services/website" [label="DARIAH-DE Website"]
 	}
 	subgraph cluster_middlewares {
-		graph [color=white,
-			label=""
-		];
-		node [color=red,
-			fontname=helvetica,
-			shape=hexagon,
-			style="rounded,bold"
-		];
-		"/middlewares/dariahldap"		 [color=red,
-			fontname=helvetica,
-			label="DARIAH LDAP",
-			shape=hexagon,
-			style="rounded,bold"];
-		"/middlewares/dariahstorage"		 [color=red,
-			fontname=helvetica,
-			label="DARIAH Storage",
-			shape=hexagon,
-			style="rounded,bold"];
-		"/middlewares/liferay"		 [color=red,
-			fontname=helvetica,
-			label="DARIAH-DE Liferay Portal",
-			shape=hexagon,
-			style="rounded,bold"];
-		"/middlewares/tgauth"		 [color=red,
-			fontname=helvetica,
-			label="TG-auth",
-			shape=hexagon,
-			style="rounded,bold"];
-		"/middlewares/tgauth" -> "/middlewares/dariahldap";
-		"/middlewares/tgcrud"		 [color=red,
-			fontname=helvetica,
-			label="TG-crud",
-			shape=hexagon,
-			style="rounded,bold"];
-		"/middlewares/tgcrud" -> "/middlewares/dariahldap";
-		"/middlewares/tgcrud" -> "/middlewares/tgauth";
+		node [color=red fontname=helvetica shape=hexagon style="rounded,bold"]
+		color=white label=""
+		"/middlewares/dariahldap" [label="DARIAH LDAP"]
+		"/middlewares/dariahstorage" [label="DARIAH Storage"]
+		"/middlewares/liferay" [label="DARIAH-DE Liferay Portal"]
+		"/middlewares/tgauth" [label="TG-auth"]
+		"/middlewares/tgcrud" [label="TG-crud"]
 	}
 	subgraph cluster_servers {
-		graph [color=white,
-			label=""
-		];
-		node [color=blue3,
-			fontname=helvetica,
-			shape=house,
-			style="rounded,bold"
-		];
-		"/servers/auth"		 [color=blue3,
-			fontname=helvetica,
-			label="auth.dariah.eu",
-			shape=house,
-			style="rounded,bold"];
-		"/servers/ref"		 [color=blue3,
-			fontname=helvetica,
-			label="ref.dariah.eu",
-			shape=house,
-			style="rounded,bold"];
-		"/servers/textgrid-esx2"		 [color=blue3,
-			fontname=helvetica,
-			label="textgrid-esx2.gwdg.de",
-			shape=house,
-			style="rounded,bold"];
+		node [color=blue3 fontname=helvetica shape=house style="rounded,bold"]
+		color=white label=""
+		"/servers/auth" [label="auth.dariah.eu"]
+		"/servers/ref" [label="ref.dariah.eu"]
+		"/servers/textgrid-esx2" [label="textgrid-esx2.gwdg.de"]
 	}
 	subgraph cluster_infrastructure {
-		graph [color=white,
-			label=""
-		];
-		node [color=blue3,
-			fontname=helvetica,
-			shape=box,
-			style="rounded,bold"
-		];
-		"/infrastructure/gwdg-cloud"		 [color=blue3,
-			fontname=helvetica,
-			label="GWDG ComputeCloud",
-			shape=box,
-			style="rounded,bold"];
-		"/infrastructure/gwdg-esx"		 [color=blue3,
-			fontname=helvetica,
-			label="GWDG ESX Cluster",
-			shape=box,
-			style="rounded,bold"];
-		"/infrastructure/gwdg-storenext"		 [color=blue3,
-			fontname=helvetica,
-			label="GWDG StoreNext",
-			shape=box,
-			style="rounded,bold"];
+		node [color=blue3 fontname=helvetica shape=box style="rounded,bold"]
+		color=white label=""
+		"/infrastructure/gwdg-cloud" [label="GWDG ComputeCloud"]
+		"/infrastructure/gwdg-esx" [label="GWDG ESX Cluster"]
+		"/infrastructure/gwdg-storenext" [label="GWDG StoreNext"]
 	}
-	"/services/annotation_sandbox" -> "/infrastructure/gwdg-cloud";
-	"/services/confluence" -> "/infrastructure/gwdg-esx";
-	"/services/fontane" -> "/middlewares/tgcrud";
-	"/services/fontane" -> "/infrastructure/gwdg-cloud";
-	"/services/geobrowser" -> "/middlewares/dariahstorage";
-	"/services/geobrowser" -> "/servers/ref";
-	"/services/repository" -> "/middlewares/dariahstorage";
-	"/services/tglab" -> "/middlewares/tgauth";
-	"/services/tglab" -> "/middlewares/tgcrud";
-	"/services/tglab" -> "/servers/textgrid-esx2";
-	"/services/tgrep" -> "/middlewares/liferay";
-	"/services/tgrep" -> "/middlewares/tgcrud";
-	"/services/tgrep" -> "/servers/textgrid-esx2";
-	"/services/website" -> "/middlewares/liferay";
-	"/middlewares/dariahldap" -> "/servers/auth";
-	"/middlewares/dariahstorage" -> "/infrastructure/gwdg-storenext";
-	"/middlewares/liferay" -> "/infrastructure/gwdg-esx";
-	"/middlewares/tgauth" -> "/servers/textgrid-esx2";
-	"/middlewares/tgcrud" -> "/servers/textgrid-esx2";
-	"/servers/auth" -> "/infrastructure/gwdg-esx";
-	"/servers/ref" -> "/infrastructure/gwdg-cloud";
-	"/servers/textgrid-esx2" -> "/infrastructure/gwdg-esx";
-	"/servers/textgrid-esx2" -> "/infrastructure/gwdg-storenext";
+	"/services/annotation_sandbox" -> "/infrastructure/gwdg-cloud"
+	"/services/confluence" -> "/infrastructure/gwdg-esx"
+	"/services/fontane" -> "/middlewares/tgcrud"
+	"/services/fontane" -> "/infrastructure/gwdg-cloud"
+	"/services/geobrowser" -> "/middlewares/dariahstorage"
+	"/services/geobrowser" -> "/servers/ref"
+	"/services/repository" -> "/middlewares/dariahstorage"
+	"/services/tglab" -> "/middlewares/tgauth"
+	"/services/tglab" -> "/middlewares/tgcrud"
+	"/services/tglab" -> "/servers/textgrid-esx2"
+	"/services/tgrep" -> "/middlewares/liferay"
+	"/services/tgrep" -> "/middlewares/tgcrud"
+	"/services/tgrep" -> "/servers/textgrid-esx2"
+	"/services/website" -> "/middlewares/liferay"
+	"/middlewares/dariahldap" -> "/servers/auth"
+	"/middlewares/dariahstorage" -> "/infrastructure/gwdg-storenext"
+	"/middlewares/liferay" -> "/infrastructure/gwdg-esx"
+	"/middlewares/tgauth" -> "/middlewares/dariahldap"
+	"/middlewares/tgauth" -> "/servers/textgrid-esx2"
+	"/middlewares/tgcrud" -> "/middlewares/tgauth"
+	"/middlewares/tgcrud" -> "/middlewares/dariahldap"
+	"/middlewares/tgcrud" -> "/servers/textgrid-esx2"
+	"/servers/auth" -> "/infrastructure/gwdg-esx"
+	"/servers/ref" -> "/infrastructure/gwdg-cloud"
+	"/servers/textgrid-esx2" -> "/infrastructure/gwdg-storenext"
+	"/servers/textgrid-esx2" -> "/infrastructure/gwdg-esx"
 }
