@@ -8,7 +8,17 @@ The status page is powered by [Jekyll](https://jekyllrb.com/) using its features
 
 See the [documentation](documentation.md).
 
-To compile the graph, you need `graphviz` and the python dependencies from `requirements.txt`.
+Changes in the data must be reflected in the graph, so make sure to re-compile!
+Make sure to have `graphviz` and the python dependencies from `requirements.txt`, e.g. on Ubuntu:
+``` Bash
+sudo apt-get -y install graphviz
+sudo apt-get -y install python3-all-dev python3-pip
+python3 -m venv myvenv
+source myvenv/bin/activate
+pip3 install -r requirements.txt
+```
+
+Than compile with `python3 render_graph.py`.
 
 ## Development
 
@@ -18,7 +28,7 @@ To test the functionally locally, do
 bundle install
 ```
 
-and 
+and
 
 ```
 bundle exec jekyll serve
