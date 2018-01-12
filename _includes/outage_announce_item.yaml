@@ -1,3 +1,6 @@
+{%- comment -%}
+  This generates a yaml presentation of an outage or announcement.
+{%- endcomment -%}
 - title: '{{ include.item["title"] }}'
   description: '{{ include.item["description"] }}'
 {% if include.item["date_start"] %}  date_start: '{{ include.item["date_start"] }}'{% endif %}
@@ -10,7 +13,7 @@
   {%- for servicename in array_affected -%}
     {%- if servicename.size > 0 %}
     - '{{ servicename | strip }}'
-    {%- endif %}
-  {%- endfor %}
-{% endif %}
+    {%- endif -%}
+  {%- endfor -%}
+{% endif -%}
 

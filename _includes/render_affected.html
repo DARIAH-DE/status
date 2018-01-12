@@ -1,3 +1,7 @@
+{%- comment -%}
+  Render the list of affected service from the `affected_services` array.
+{%- endcomment -%}
+
 <p lang="en">{{ include.headline | default: 'Affected services:' | markdownify }}
   <ul>
     {% for servicename in include.affected_services %}

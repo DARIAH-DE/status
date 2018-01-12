@@ -1,3 +1,7 @@
+{%- comment -%}
+  Render the message for an `item`.
+{%- endcomment -%}
+
 <h3 lang="en">{{ include.item.title | escape }}</h3>
 {% if include.item.date_start%}
 <p lang="en">Effective from {{ include.item.date_start }}{% if include.item.date_end %} until {{ include.item.date_end }}{% endif %}.</p>

@@ -1,3 +1,7 @@
+{%- comment -%}
+  Get a list of titles of all services affected by `affected`.
+{%- endcomment -%}
+
 {% assign list_announced_affected = "" | split: "; " %}
 
 {% for affected_item in include.affected %}

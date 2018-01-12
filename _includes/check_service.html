@@ -1,3 +1,8 @@
+{%- comment -%}
+  This file checks, whether a given `service` is affected by an outage of the given `affected_item`.
+  It will recurse all the `service`'s dependencies to check against the `affected_item`.
+{%- endcomment -%}
+
 {% if include.service.id == include.affected_item %}
 yepp
 {% endif %}

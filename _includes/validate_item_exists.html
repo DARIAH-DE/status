@@ -1,3 +1,7 @@
+{%- comment -%}
+  Check whether an `item` is actually present in the respective collection.
+{%- endcomment -%}
+
 {% assign collection_found = false %}
 {% for coll in site.collections %}
   {% if include.item contains coll.label | append: '/' | prepend: '/' %}
