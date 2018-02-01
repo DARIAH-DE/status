@@ -1,0 +1,48 @@
+---
+layout: index
+---
+
+{% comment %}
+  Status page design.
+{% endcomment %}
+
+<h1>DARIAH-DE :: Status</h1>
+
+<div class="status info">
+  <h2>Current notifications</h2>
+    <p>Latest update: <strong>{{ site.time | date: '%c' }}</strong></p>
+
+{% assign outages_array = site.data.outages | where_exp: "item", "item.hide != true"  %}
+{% assign outages_array = outages_array | where_exp: "item", "item.date_end == nil"  %}
+
+{% if outages_array.size > 0 %}
+  <div class="alert alert-error">Service Disruption!</div>
+
+  {% for outage in outages_array %}
+    {% include single_status_message.html item=outage %}
+  {% endfor %}
+{% else %}
+  <div class="alert alert-success">All services are available</div>
+{% endif %}
+
+{% assign announcements_array = site.data.announcements | where_exp: "item", "item.hide != true"  %}
+
+{% if announcements_array.size > 0 %}
+  <div class="alert alert-warning">Announcements.</div>
+
+  {% for announcement in announcements_array %}
+    {% include single_status_message.html item=announcement %}
+  {% endfor %}
+
+{% endif %}
+
+
+</div>
+
+<p><a href="mailto:{{ site.support_mail }}?subject=Service down"><i class="fa fa-envelope" aria-hidden="true"></i> Is there a service missing? Please contact us.</a>
+See the <a href="{{ site.baseurl }}{% link history.md %}">History</a> for older messages.</p>
+
+<p><i>Maintenance is regularly scheduled Thursdays between 15:00 and 19:00 German time.</i></p>
+
+{{ content }}
+

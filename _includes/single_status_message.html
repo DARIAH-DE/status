@@ -1,0 +1,18 @@
+{%- comment -%}
+  Render the message for an `item`.
+{%- endcomment -%}
+
+<h3 lang="en">{{ include.item.title | escape }}</h3>
+{% if include.item.date_start%}
+<p lang="en">Effective from {{ include.item.date_start }}{% if include.item.date_end %} until {{ include.item.date_end }}{% endif %}.</p>
+{% endif %}
+<p lang="en">{{ include.item.description | markdownify }}</p>
+{% if include.item.affected.size > 0 %}
+  {%- capture list_affected %}{% include list_affected.html affected=include.item.affected %}{% endcapture %}
+  {%- assign array_affected = list_affected | split: ";" %}
+  {%- include render_affected.html affected_services=array_affected headline='The following services are affected:'%}
+{% elsif include.item.affected_services.size > 0 %}
+  {%- include render_affected.html affected_services=include.item.affected_services %}
+{% endif %}
+
+

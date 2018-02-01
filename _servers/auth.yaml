@@ -1,0 +1,5 @@
+---
+title: 'auth.dariah.eu'
+dependencies:
+  - '/infrastructure/gwdg-esx'
+---

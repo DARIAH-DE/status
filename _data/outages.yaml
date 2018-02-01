@@ -1,0 +1,15 @@
+---
+- title: 'Performance Issues'
+  description: 'Due to hardware issues, performance issues for all DARIAH services are possible [throughout the week](https://info.gwdg.de/news/wartungsarbeiten-netapp/).'
+  date_start: '2017-07-24 15:20'
+  date_end: '2017-08-02'
+  affected:
+    - '/infrastructure/gwdg-esx'
+    - '/infrastructure/gwdg-storenext'
+- title: 'Maintenance'
+  description: 'Due to unforseen complications during maintenance, many DARIAH services are currently not available.'
+  date_start: '2017-06-22'
+  date_end: '2017-06-27'
+  affected:
+    - '/infrastructure/gwdg-cloud'
+

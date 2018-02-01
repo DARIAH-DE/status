@@ -1,0 +1,27 @@
+{%- comment -%}
+  This file checks, whether a given `service` is affected by an outage of the given `affected_item`.
+  It will recurse all the `service`'s dependencies to check against the `affected_item`.
+{%- endcomment -%}
+
+{% if include.service.id == include.affected_item %}
+yepp
+{% endif %}
+{% for dependency in include.service.dependencies %}
+  {% comment %} Make sure the dependency exists {% endcomment %}
+  {% include validate_item_exists.html item=dependency %}
+  {% if dependency contains '/services/' %}
+    {% assign next_service = site.services | where:"id", dependency | first %}
+  {% endif %}
+  {% if dependency contains '/middlewares/' %}
+    {% assign next_service = site.middlewares | where:"id", dependency | first %}
+  {% endif %}
+  {% if dependency contains '/servers/' %}
+    {% assign next_service = site.servers | where:"id", dependency | first %}
+  {% endif %}
+  {% if dependency contains '/infrastructure/' %}
+    {% assign next_service = site.infrastructure | where:"id", dependency | first %}
+  {% endif %}
+  {% if next_service %}
+    {% include check_service.html service=next_service affected_item=include.affected_item %}
+  {% endif %}
+{% endfor %}

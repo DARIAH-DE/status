@@ -1,0 +1,53 @@
+{%- comment -%}
+  Check whether TextGrid services are affacted by an `item` of `itemtyp` outage or announcemnt and render the output.
+{%- endcomment -%}
+
+
+{% comment %} Load TG services {% endcomment %}
+{% assign tglab = site.services | where:"id", '/services/tglab' | first %}
+{% assign tgrep = site.services | where:"id", '/services/tgrep' | first %}
+
+
+{%- capture tglab_affected %}{% include check_service.html outage=include.item tgservice=tglab %}{% endcapture %}
+{%- capture tgrep_affected %}{% include check_service.html outage=include.item tgservice=tgrep %}{% endcapture %}
+
+{% comment %} Process outage data {% endcomment %}
+{% if tglab_affected contains "yepp" %}
+<!-- TextGridLab -->
+<div class="status {{ include.itemtype }}">
+  {% if include.item.description_tg_de %}
+    <p lang="de">
+      {{ include.item.description_tg_de }}
+    </p>
+  {% endif %}
+  <p lang="en">
+  {% if include.item.description_tg_en %}
+    {{ include.item.description_tg_en }}
+  {% else %}
+    <b>{{ include.item.title }}</b><br/>
+    {{ include.item.description }}
+  {% endif %}
+  </p>
+</div>
+{% endif %}
+
+{% if tgrep_affected contains "yepp" %}
+<!-- TextGrid Repository -->
+<div class="repstatus {{ include.itemtype }}">
+  {% if include.item.description_tg_de %}
+    <p lang="de">
+      {{ include.item.description_tg_de }}
+    </p>
+  {% endif %}
+  <p lang="en">
+  {% if include.item.description_tg_en %}
+    {{ include.item.description_tg_en }}
+  {% else %}
+    <b>{{ include.item.title }}</b><br/>
+    {{ include.item.description }}
+  {% endif %}
+  </p>
+</div>
+{% endif %}
+
+

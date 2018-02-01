@@ -1,0 +1,5 @@
+---
+title: 'DARIAH LDAP'
+dependencies:
+  - '/servers/auth'
+---

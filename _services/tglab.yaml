@@ -1,0 +1,9 @@
+---
+title: 'TextGrid Laboratory'
+description: 'Open source tools and services to support the entire research process and create digital editions.'
+website: 'https://de.dariah.eu/textgridlab'
+dependencies:
+  - '/middlewares/tgauth'
+  - '/middlewares/tgcrud'
+  - '/servers/textgrid-esx2'
+---

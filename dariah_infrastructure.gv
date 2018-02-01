@@ -1,0 +1,64 @@
+digraph {
+	fontname=helvetica fontsize=20 label="DARIAH-DE Infrastructure"
+	subgraph cluster_services {
+		node [color=forestgreen fontname=helvetica shape=oval style="rounded,bold"]
+		color=white label=""
+		"/services/annotation_sandbox" [label="DARIAH-DE Annotation Sandbox"]
+		"/services/confluence" [label="DARIAH Wiki"]
+		"/services/fontane" [label="Fontane Notizbücher"]
+		"/services/geobrowser" [label="Geo-Browser"]
+		"/services/repository" [label="DARIAH Repository"]
+		"/services/tglab" [label="TextGrid Laboratory"]
+		"/services/tgrep" [label="TextGrid Repository"]
+		"/services/website" [label="DARIAH-DE Website"]
+	}
+	subgraph cluster_middlewares {
+		node [color=red fontname=helvetica shape=hexagon style="rounded,bold"]
+		color=white label=""
+		"/middlewares/dariahldap" [label="DARIAH LDAP"]
+		"/middlewares/dariahstorage" [label="DARIAH Storage"]
+		"/middlewares/liferay" [label="DARIAH-DE Liferay Portal"]
+		"/middlewares/tgauth" [label="TG-auth"]
+		"/middlewares/tgcrud" [label="TG-crud"]
+	}
+	subgraph cluster_servers {
+		node [color=blue3 fontname=helvetica shape=house style="rounded,bold"]
+		color=white label=""
+		"/servers/auth" [label="auth.dariah.eu"]
+		"/servers/ref" [label="ref.dariah.eu"]
+		"/servers/textgrid-esx2" [label="textgrid-esx2.gwdg.de"]
+	}
+	subgraph cluster_infrastructure {
+		node [color=blue3 fontname=helvetica shape=box style="rounded,bold"]
+		color=white label=""
+		"/infrastructure/gwdg-cloud" [label="GWDG ComputeCloud"]
+		"/infrastructure/gwdg-esx" [label="GWDG ESX Cluster"]
+		"/infrastructure/gwdg-storenext" [label="GWDG StoreNext"]
+	}
+	"/services/annotation_sandbox" -> "/infrastructure/gwdg-cloud"
+	"/services/confluence" -> "/infrastructure/gwdg-esx"
+	"/services/fontane" -> "/middlewares/tgcrud"
+	"/services/fontane" -> "/infrastructure/gwdg-cloud"
+	"/services/geobrowser" -> "/middlewares/dariahstorage"
+	"/services/geobrowser" -> "/servers/ref"
+	"/services/repository" -> "/middlewares/dariahstorage"
+	"/services/tglab" -> "/middlewares/tgauth"
+	"/services/tglab" -> "/middlewares/tgcrud"
+	"/services/tglab" -> "/servers/textgrid-esx2"
+	"/services/tgrep" -> "/middlewares/liferay"
+	"/services/tgrep" -> "/middlewares/tgcrud"
+	"/services/tgrep" -> "/servers/textgrid-esx2"
+	"/services/website" -> "/middlewares/liferay"
+	"/middlewares/dariahldap" -> "/servers/auth"
+	"/middlewares/dariahstorage" -> "/infrastructure/gwdg-storenext"
+	"/middlewares/liferay" -> "/infrastructure/gwdg-esx"
+	"/middlewares/tgauth" -> "/middlewares/dariahldap"
+	"/middlewares/tgauth" -> "/servers/textgrid-esx2"
+	"/middlewares/tgcrud" -> "/middlewares/tgauth"
+	"/middlewares/tgcrud" -> "/middlewares/dariahldap"
+	"/middlewares/tgcrud" -> "/servers/textgrid-esx2"
+	"/servers/auth" -> "/infrastructure/gwdg-esx"
+	"/servers/ref" -> "/infrastructure/gwdg-cloud"
+	"/servers/textgrid-esx2" -> "/infrastructure/gwdg-storenext"
+	"/servers/textgrid-esx2" -> "/infrastructure/gwdg-esx"
+}

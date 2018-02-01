@@ -1,0 +1,7 @@
+---
+title: 'TG-auth'
+website: 'https://textgridlab.org/doc/services/submodules/tg-crud/service/tgcrud-webapp/docs/index.html'
+dependencies:
+  - '/middlewares/dariahldap'
+  - '/servers/textgrid-esx2'
+---

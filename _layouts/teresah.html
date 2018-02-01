@@ -1,0 +1,29 @@
+---
+layout: index
+---
+
+{% comment %}
+  Template to display inventory for teresah harvesting.
+{% endcomment %}
+
+
+{{ content }}
+
+{% for service in site.services %}
+
+  {% comment %} We default to include services as tools in TERESAH, but absent entries are false in liquid {% endcomment %}
+  {% if service.teresah_included != false %}
+    {% include teresah_entry.html entry=service type='Tool' %}
+  {% endif %}
+
+{% endfor %}
+
+{% for service in site.middlewares %}
+
+  {% comment %} We included explicitly set middlewares as service in TERESAH {% endcomment %}
+  {% if service.teresah_included == true %}
+    {% include teresah_entry.html entry=service type='Service' %}
+  {% endif %}
+
+{% endfor %}
+

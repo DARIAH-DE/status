@@ -1,0 +1,33 @@
+# DARIAH-DE status page
+title: DARIAH-DE Status
+timezone: Europe/Berlin
+impressum_url: 'https://de.dariah.eu/Impressum'
+support_mail: 'support@de.dariah.eu'
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+#plugins:
+
+collections:
+  services:
+  middlewares:
+  servers:
+  infrastructure:
+
+exclude:
+  - 'README.md'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'venv/'
+  - 'requirements.txt'
+  - 'render_graph.py'
+  - 'render_graph.rb'
+
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: 'index'
+

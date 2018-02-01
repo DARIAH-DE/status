@@ -1,10 +1,14 @@
+{%- comment -%}
+  Main theme.
+{%- endcomment -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>DARIAH-DE :: Status</title>
+    <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="DARIAH-DE">
+    <link rel="alternate" type="application/atom+xml" title="Commits as RSS Feed" href="{{ site.github.repository_url }}/commits/master.atom" />
     <!-- CSS Imports -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen, projection" />
@@ -30,76 +34,14 @@
     <div id="content_layout">
       <div class="span8 main-content-wrapper">
         <div id="content" class="primary-area">
-          <h1>DARIAH-DE :: Status</h1>
 
-          <div class="status info">
-            <h2>Current notifications</h2>
-            <p>Latest update: <strong>22.01.2018 15:35</strong></p>
-            <!-- <div class="alert alert-warning">Performance Issues!</div>
-		  <p lang="en">Due to hardware issues, performance issues for all DARIAH services are possible <a href="https://info.gwdg.de/news/wartungsarbeiten-netapp/">throughout the week</a>.</p> -->
-      <div class="alert alert-success">All services are available</div>
-            <!--<div class="alert alert-error">Service Disruption!</div>
-      			<p lang="en">Several services are interrupted due to technical malfunction, this includes
-              <ul>
-                <li>TextGrid</li>
-              </ul>
-            </p>
--->
-            <p><a href="mailto:support@de.dariah.eu?subject=Service down"><i class="fa fa-envelope" aria-hidden="true"></i> Is there a service missing? Please contact us.</a></p>
-
-            <div id="TextGridError" display="none">
-              <br/>
-              <div id="repstatusError"></div>
-            </div>
-          </div>
-
-	<br/>
-
-  <div class="status info">
-<!--
-  <h2>Scheduled maintenance (upcoming)</h2>
-		<div class="alert alert-warning">
-      <h3>DARIAH Service Downtime on Saturday, July 22</h3>
-  		<p lang="en">
-  			Due to maintanance work at the computing center (interruption of the power supply) some DARIAH-DE Services
-  			are still not available, <time datetime="2017-07-24">July 24</time> (new date!):
-      </p>
-      <ul>
-        <li>TextGrid</li>
-        <li>DARIAH-DE Etherpad</li>
-        <li>DARIAH-DE Generic Search</li>
-        <li>DARIAH-DE Collection Registry</li>
-        <li>DARIAH-DE Data Modelling Environment</li>
-        <li>DARIAH-DE Cosmotool</li>
-        <li>DARIAH-DE Geo-Browser</li>
-        <li>DARIAH-DE GeoServer</li>
-        <li>DARIAH-DE Norm-Daten-Dienste</li>
-        <li>DARIAH-DE Annotation Sandbox</li>
-        <li>DARIAH-DE App Jüdischer Orte</li>
-        <li>DARIAH-DE CollateX</li>
-        <li>DARIAH-DE Developer Platform (CI)</li>
-        <li>DARIAH-DE Repository</li>
-        <li>Fontane Notizbücher</li>
-      </ul>
-      <p>
-  			See also the <a href="https://info.gwdg.de/news/en/information-interruption-of-the-power-supply-at-the-max-planck-campus-and-fmz/">GWDG Announcement</a>.
-  		</p>
-    </div>
--->
-    <div id="TextGridWarning" display="none">
-      <div id="repstatusWarning">&nbsp;</div>
-    </div>
-	</div>
-
-	<br/>
-
-    <a class="twitter-timeline" data-height="600" href="https://twitter.com/DARIAHdeTech">Tweets by DARIAHdeTech</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          {{ content }}
 
         </div>
         <div class="row">
-          <div class="central_logo_de"></div>
+          <a href="https://de.dariah.eu"><div class="central_logo_de"></div></a>
           <div class="pull-right" style="margin-bottom:5px;margin-right:5px">
-            <a href="https://github.com/DARIAH-DE/status">
+            <a href="{{ site.github.repository_url }}">
               <span class="">View on GitHub</span>
               <img width="20px" src="img/GitHub-Mark/PNG/GitHub-Mark-32px.png"></img>
             </a>
@@ -109,10 +51,15 @@
       <div class="row dfooter footer">
         <div class="span7">
           <!--<div class="row">-->
+          <p>Digital Research Infrastructure for the Arts and Humanities.</p>
             <hr/>
             <p>
-              Digital Research Infrastructure for the Arts and Humanities.
-              <a class="pull-right" href="https://de.dariah.eu/Impressum">Imprint</a>
+              <a  href="{{ site.baseurl }}{% link index.md %}">Home</a> &middot;
+              <a  href="{{ site.baseurl }}{% link documentation.md %}">Documentation</a> &middot;
+              <a  href="{{ site.baseurl }}{% link history.md %}">History</a> &middot;
+              <a  href="{{ site.baseurl }}{% link currentdata.md %}">Current data</a> &middot;
+              <a  href="{{ site.baseurl }}{% link fulllist.md %}">Dependency List</a>
+              <a class="pull-right" href="{{ site.impressum_url }}">Imprint</a>
             </p>
 
           <!--</div>-->

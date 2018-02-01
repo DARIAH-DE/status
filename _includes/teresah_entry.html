@@ -1,0 +1,26 @@
+{%- comment -%}
+  Render a single item into a teresah dataset.
+{%- endcomment -%}
+
+{% if include.entry.title and include.entry.description and include.entry.website %}
+{% comment %} These are mandatory. {% endcomment %}
+<div vocab="http://schema.org/" typeof="SoftwareApplication">
+
+  <h2 property="name">{{ include.entry.title }}</h2>
+
+  <p property="description">{{ include.entry.description }}</p>
+
+  <p><i class="fa fa-link" aria-hidden="true"></i> <a href="{{ include.entry.website }}" property="url">{{ include.entry.website }}</a></p>
+
+  <div style="display:none" property="http://purl.org/dc/elements/1.1/type">{{ include.type }}</div>
+  <div style="display:none" property="creator">Mitglieder des DARIAH-DE Konsortiums</div>
+  <div style="display:none" property="license">https://creativecommons.org/licenses/by/4.0/</div>
+  {% if include.entry.provider %}
+    {% assign service_provider = include.entry.provider %}
+  {% else %}
+    {% assign service_provider = 'DARIAH-DE' %}
+  {% endif %}
+  <div style="display:none" property="provider">{{ service_provider }}</div>
+
+</div>
+{% endif %}
