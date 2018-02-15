@@ -1,4 +1,9 @@
 ---
+- title: 'Problem with the DHd-Blog'
+  description: 'We are investigating a configuration problem with the DHd Blog.'
+  date_start: '2018-02-15'
+  affected:
+    - '/services/dhdblog'
 - title: 'Performance Issues'
   description: 'Due to hardware issues, performance issues for all DARIAH services are possible [throughout the week](https://info.gwdg.de/news/wartungsarbeiten-netapp/).'
   date_start: '2017-07-24 15:20'
