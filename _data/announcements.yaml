@@ -2,6 +2,7 @@
 - title: 'System Maintenance'
   date_start: '2018-02-15'
   date_end: '2018-02-15'
+  hide: true
   description: 'Routine software maintenance will be performed to upgrade the DARIAH Wiki to a newer version. This is expected to last from 15-17 CET on February 15th.'
   affected:
     - '/services/confluence'
