@@ -1,7 +1,8 @@
 ---
 - title: 'OTRS Failure'
   date_start: '2018-02-22'
-  hide: false
+  date_end: '2018-02-28'
+  hide: true
   affected:
     - '/services/otrs'
 - title: 'System Maintenance'
