@@ -1,4 +1,9 @@
 ---
+- title: 'Authentication Issues'
+  description: 'We are experiencing issues with eduGAIN, the infrastructure behind the DARIAH AAI. This leads to problems with certain services.'
+  date_start: '2018-03-25 18:37'
+  affected:
+    - '/middlewares/edugain'
 - title: 'Performance Issues'
   description: 'Due to hardware issues, performance issues for all DARIAH services are possible [throughout the week](https://info.gwdg.de/news/wartungsarbeiten-netapp/).'
   date_start: '2017-07-24 15:20'

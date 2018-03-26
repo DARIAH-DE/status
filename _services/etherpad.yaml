@@ -1,0 +1,7 @@
+---
+title: 'DARIAH-DE Etherpad'
+teresah_included: false
+dependencies:
+  - '/middlewares/edugain'
+  - '/infrastructure/gwdg-cloud'
+---
