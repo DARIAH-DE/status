@@ -28,4 +28,3 @@ layout: textgrid
 	  <p>Alles OK mit dem Lab. Aber diese Seite sollte trotzdem nicht angezeigt werden.</p>
   </div>
 {% endif %}
-

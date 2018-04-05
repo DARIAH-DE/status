@@ -12,12 +12,12 @@
   description: 'Routine software maintenance will be performed to upgrade the DARIAH Wiki to a newer version. This is expected to last from 15-17 CET on February 15th.'
   affected:
     - '/services/confluence'
-- title: 'DARIAH Service Downtime on Saturday, July 22'
+- title: 'DARIAH Service Downtime'
   description: 'Due to maintanance work at the computing center
     ([interruption of the power supply](https://info.gwdg.de/news/en/information-interruption-of-the-power-supply-at-the-max-planck-campus-and-fmz/))
-    most DARIAH-DE Services will not available from July 21 to July 24.'
-  date_start: '2017-07-21'
-  date_end: '2017-07-24'
+    most DARIAH-DE Services will not available.'
+  date_start: '2016-02-24 14:47'
+  date_end: '2017-07-04'
   hide: true
   affected:
     - '/infrastructure/gwdg-esx'
@@ -30,9 +30,8 @@
   affected:
     - '/infrastructure/gwdg-storenext'
 - title: 'Maintenance'
+  description: 'Test'
   date_start: '2017-06-22'
-  date_end: '2017-06-23'
-  hide: true
+  hide: false
   affected:
-    - '/infrastructure/gwdg-cloud'
-
+    - '/services/fontane'
