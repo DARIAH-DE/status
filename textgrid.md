@@ -20,11 +20,12 @@ layout: textgrid
 
 {%- endcapture %}
 
-{% comment %} Make sure there is actually something (must be a class somewhere) {% endcomment %}
-{% if textgridmessages contains "class" %}
-  {{ textgridmessages }}
-{% else %}
-  <div class="status repstatus ok">
+{% comment %} If TGLab is not affected, give the OK {% endcomment %}
+{% unless textgridmessages contains 'tglab_is_actually_affected' %}
+  <div class="status ok">
 	  <p>Alles OK mit dem Lab. Aber diese Seite sollte trotzdem nicht angezeigt werden.</p>
   </div>
-{% endif %}
+{% endunless %}
+
+{{ textgridmessages }}
+

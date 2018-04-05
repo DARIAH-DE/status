@@ -58,8 +58,6 @@ in`_data/outages.yaml` and `_data/announcements.yaml` respectively.
 ---
 - title: 'This is the heading on the status page'
   description: 'This describes what the entry is about.'
-  description_tg_de: 'TextGrid-spezificsche Beschreibung in Deutsch.'
-  description_tg_en: 'TextGrid specific description in English.'
   hide: false
   date_start: '2017-10-01 11:01'
   date_end: '2017-10-02 14:38'
@@ -74,15 +72,13 @@ Using [Liquid](https://shopify.github.io/liquid/) processing,
 all services depending on any (or listed as) item in the `affected` array are shown on the status page.
 The items of the `affected` array use the same `id` schema as the infrastructure components dependencies.
 In case a non-existing item is listed, the same division by zero will be caused.
+The `date_start` is required.
 
 Explicit listing using the `affected_services` is discouraged in favour of dynamic catalogue resolution
 and it will be ignored if the `affected` array is present.
 
 The field `hide` defaults to `false` if absent, but can be used to hide messages from the status page.
 Outages with a set `date_end` will also not be shown on the status page.
-
-The TextGrid fields `description_tg_de` and `description_tg_en` are only processed in `textgrid.md`.
-If they are omitted, `title` and `description` are used as fallback.
 
 ## History
 

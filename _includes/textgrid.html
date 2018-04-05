@@ -7,18 +7,25 @@
 {% assign tglab = site.services | where:"id", '/services/tglab' | first %}
 {% assign tgrep = site.services | where:"id", '/services/tgrep' | first %}
 
-
-<!-- {{ tglab_affected }} -->
-<!-- {{ tgrep_affected }} -->
-
-{%- capture tglab_affected %}{% include check_service.html outage=include.item service=tglab %}{% endcapture %}
-{%- capture tgrep_affected %}{% include check_service.html outage=include.item service=tgrep %}{% endcapture %}
+{% capture tglab_affected %}
+  {% for affected_item in include.item.affected %}
+    {% include check_service.html affected_item=affected_item service=tglab %}
+  {% endfor %}
+{% endcapture %}
+{% capture tgrep_affected %}
+  {% for affected_item in include.item.affected %}
+    {% include check_service.html affected_item=affected_item service=tgrep %}
+  {% endfor %}
+{% endcapture %}
 
 {% comment %} Process outage data {% endcomment %}
 <div class="
 {%- if tgrep_affected contains "yepp" -%} repstatus {% endif -%}
 {%- if tglab_affected contains "yepp" -%} status {% endif -%}
  {{ include.itemtype }}">
+  {% comment %} machine-readable strings to check affectedness {% endcomment %}
+  {%- if tgrep_affected contains "yepp" -%}<!-- tgrep_is_actually_affected -->{% endif -%}
+  {%- if tglab_affected contains "yepp" -%}<!-- tglab_is_actually_affected -->{% endif -%}
   <p lang="en">
     <b>{{ include.item.title }}</b><br/>
     {% include timestamp.html %}
@@ -27,5 +34,3 @@
   </p>
 </div>
 
-<!-- {{ tglab_affected }} -->
-<!-- {{ tgrep_affected }} -->
