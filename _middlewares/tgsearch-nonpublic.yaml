@@ -1,0 +1,8 @@
+---
+title: 'TextGrid Search (nonpublic)'
+description: 'TextGrid Search Service'
+website: 'https://de.dariah.eu/textgrid'
+dependencies:
+  - '/servers/textgrid-esx2'
+  - '/middlewares/tgauth'
+---

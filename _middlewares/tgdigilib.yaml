@@ -1,0 +1,8 @@
+---
+title: 'TextGrid Digilib'
+description: 'Open Source Image Manipulation and Delivery Service'
+website: 'https://textgridlab.org/1.0/tgrep/digilib/digilib.html?fn=textgrid:24hq1.0'
+dependencies:
+  - '/middlewares/tgcrud'
+  - '/servers/textgrid-esx2'
+---
