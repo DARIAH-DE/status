@@ -7,6 +7,7 @@ digraph {
 		"/services/fontane" [label="Fontane Notizbücher"]
 		"/services/tglab" [label="TextGrid Laboratory"]
 		"/services/dhdblog" [label="DHd Blog"]
+		"/services/datasheet_editor" [label="Datasheet Editor"]
 		"/services/otrs" [label="DARIAH-DE Ticket-System"]
 		"/services/confluence" [label="DARIAH Wiki"]
 		"/services/annotation_sandbox" [label="DARIAH-DE Annotation Sandbox"]
@@ -55,6 +56,9 @@ digraph {
 	"/services/tglab" -> "/middlewares/tgcrud"
 	"/services/tglab" -> "/middlewares/tgsearch-nonpublic"
 	"/services/tglab" -> "/servers/textgrid-esx2"
+	"/services/datasheet_editor" -> "/middlewares/getty"
+	"/services/datasheet_editor" -> "/middlewares/dariah-openstorage"
+	"/services/datasheet_editor" -> "/servers/ref"
 	"/services/confluence" -> "/infrastructure/gwdg-esx"
 	"/services/annotation_sandbox" -> "/infrastructure/gwdg-cloud"
 	"/services/etherpad" -> "/infrastructure/gwdg-cloud"
