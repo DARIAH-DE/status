@@ -1,0 +1,7 @@
+---
+title: 'GeoServer'
+description: ''
+website: 'http://ref.dariah.eu/geoserver/web/'
+dependencies:
+  - '/servers/ref'
+---

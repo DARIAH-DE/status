@@ -1,0 +1,9 @@
+---
+title: 'DH-crud public'
+description: ''
+website: ''
+teresah_included: true
+dependencies:
+  - '/middlewares/dariah-publicstorage'
+  - '/servers/repository-de-dariah-eu'
+---

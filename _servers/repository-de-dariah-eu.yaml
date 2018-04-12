@@ -1,0 +1,6 @@
+---
+title: 'repository.de.dariah.eu'
+dependencies:
+  - '/infrastructure/gwdg-storenext'
+  - '/infrastructure/gwdg-esx'
+---

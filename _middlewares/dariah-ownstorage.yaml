@@ -1,0 +1,5 @@
+---
+title: 'DARIAH-DE OwnStorage'
+dependencies:
+  - '/infrastructure/gwdg-storenext'
+---

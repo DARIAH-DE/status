@@ -1,0 +1,8 @@
+---
+title: 'DARIAH-DE Repository'
+description: 'The DARIAH-DE repository allows to save research data sustainably and safely, to provide it with metadata, and to find the research data through the generic search.'
+website: 'https://de.dariah.eu/repository'
+teresah_included: false
+dependencies:
+  - '/middlewares/dariah-publicstorage'
+---

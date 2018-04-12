@@ -1,0 +1,10 @@
+---
+title: 'DARIAH-DE Publikator'
+description: ''
+website: 'https://repository.de.dariah.eu/publikator'
+teresah_included: false
+dependencies:
+  - '/middlewares/dariah-ownstorage'
+  - '/middlewares/dhpublish'
+  - '/servers/repository-de-dariah-eu'
+---
