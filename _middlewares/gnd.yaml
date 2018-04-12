@@ -1,0 +1,7 @@
+---
+title: 'GND Service'
+description: 'The GND REST Service, a tool to query the GND.'
+website: 'https://de.dariah.eu/gnd-service'
+dependencies:
+  - '/servers/ref'
+---
