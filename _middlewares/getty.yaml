@@ -1,0 +1,7 @@
+---
+title: 'Getty Service'
+description: 'The Getty Thesaurus of Geographical Names REST Service, a tool to quickly identify TGN IDs.'
+website: 'https://de.dariah.eu/getty-service'
+dependencies:
+  - '/servers/ref'
+---

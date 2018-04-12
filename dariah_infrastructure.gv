@@ -18,6 +18,7 @@ digraph {
 	subgraph cluster_middlewares {
 		node [color=red fontname=helvetica shape=hexagon style="rounded,bold"]
 		color=white label=""
+		"/middlewares/getty" [label="Getty Service"]
 		"/middlewares/dariahstorage" [label="DARIAH Storage"]
 		"/middlewares/liferay" [label="DARIAH-DE Liferay Portal"]
 		"/middlewares/tgdigilib" [label="TextGrid Digilib"]
