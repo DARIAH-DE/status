@@ -19,9 +19,12 @@ digraph {
 		node [color=red fontname=helvetica shape=hexagon style="rounded,bold"]
 		color=white label=""
 		"/middlewares/dariahstorage" [label="DARIAH Storage"]
+		"/middlewares/tgsearch-public" [label="TextGrid Search (public)"]
 		"/middlewares/dariahldap" [label="DARIAH LDAP"]
 		"/middlewares/tgauth" [label="TG-auth"]
+		"/middlewares/tgdigilib" [label="TextGrid Digilib"]
 		"/middlewares/liferay" [label="DARIAH-DE Liferay Portal"]
+		"/middlewares/tgsearch-nonpublic" [label="TextGrid Search (nonpublic)"]
 		"/middlewares/tgcrud" [label="TG-crud"]
 	}
 	subgraph cluster_servers {
@@ -40,11 +43,13 @@ digraph {
 	}
 	"/services/tgrep" -> "/middlewares/liferay"
 	"/services/tgrep" -> "/middlewares/tgcrud"
-	"/services/tgrep" -> "/servers/textgrid-esx2"
+	"/services/tgrep" -> "/middlewares/tgsearch-public"
+	"/services/tgrep" -> "/middlewares/tgdigilib"
 	"/services/fontane" -> "/middlewares/tgcrud"
 	"/services/fontane" -> "/infrastructure/gwdg-cloud"
 	"/services/tglab" -> "/middlewares/tgauth"
 	"/services/tglab" -> "/middlewares/tgcrud"
+	"/services/tglab" -> "/middlewares/tgsearch-nonpublic"
 	"/services/tglab" -> "/servers/textgrid-esx2"
 	"/services/confluence" -> "/infrastructure/gwdg-esx"
 	"/services/annotation_sandbox" -> "/infrastructure/gwdg-cloud"
@@ -54,10 +59,15 @@ digraph {
 	"/services/geobrowser" -> "/servers/ref"
 	"/services/repository" -> "/middlewares/dariahstorage"
 	"/middlewares/dariahstorage" -> "/infrastructure/gwdg-storenext"
+	"/middlewares/tgsearch-public" -> "/servers/textgrid-esx2"
 	"/middlewares/dariahldap" -> "/servers/auth"
 	"/middlewares/tgauth" -> "/middlewares/dariahldap"
 	"/middlewares/tgauth" -> "/servers/textgrid-esx2"
+	"/middlewares/tgdigilib" -> "/middlewares/tgcrud"
+	"/middlewares/tgdigilib" -> "/servers/textgrid-esx2"
 	"/middlewares/liferay" -> "/infrastructure/gwdg-esx"
+	"/middlewares/tgsearch-nonpublic" -> "/servers/textgrid-esx2"
+	"/middlewares/tgsearch-nonpublic" -> "/middlewares/tgauth"
 	"/middlewares/tgcrud" -> "/middlewares/tgauth"
 	"/middlewares/tgcrud" -> "/middlewares/dariahldap"
 	"/middlewares/tgcrud" -> "/servers/textgrid-esx2"
