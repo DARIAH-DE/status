@@ -3,87 +3,113 @@ digraph {
 	subgraph cluster_services {
 		node [color=forestgreen fontname=helvetica shape=oval style="rounded,bold"]
 		color=white label=""
-		"/services/tgrep" [label="TextGrid Repository"]
-		"/services/fontane" [label="Fontane Notizbücher"]
-		"/services/tglab" [label="TextGrid Laboratory"]
+		"/services/neologie" [label="Bibliothek der Neologie -  Portal"]
 		"/services/dhdblog" [label="DHd Blog"]
-		"/services/datasheet_editor" [label="Datasheet Editor"]
+		"/services/website" [label="DARIAH-DE Website"]
+		"/services/etherpad" [label="DARIAH-DE Etherpad"]
+		"/services/fontane" [label="Fontane Notizbücher"]
+		"/services/publikator" [label="DARIAH-DE Publikator"]
 		"/services/otrs" [label="DARIAH-DE Ticket-System"]
 		"/services/confluence" [label="DARIAH Wiki"]
 		"/services/annotation_sandbox" [label="DARIAH-DE Annotation Sandbox"]
-		"/services/etherpad" [label="DARIAH-DE Etherpad"]
-		"/services/website" [label="DARIAH-DE Website"]
+		"/services/tgrep" [label="TextGrid Repository"]
 		"/services/geobrowser" [label="Geo-Browser"]
-		"/services/repository" [label="DARIAH Repository"]
-		"/services/neologie" [label="Bibliothek der Neologie -  Portal"]
+		"/services/datasheeteditor" [label="Datasheet Editor"]
+		"/services/tglab" [label="TextGrid Laboratory"]
+		"/services/dariah-repository" [label="DARIAH-DE Repository"]
 	}
 	subgraph cluster_middlewares {
 		node [color=red fontname=helvetica shape=hexagon style="rounded,bold"]
 		color=white label=""
-		"/middlewares/dariah-openstorage" [label="DARIAH-DE Open Storage"]
-		"/middlewares/getty" [label="Getty Service"]
-		"/middlewares/dariahstorage" [label="DARIAH Storage"]
-		"/middlewares/tgsearch-public" [label="TextGrid Search (public)"]
-		"/middlewares/gnd" [label="GND Service"]
-		"/middlewares/dariahldap" [label="DARIAH LDAP"]
-		"/middlewares/tgauth" [label="TG-auth"]
-		"/middlewares/tgdigilib" [label="TextGrid Digilib"]
+		"/middlewares/dhcrud-public" [label="DH-crud public"]
 		"/middlewares/liferay" [label="DARIAH-DE Liferay Portal"]
+		"/middlewares/getty" [label="Getty Service"]
+		"/middlewares/tgdigilib" [label="TextGrid Digilib"]
+		"/middlewares/gnd" [label="GND Service"]
 		"/middlewares/tgsearch-nonpublic" [label="TextGrid Search (nonpublic)"]
+		"/middlewares/dhpublish" [label="DH-publish"]
+		"/middlewares/tgauth" [label="TG-auth"]
+		"/middlewares/tgsearch-public" [label="TextGrid Search (public)"]
 		"/middlewares/tgcrud" [label="TG-crud"]
+		"/middlewares/dariah-publicstorage" [label="DARIAH-DE PublicStorage"]
+		"/middlewares/dariah-ownstorage" [label="DARIAH-DE OwnStorage"]
+		"/middlewares/dariah-openstorage" [label="DARIAH-DE Open Storage"]
+		"/middlewares/dhcrud-nonpublic" [label="DH-crud nonpublic"]
+		"/middlewares/geoserver" [label=GeoServer]
+		"/middlewares/dariahldap" [label="DARIAH LDAP"]
+		"/middlewares/dhpid" [label="DH-pid"]
 	}
 	subgraph cluster_servers {
 		node [color=blue3 fontname=helvetica shape=house style="rounded,bold"]
 		color=white label=""
 		"/servers/ref" [label="ref.dariah.eu"]
-		"/servers/auth" [label="auth.dariah.eu"]
 		"/servers/textgrid-esx2" [label="textgrid-esx2.gwdg.de"]
+		"/servers/auth" [label="auth.dariah.eu"]
+		"/servers/repository-de-dariah-eu" [label="repository.de.dariah.eu"]
 	}
 	subgraph cluster_infrastructure {
 		node [color=blue3 fontname=helvetica shape=box style="rounded,bold"]
 		color=white label=""
-		"/infrastructure/gwdg-esx" [label="GWDG ESX Cluster"]
 		"/infrastructure/gwdg-storenext" [label="GWDG StoreNext"]
+		"/infrastructure/gwdg-esx" [label="GWDG ESX Cluster"]
 		"/infrastructure/gwdg-cloud" [label="GWDG ComputeCloud"]
 	}
+	"/services/neologie" -> "/infrastructure/gwdg-cloud"
+	"/services/website" -> "/middlewares/liferay"
+	"/services/etherpad" -> "/infrastructure/gwdg-cloud"
+	"/services/fontane" -> "/middlewares/tgcrud"
+	"/services/fontane" -> "/infrastructure/gwdg-cloud"
+	"/services/publikator" -> "/middlewares/dariah-ownstorage"
+	"/services/publikator" -> "/middlewares/dhpublish"
+	"/services/publikator" -> "/servers/repository-de-dariah-eu"
+	"/services/confluence" -> "/infrastructure/gwdg-esx"
+	"/services/annotation_sandbox" -> "/infrastructure/gwdg-cloud"
 	"/services/tgrep" -> "/middlewares/liferay"
 	"/services/tgrep" -> "/middlewares/tgcrud"
 	"/services/tgrep" -> "/middlewares/tgsearch-public"
 	"/services/tgrep" -> "/middlewares/tgdigilib"
-	"/services/fontane" -> "/middlewares/tgcrud"
-	"/services/fontane" -> "/infrastructure/gwdg-cloud"
+	"/services/geobrowser" -> "/middlewares/dariah-openstorage"
+	"/services/geobrowser" -> "/middlewares/geoserver"
+	"/services/geobrowser" -> "/servers/ref"
+	"/services/datasheeteditor" -> "/middlewares/dariah-openstorage"
+	"/services/datasheeteditor" -> "/servers/ref"
 	"/services/tglab" -> "/middlewares/tgauth"
 	"/services/tglab" -> "/middlewares/tgcrud"
 	"/services/tglab" -> "/middlewares/tgsearch-nonpublic"
 	"/services/tglab" -> "/servers/textgrid-esx2"
-	"/services/datasheet_editor" -> "/middlewares/getty"
-	"/services/datasheet_editor" -> "/middlewares/dariah-openstorage"
-	"/services/datasheet_editor" -> "/servers/ref"
-	"/services/confluence" -> "/infrastructure/gwdg-esx"
-	"/services/annotation_sandbox" -> "/infrastructure/gwdg-cloud"
-	"/services/etherpad" -> "/infrastructure/gwdg-cloud"
-	"/services/website" -> "/middlewares/liferay"
-	"/services/geobrowser" -> "/middlewares/dariahstorage"
-	"/services/geobrowser" -> "/servers/ref"
-	"/services/repository" -> "/middlewares/dariahstorage"
-	"/services/neologie" -> "/infrastructure/gwdg-cloud"
+	"/services/dariah-repository" -> "/middlewares/dariah-publicstorage"
+	"/middlewares/dhcrud-public" -> "/middlewares/dariah-publicstorage"
+	"/middlewares/dhcrud-public" -> "/servers/repository-de-dariah-eu"
+	"/middlewares/liferay" -> "/infrastructure/gwdg-esx"
 	"/middlewares/getty" -> "/servers/ref"
-	"/middlewares/dariahstorage" -> "/infrastructure/gwdg-storenext"
-	"/middlewares/tgsearch-public" -> "/servers/textgrid-esx2"
-	"/middlewares/gnd" -> "/servers/ref"
-	"/middlewares/dariahldap" -> "/servers/auth"
-	"/middlewares/tgauth" -> "/middlewares/dariahldap"
-	"/middlewares/tgauth" -> "/servers/textgrid-esx2"
 	"/middlewares/tgdigilib" -> "/middlewares/tgcrud"
 	"/middlewares/tgdigilib" -> "/servers/textgrid-esx2"
-	"/middlewares/liferay" -> "/infrastructure/gwdg-esx"
+	"/middlewares/gnd" -> "/servers/ref"
 	"/middlewares/tgsearch-nonpublic" -> "/servers/textgrid-esx2"
 	"/middlewares/tgsearch-nonpublic" -> "/middlewares/tgauth"
+	"/middlewares/dhpublish" -> "/middlewares/dhcrud-nonpublic"
+	"/middlewares/dhpublish" -> "/middlewares/dhpid"
+	"/middlewares/dhpublish" -> "/middlewares/dariah-ownstorage"
+	"/middlewares/dhpublish" -> "/servers/repository-de-dariah-eu"
+	"/middlewares/tgauth" -> "/middlewares/dariahldap"
+	"/middlewares/tgauth" -> "/servers/textgrid-esx2"
+	"/middlewares/tgsearch-public" -> "/servers/textgrid-esx2"
 	"/middlewares/tgcrud" -> "/middlewares/tgauth"
 	"/middlewares/tgcrud" -> "/middlewares/dariahldap"
 	"/middlewares/tgcrud" -> "/servers/textgrid-esx2"
+	"/middlewares/dariah-publicstorage" -> "/infrastructure/gwdg-storenext"
+	"/middlewares/dariah-ownstorage" -> "/infrastructure/gwdg-storenext"
+	"/middlewares/dhcrud-nonpublic" -> "/middlewares/dhpid"
+	"/middlewares/dhcrud-nonpublic" -> "/middlewares/dariah-ownstorage"
+	"/middlewares/dhcrud-nonpublic" -> "/middlewares/dariah-publicstorage"
+	"/middlewares/dhcrud-nonpublic" -> "/servers/repository-de-dariah-eu"
+	"/middlewares/geoserver" -> "/servers/ref"
+	"/middlewares/dariahldap" -> "/servers/auth"
+	"/middlewares/dhpid" -> "/servers/repository-de-dariah-eu"
 	"/servers/ref" -> "/infrastructure/gwdg-cloud"
-	"/servers/auth" -> "/infrastructure/gwdg-esx"
 	"/servers/textgrid-esx2" -> "/infrastructure/gwdg-storenext"
 	"/servers/textgrid-esx2" -> "/infrastructure/gwdg-esx"
+	"/servers/auth" -> "/infrastructure/gwdg-esx"
+	"/servers/repository-de-dariah-eu" -> "/infrastructure/gwdg-storenext"
+	"/servers/repository-de-dariah-eu" -> "/infrastructure/gwdg-esx"
 }
