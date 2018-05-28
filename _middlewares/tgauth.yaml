@@ -1,6 +1,7 @@
 ---
-title: 'TG-auth'
-website: 'https://textgridlab.org/doc/services/submodules/tg-crud/service/tgcrud-webapp/docs/index.html'
+title: 'TG-auth*'
+description: 'TG-auth provides access and authorization management methods and API for the TextGrid Laboratory and TextGrid Repository.'
+website: 'http://www.textgridlab.org/doc/services/submodules/tg-auth/docs/index.html'
 dependencies:
   - '/middlewares/dariahldap'
   - '/servers/textgrid-esx2'

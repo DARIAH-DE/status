@@ -3,7 +3,7 @@ digraph {
 	subgraph cluster_services {
 		node [color=forestgreen fontname=helvetica shape=oval style="rounded,bold"]
 		color=white label=""
-		"/services/neologie" [label="Bibliothek der Neologie -  Portal"]
+		"/services/neologie" [label="Bibliothek der Neologie - Portal"]
 		"/services/otrs" [label="DARIAH-DE Ticket-System"]
 		"/services/website" [label="DARIAH-DE Website"]
 		"/services/etherpad" [label="DARIAH-DE Etherpad"]
@@ -22,22 +22,23 @@ digraph {
 		node [color=red fontname=helvetica shape=hexagon style="rounded,bold"]
 		color=white label=""
 		"/middlewares/liferay" [label="DARIAH-DE Liferay Portal"]
+		"/middlewares/dhoaipmh" [label="DH-oaipmh"]
 		"/middlewares/tgcrud" [label="TG-crud"]
 		"/middlewares/tgdigilib" [label="TextGrid Digilib"]
 		"/middlewares/gnd" [label="GND Service"]
-		"/middlewares/dhpid" [label="DH-pid"]
-		"/middlewares/tgsearch-public" [label="TextGrid Search (public)"]
-		"/middlewares/dariah-openstorage" [label="DARIAH-DE Open Storage"]
-		"/middlewares/dhcrud-nonpublic" [label="DH-crud nonpublic"]
+		"/middlewares/tgoaipmh" [label="TG-oaipmh"]
+		"/middlewares/tgpid" [label="TG-pid"]
+		"/middlewares/tgsearch-public" [label="TG-search (public)"]
+		"/middlewares/dariah-openstorage" [label="DARIAH-DE OpenStorage"]
 		"/middlewares/dariah-ownstorage" [label="DARIAH-DE OwnStorage"]
 		"/middlewares/dariahldap" [label="DARIAH LDAP"]
 		"/middlewares/geoserver" [label=GeoServer]
 		"/middlewares/dariah-publicstorage" [label="DARIAH-DE PublicStorage"]
-		"/middlewares/dhcrud-public" [label="DH-crud public"]
-		"/middlewares/tgsearch-nonpublic" [label="TextGrid Search (nonpublic)"]
+		"/middlewares/dhcrud-public" [label="DH-crud"]
+		"/middlewares/tgsearch-nonpublic" [label="TG-search (nonpublic)"]
 		"/middlewares/getty" [label="Getty Service"]
 		"/middlewares/dhpublish" [label="DH-publish"]
-		"/middlewares/tgauth" [label="TG-auth"]
+		"/middlewares/tgauth" [label="TG-auth*"]
 	}
 	subgraph cluster_servers {
 		node [color=blue3 fontname=helvetica shape=house style="rounded,bold"]
@@ -80,18 +81,16 @@ digraph {
 	"/services/geobrowser" -> "/middlewares/geoserver"
 	"/services/geobrowser" -> "/servers/ref"
 	"/middlewares/liferay" -> "/infrastructure/gwdg-esx"
+	"/middlewares/dhoaipmh" -> "/servers/repository-de-dariah-eu"
 	"/middlewares/tgcrud" -> "/middlewares/tgauth"
 	"/middlewares/tgcrud" -> "/middlewares/dariahldap"
 	"/middlewares/tgcrud" -> "/servers/textgrid-esx2"
 	"/middlewares/tgdigilib" -> "/middlewares/tgcrud"
 	"/middlewares/tgdigilib" -> "/servers/textgrid-esx2"
 	"/middlewares/gnd" -> "/servers/ref"
-	"/middlewares/dhpid" -> "/servers/repository-de-dariah-eu"
+	"/middlewares/tgoaipmh" -> "/servers/textgrid-esx2"
+	"/middlewares/tgpid" -> "/servers/textgrid-esx2"
 	"/middlewares/tgsearch-public" -> "/servers/textgrid-esx2"
-	"/middlewares/dhcrud-nonpublic" -> "/middlewares/dhpid"
-	"/middlewares/dhcrud-nonpublic" -> "/middlewares/dariah-ownstorage"
-	"/middlewares/dhcrud-nonpublic" -> "/middlewares/dariah-publicstorage"
-	"/middlewares/dhcrud-nonpublic" -> "/servers/repository-de-dariah-eu"
 	"/middlewares/dariah-ownstorage" -> "/infrastructure/gwdg-isilon"
 	"/middlewares/dariahldap" -> "/servers/auth"
 	"/middlewares/geoserver" -> "/servers/ref"
@@ -101,8 +100,6 @@ digraph {
 	"/middlewares/tgsearch-nonpublic" -> "/servers/textgrid-esx2"
 	"/middlewares/tgsearch-nonpublic" -> "/middlewares/tgauth"
 	"/middlewares/getty" -> "/servers/ref"
-	"/middlewares/dhpublish" -> "/middlewares/dhcrud-nonpublic"
-	"/middlewares/dhpublish" -> "/middlewares/dhpid"
 	"/middlewares/dhpublish" -> "/middlewares/dariah-ownstorage"
 	"/middlewares/dhpublish" -> "/servers/repository-de-dariah-eu"
 	"/middlewares/tgauth" -> "/middlewares/dariahldap"

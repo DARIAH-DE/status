@@ -1,11 +1,10 @@
 ---
 title: 'DH-publish'
-description: ''
+description: 'The DH-publish service provides publich methods and API for publishing objects to the DARIAH-DE Repository.'
 website: 'https://repository.de.dariah.eu/doc/services/submodules/kolibri/kolibri-dhpublish-service/docs/index.html'
 teresah_included: true
 dependencies:
-  - '/middlewares/dhcrud-nonpublic'
-  - '/middlewares/dhpid'
+#  - '/middlewares/dhcrud-nonpublic'
   - '/middlewares/dariah-ownstorage'
   - '/servers/repository-de-dariah-eu'
 ---
