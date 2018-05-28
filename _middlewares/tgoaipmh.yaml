@@ -1,0 +1,8 @@
+---
+title: 'TG-oaipmh'
+description: 'OAI-PMH Data Provider for the TextGrid Repository.'
+website: 'http://www.textgridlab.org/doc/services/submodules/oai-pmh/docs_tgrep/index.html'
+teresah_included: true
+dependencies:
+  - '/servers/textgrid-esx2'
+---
