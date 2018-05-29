@@ -5,4 +5,5 @@ website: 'https://de.dariah.eu/repository'
 teresah_included: false
 dependencies:
   - '/middlewares/dariah-publicstorage'
+  - '/middlewares/dhcrud'
 ---
