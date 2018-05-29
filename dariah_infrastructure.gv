@@ -8,6 +8,7 @@ digraph {
 		"/services/website" [label="DARIAH-DE Website"]
 		"/services/etherpad" [label="DARIAH-DE Etherpad"]
 		"/services/datasheeteditor" [label="Datasheet Editor"]
+		"/services/architrave" [label="ARCHITRAVE Portal"]
 		"/services/publikator" [label="DARIAH-DE Publikator"]
 		"/services/dhdblog" [label="DHd Blog"]
 		"/services/dariah-repository" [label="DARIAH-DE Repository"]
@@ -61,10 +62,14 @@ digraph {
 	"/services/etherpad" -> "/infrastructure/gwdg-cloud"
 	"/services/datasheeteditor" -> "/middlewares/dariah-openstorage"
 	"/services/datasheeteditor" -> "/servers/ref"
+	"/services/architrave" -> "/infrastructure/gwdg-cloud"
+	"/services/architrave" -> "/middlewares/tgdigilib"
+	"/services/architrave" -> "/servers/auth"
 	"/services/publikator" -> "/middlewares/dariah-ownstorage"
 	"/services/publikator" -> "/middlewares/dhpublish"
 	"/services/publikator" -> "/servers/repository-de-dariah-eu"
 	"/services/dariah-repository" -> "/middlewares/dariah-publicstorage"
+	"/services/dariah-repository" -> "/middlewares/dhcrud-public"
 	"/services/tglab" -> "/middlewares/tgauth"
 	"/services/tglab" -> "/middlewares/tgcrud"
 	"/services/tglab" -> "/middlewares/tgsearch-nonpublic"
