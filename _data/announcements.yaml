@@ -22,13 +22,13 @@
   affected:
     - '/infrastructure/gwdg-esx'
     - '/infrastructure/gwdg-cloud'
-    - '/infrastructure/gwdg-storenext'
+    - '/infrastructure/gwdg-stornext'
 - title: 'Filesystem maintenance'
   description: 'On July 4 from 16:00, the file services at the computing center will be updated.'
   date_start: '2017-07-04 16:00'
   hide: true
   affected:
-    - '/infrastructure/gwdg-storenext'
+    - '/infrastructure/gwdg-stornext'
 - title: 'Maintenance'
   date_start: '2017-06-22'
   date_end: '2017-06-23'

@@ -1,6 +1,6 @@
 ---
 title: 'repository.de.dariah.eu'
 dependencies:
-  - '/infrastructure/gwdg-storenext'
+  - '/infrastructure/gwdg-isilon'
   - '/infrastructure/gwdg-esx'
 ---

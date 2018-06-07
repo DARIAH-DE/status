@@ -1,0 +1,8 @@
+---
+title: 'DH-oaipmh'
+description: 'The OAI-PMH Data Provider for the DARIAH-DE Repository.'
+website: 'https://repository.de.dariah.eu/doc/services/submodules/oai-pmh/docs_dhrep/index.html'
+teresah_included: true
+dependencies:
+  - '/servers/repository-de-dariah-eu'
+---

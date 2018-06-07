@@ -1,0 +1,9 @@
+---
+title: 'ARCHITRAVE Portal'
+website: 'https://architrave.eu'
+provider: 'SUB Göttingen'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+  - '/middlewares/tgdigilib'
+  - '/servers/auth'
+---

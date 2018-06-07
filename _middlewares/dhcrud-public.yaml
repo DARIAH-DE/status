@@ -1,7 +1,7 @@
 ---
-title: 'DH-crud public'
-description: ''
-website: ''
+title: 'DH-crud'
+description: 'DH-crud public provides storage methods amnd API for the DARIAH-DE Repository.'
+website: 'https://repository.de.dariah.eu/doc/services/submodules/tg-crud/service/dhcrud-webapp-public/docs/index.html'
 teresah_included: true
 dependencies:
   - '/middlewares/dariah-publicstorage'
