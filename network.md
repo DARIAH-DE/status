@@ -51,6 +51,7 @@ layout: simple
 <script src="js/sigma/misc/sigma.misc.bindDOMEvents.js"></script>
 <script src="js/sigma/misc/sigma.misc.drawHovers.js"></script>
 <!-- END SIGMA IMPORTS -->
+<script src="js/sigma/plugins/sigma.plugins.dragNodes/sigma.plugins.dragNodes.js"></script>
 <div id="container">
   <style>
     #graph-container {
@@ -61,14 +62,6 @@ layout: simple
   <div id="graph-container"></div>
 </div>
 <script>
-/*
- * This is a basic example on how to instantiate sigma. A random graph is
- * generated and stored in the "graph" variable, and then sigma is instantiated
- * directly with the graph.
- *
- * The simple instance of sigma is enough to make it render the graph on the on
- * the screen, since the graph is given directly to the constructor.
- */
 
 var data = {
   "nodes": [
@@ -83,7 +76,7 @@ var data = {
   {%- if cindex == clength and forloop.last -%}
     {"id": "{{ item.title | replace: ' ', '.' }}", "group": {{ cindex }}}
   {%- else -%}
-    {"id": "{{ item.title | replace: ' ', '.' }}", "group": {{ cindex }}},
+    {"id": "{{ item.title | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{coll.label}}"},
   {%- endif -%}
 {%- endfor -%}
 {%- endif -%}
@@ -142,6 +135,9 @@ var len = [ data.nodes.filter(one).length,
 
 var colors = ["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd","#8c564b","#e377c2","#7f7f7f","#bcbd22","#17becf"]
 
+// order of the items in the grid. base: order of collections returned from jekyll, start counting with 1 (so we have a leading zero in the array). the "_posts" collection is omitted, so we have a zero value at jekyll's #3.
+var orderArray = [0,1,3,0,2,4];
+
 var i,
     s,
     N = data.nodes.length,
@@ -155,15 +151,17 @@ var i,
 for (i = 0; i < N; i++){
 var item = data.nodes[i];
 var L = len[item.group - 1];
+var order =
   g.nodes.push({
     id: item.id,
     label: item.id,
     group: item.group,
+    groupLabel: item.groupLabel,
     size: 1,
     color: colors[item.group - 1],
 
     x: i % L,
-    y: item.group
+    y: orderArray[item.group]
 
   });
 };
@@ -175,7 +173,8 @@ var item = data.links[i];
     source: item.source,
     target: item.target,
     size: 1,
-    color: '#ccc'
+    color: '#ccc',
+    type: 'arrow'
   });
 };
 
@@ -279,5 +278,19 @@ var s = new sigma({
       s.bind('clickStage', function(e) {
        $('.popover').hide()
       });
+
+  var dragListener = sigma.plugins.dragNodes(s, s.renderers[0]);
+  dragListener.bind('startdrag', function(event) {
+    console.log(event);
+  });
+  dragListener.bind('drag', function(event) {
+    console.log(event);
+  });
+  dragListener.bind('drop', function(event) {
+    console.log(event);
+  });
+  dragListener.bind('dragend', function(event) {
+    console.log(event);
+  });
 
 </script>
