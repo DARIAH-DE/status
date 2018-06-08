@@ -1,6 +1,6 @@
 ---
 title: 'Interactive Graph'
-layout: index
+layout: simple
 ---
 
 <!-- START SIGMA IMPORTS -->
