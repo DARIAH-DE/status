@@ -3,7 +3,73 @@ title: 'Interactive Graph'
 layout: index
 ---
 
+<!-- START SIGMA IMPORTS -->
+<script src="js/sigma/sigma.core.js"></script>
+<script src="js/sigma/conrad.js"></script>
+<script src="js/sigma/utils/sigma.utils.js"></script>
+<script src="js/sigma/utils/sigma.polyfills.js"></script>
+<script src="js/sigma/sigma.settings.js"></script>
+<script src="js/sigma/classes/sigma.classes.dispatcher.js"></script>
+<script src="js/sigma/classes/sigma.classes.configurable.js"></script>
+<script src="js/sigma/classes/sigma.classes.graph.js"></script>
+<script src="js/sigma/classes/sigma.classes.camera.js"></script>
+<script src="js/sigma/classes/sigma.classes.quad.js"></script>
+<script src="js/sigma/classes/sigma.classes.edgequad.js"></script>
+<script src="js/sigma/captors/sigma.captors.mouse.js"></script>
+<script src="js/sigma/captors/sigma.captors.touch.js"></script>
+<script src="js/sigma/renderers/sigma.renderers.canvas.js"></script>
+<script src="js/sigma/renderers/sigma.renderers.webgl.js"></script>
+<script src="js/sigma/renderers/sigma.renderers.svg.js"></script>
+<script src="js/sigma/renderers/sigma.renderers.def.js"></script>
+<script src="js/sigma/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+<script src="js/sigma/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+<script src="js/sigma/renderers/webgl/sigma.webgl.edges.def.js"></script>
+<script src="js/sigma/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+<script src="js/sigma/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.labels.def.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.hovers.def.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.edges.def.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+<script src="js/sigma/renderers/canvas/sigma.canvas.extremities.def.js"></script>
+<script src="js/sigma/renderers/svg/sigma.svg.utils.js"></script>
+<script src="js/sigma/renderers/svg/sigma.svg.nodes.def.js"></script>
+<script src="js/sigma/renderers/svg/sigma.svg.edges.def.js"></script>
+<script src="js/sigma/renderers/svg/sigma.svg.edges.curve.js"></script>
+<script src="js/sigma/renderers/svg/sigma.svg.labels.def.js"></script>
+<script src="js/sigma/renderers/svg/sigma.svg.hovers.def.js"></script>
+<script src="js/sigma/middlewares/sigma.middlewares.rescale.js"></script>
+<script src="js/sigma/middlewares/sigma.middlewares.copy.js"></script>
+<script src="js/sigma/misc/sigma.misc.animation.js"></script>
+<script src="js/sigma/misc/sigma.misc.bindEvents.js"></script>
+<script src="js/sigma/misc/sigma.misc.bindDOMEvents.js"></script>
+<script src="js/sigma/misc/sigma.misc.drawHovers.js"></script>
+<!-- END SIGMA IMPORTS -->
+<div id="container">
+  <style>
+    #graph-container {
+      width: 700px;
+      height: 500px;
+    }
+  </style>
+  <div id="graph-container"></div>
+</div>
 <script>
+/*
+ * This is a basic example on how to instantiate sigma. A random graph is
+ * generated and stored in the "graph" variable, and then sigma is instantiated
+ * directly with the graph.
+ *
+ * The simple instance of sigma is enough to make it render the graph on the on
+ * the screen, since the graph is given directly to the constructor.
+ */
+
 var data = {
   "nodes": [
   {%- comment -%}
@@ -57,84 +123,161 @@ var data = {
 {%- endif -%}
 {%- endfor -%}
 ]}
-</script>
-<svg class="network" width="500" height="800"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
-
-var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
-
-var color = d3.scaleOrdinal(d3.schemeCategory10);
-
-var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody())
-    .force("center", d3.forceCenter(width / 2, height / 2));
 
 
- var link = svg.selectAll(".link")
-            .data(links)
-            .enter()
-            .append("line")
-            .attr("class", "link")
+// check how many items we have per group
 
-  var node = svg.selectAll(".node")
-            .data(data.nodes)
-            .enter()
-            .append("g")
-            .attr("class", "node")
-            .call(d3.drag()
-                    .on("start", dragstarted)
-                    .on("drag", dragged)
-                    //.on("end", dragended)
-            );
-  node.append("circle")
-              .attr("r", 5)
-              .style("fill", function (d, i) {return colors(i);})
-    node.append("title")
-        .text(function (d) {return d.id;});
+function one(i){return i.group == 1};
+function two(i){return i.group == 2};
+function three(i){return i.group == 3};
+function four(i){return i.group == 4};
+function five(i){return i.group == 5};
 
-    node.append("text")
-        .attr("dy", -3)
-        .text(function (d) {return d.name+":"+d.label;});
+var len = [ data.nodes.filter(one).length,
+            data.nodes.filter(two).length,
+            data.nodes.filter(three).length,
+            data.nodes.filter(four).length,
+            data.nodes.filter(five).length
+          ]
 
-  simulation
-      .nodes(data.nodes)
-      .on("tick", ticked);
+var colors = ["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd","#8c564b","#e377c2","#7f7f7f","#bcbd22","#17becf"]
 
-  simulation.force("link")
-      .links(data.links);
+var i,
+    s,
+    N = data.nodes.length,
+    E = data.links.length,
+    g = {
+      nodes: [],
+      edges: []
+    };
 
-  function ticked() {
-    link
-        .attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
+// Generate a random graph:
+for (i = 0; i < N; i++){
+var item = data.nodes[i];
+var L = len[item.group - 1];
+  g.nodes.push({
+    id: item.id,
+    label: item.id,
+    group: item.group,
+    size: 1,
+    color: colors[item.group - 1],
 
-    node
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
-  }
+    x: i % L,
+    y: item.group
+
+  });
+};
+
+for (i = 0; i < E; i++){
+var item = data.links[i];
+  g.edges.push({
+    id: 'e' + i,
+    source: item.source,
+    target: item.target,
+    size: 1,
+    color: '#ccc'
+  });
+};
+
+console.log(g);
+
+// Add a method to the graph model that returns an
+// object with every neighbors of a node inside:
+sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+  var k,
+      neighbors = {},
+      index = this.allNeighborsIndex[nodeId] || {};
+
+  for (k in index)
+    neighbors[k] = this.nodesIndex[k];
+
+  return neighbors;
+});
 
 
-function dragstarted(d) {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-  d.fx = d.x;
-  d.fy = d.y;
-}
+// Instantiate sigma:
+var s = new sigma({
+  graph: g,
+  container: 'graph-container',
+  settings: {
+      defaultNodeColor: '#ec5148',
+      defaultLabelSize: 8
+    }
 
-function dragged(d) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
-}
+});
 
-function dragended(d) {
-  if (!d3.event.active) simulation.alphaTarget(0);
-  d.fx = null;
-  d.fy = null;
-}
+
+      // We first need to save the original colors of our
+      // nodes and edges, like this:
+
+      s.graph.nodes().forEach(function(n) {
+        n.originalColor = n.color;
+      });
+
+      s.graph.edges().forEach(function(e) {
+        e.originalColor = e.color;
+      });
+
+      // When a node is clicked, we check for each node
+      // if it is a neighbor of the clicked one. If not,
+      // we set its color as grey, and else, it takes its
+      // original color.
+      // We do the same for the edges, and we only keep
+      // edges that have both extremities colored.
+      s.bind('clickNode', function(e) {
+        var nodeId = e.data.node.id,
+            toKeep = s.graph.neighbors(nodeId);
+        toKeep[nodeId] = e.data.node;
+
+        s.graph.nodes().forEach(function(n) {
+          if (toKeep[n.id])
+            n.color = n.originalColor;
+          else
+            n.color = '#eee';
+        });
+
+        s.graph.edges().forEach(function(e) {
+          if (toKeep[e.source] && toKeep[e.target])
+            e.color = e.originalColor;
+          else
+            e.color = '#eee';
+        });
+
+        // Since the data has been modified, we need to
+        // call the refresh method to make the colors
+        // update effective.
+        s.refresh();
+      });
+
+      // When the stage is clicked, we just color each
+      // node and edge with its original color.
+      s.bind('clickStage', function(e) {
+        s.graph.nodes().forEach(function(n) {
+          n.color = n.originalColor;
+        });
+
+        s.graph.edges().forEach(function(e) {
+          e.color = e.originalColor;
+        });
+
+        // Same as in the previous event:
+        s.refresh();
+      });
+
+
+      s.bind('clickNode', function(e) {
+      clicknode = e.data.node;
+      var left = e['data']['node']['renderer1:x'];
+          var top = e['data']['node']['renderer1:y'];
+          $('.popover').html(clicknode.label);
+          var theHeight = $('.popover').height();
+          var theWidth = $('.popover').width();
+          $('.popover').css('left', (left)-30 -theWidth+ 'px');
+          $('.popover').css('top', (top-(theHeight/2))+35 + 'px');
+          $('.popover').show();
+      });
+      s.bind('clickStage', function(e) {
+       $('.popover').hide()
+      });
 
 </script>
