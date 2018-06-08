@@ -90,7 +90,10 @@ Affected services must therefore be specified using the `affected_services` arra
 To facilitate maintenance of the history, resolved outages and announcements (even if hidden)
 are listed on the [current data]({{ site.baseurl }}{% link currentdata.md %}) page.
 
-## Infrastructure overview
+## Overview
+{% include network.html %}
+
+## Infrastructure overview (Old ’n’ Obsolete)
 
 A graph providing an overview of the entire infrastructure is provided in this graph:
 
@@ -100,4 +103,3 @@ A graph providing an overview of the entire infrastructure is provided in this g
 
 The DARIAH-DE Status Jekyll page also includes the page with all DARIAH-DE services to be harvested by [TERESAH](http://teresah.dariah.eu/).
 This includes all services except those explicitly excluded and all middlewares that are explicitly included, as long they have a `title`, `description` and `website` element.
-

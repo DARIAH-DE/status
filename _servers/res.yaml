@@ -1,0 +1,5 @@
+---
+title: 'res.de.dariah.eu'
+dependencies:
+  - '/infrastructure/gwdg-esx'
+---

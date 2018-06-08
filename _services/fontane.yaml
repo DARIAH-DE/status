@@ -5,4 +5,5 @@ provider: 'SUB Göttingen'
 dependencies:
   - '/middlewares/tgcrud'
   - '/infrastructure/gwdg-cloud'
+  - '/servers/res'
 ---

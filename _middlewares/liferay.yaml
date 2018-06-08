@@ -4,5 +4,5 @@ description: 'DARIAH-DE Website, TextGrid Website, TextGrid Repository'
 website: 'https://de.dariah.eu'
 teresah_included: false
 dependencies:
-  - '/infrastructure/gwdg-esx'
+  - '/servers/res'
 ---
