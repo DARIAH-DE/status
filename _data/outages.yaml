@@ -2,7 +2,6 @@
 - title: 'Maintenance'
   description: 'Due to unforseen complications during maintenance, many DARIAH services are currently not available.'
   date_start: '2018-07-05'
-  date_end: '2018-07-05 17:00'
   affected:
     - '/middlewares/tgauth'
 - title: 'Network Issues'
