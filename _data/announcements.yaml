@@ -1,7 +1,8 @@
 ---
 - title: 'System Maintenance'
   date_start: '2018-07-05'
-  hide: false
+  date_end: '2018-07-05'
+  hide: true
   description: 'Routine software maintenance will be performed to upgrade the DARIAH LDAP. This is expected to last from 13-17 CEST. The disruption of services (Wiki, Owncloud, Projects) should be in the minute range'
   affected:
     - '/services/confluence'
