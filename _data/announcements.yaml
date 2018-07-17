@@ -1,7 +1,8 @@
 ---
 - title: 'System Maintenance'
   date_start: '2018-07-12'
-  hide: false
+  date_end: '2018-07-03'
+  hide: true
   description: 'A host migration will be performed for incinga.de.dariah.eu. This is expected to last from 15-17 CEST.'
 - title: 'System Maintenance'
   date_start: '2018-07-05'
