@@ -1,4 +1,9 @@
 ---
+- title: 'Geo-Browser storage server maintainance'
+  description: 'The DARIAH-DE Geo-Browser storage is currently unavailable due to maintainance.'
+  date_start: '2018-09-12 11:30'
+  affected:
+    - '/middlewares/dariah-openstorage'
 - title: 'Geo-Browser storage down'
   description: 'The DARIAH-DE Geo-Browser storage is currently unavailable due to hardware faults.'
   date_start: '2018-08-21 12:00'
