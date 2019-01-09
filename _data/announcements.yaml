@@ -3,7 +3,7 @@
   date_start: '2019-01-17'
   date_end: 
   hide: false
-  description: 'Routine software maintenance will be performed to upgrade the Operating System of {ci, devportal, exist, liferay, pdp, wiki}.de.dariah.eu}. This is expected to last from 15-17 CEST. The services Wiki, Policiy Decision Point (PDP), Publikator/Repository, GeoBrowser, Arabic and Latin Glossary are not available.'
+  description: 'Routine software maintenance will be performed to upgrade the Operating System of {ci, devportal, exist, liferay, pdp, wiki}.de.dariah.eu. This is expected to last from 15-17 CEST. The services Wiki, Policiy Decision Point (PDP), Publikator/Repository, GeoBrowser, Arabic and Latin Glossary are not available.'
 - title: 'System Maintenance'
   date_start: '2018-07-12'
   date_end: '2018-07-03'
