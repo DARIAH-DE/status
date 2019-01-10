@@ -4,9 +4,9 @@
   date_end:
   hide: false
   description: 'Routine software maintenance will be performed to upgrade the Operating System of {ci, devportal, exist, liferay, pdp, wiki}.de.dariah.eu. This is expected to last from 15-19 CET. The services Wiki, Policiy Decision Point (PDP), Publikator/Repository, GeoBrowser, Arabic and Latin Glossary are not available.'
-    affected:
+  affected:
     - '/servers/ref'
-    - '/servers/repository-de-dariah.eu'
+    - '/servers/repository-de-dariah-eu'
     - '/servers/res'
     - '/middlewares/liferay'
 - title: 'System Maintenance'
