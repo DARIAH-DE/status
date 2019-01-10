@@ -8,3 +8,6 @@
 .githubimg {
 	display: inline;
 }
+li > p::before {
+	display: none;
+}

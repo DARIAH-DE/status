@@ -103,3 +103,5 @@ A graph providing an overview of the entire infrastructure is provided in this g
 
 The DARIAH-DE Status Jekyll page also includes the page with all DARIAH-DE services to be harvested by [TERESAH](http://teresah.dariah.eu/).
 This includes all services except those explicitly excluded and all middlewares that are explicitly included, as long they have a `title`, `description` and `website` element.
+
+---
