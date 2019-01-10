@@ -1,5 +1,5 @@
 ---
 title: 'pdp.de.dariah.eu'
 dependencies:
-    - '/infrastructure/gwdg-cloud'
+  - '/infrastructure/gwdg-cloud'
 ---

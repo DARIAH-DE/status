@@ -2,5 +2,4 @@
 title: 'DARIAH-DE PublicStorage'
 dependencies:
   - '/infrastructure/gwdg-isilon'
-  - '/servers/pdp'
 ---

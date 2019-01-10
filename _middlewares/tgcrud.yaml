@@ -5,6 +5,5 @@ website: 'https://textgridlab.org/doc/services/submodules/tg-crud/service/tgcrud
 teresah_included: true
 dependencies:
   - '/middlewares/tgauth'
-  - '/middlewares/dariahldap'
   - '/servers/textgrid-esx2'
 ---

@@ -3,4 +3,6 @@ title: 'Policy Decision Point (PDP)'
 description: 'Central permission system'
 website: 'https://pdp.de.dariah.eu/'
 dependencies:
+  - '/servers/auth'
+  - '/servers/pdp'
 ---

@@ -4,7 +4,6 @@ description: 'The DH-publish service provides methods and API for publishing obj
 website: 'https://repository.de.dariah.eu/doc/services/submodules/kolibri/kolibri-dhpublish-service/docs/index.html'
 teresah_included: true
 dependencies:
-#  - '/middlewares/dhcrud-nonpublic'
   - '/middlewares/dariah-ownstorage'
   - '/servers/repository-de-dariah-eu'
 ---
