@@ -1,8 +1,9 @@
 # DARIAH-DE status page
 title: DARIAH-DE Status
 timezone: Europe/Berlin
-impressum_url: 'https://de.dariah.eu/Impressum'
-privacy_policy_url: 'https://de.dariah.eu/en_US/privacy-policy'
+impressum_url: 'https://de.dariah.eu/en/impressum/'
+privacy_policy_url: 'https://de.dariah.eu/en/datenschutz/'
+contact_url: 'https://de.dariah.eu/en/kontakt/'
 support_mail: 'support@de.dariah.eu'
 
 # Build settings
@@ -31,4 +32,3 @@ defaults:
       path: ''
     values:
       layout: 'index'
-

@@ -8,6 +8,8 @@ layout: index
 
 <h1>DARIAH-DE :: Status</h1>
 
+<hr/>
+
 <div class="status info">
   <h2>Current notifications</h2>
     <p>Latest update: <strong>{{ site.time | date: '%c' }}</strong></p>
@@ -16,19 +18,19 @@ layout: index
 {% assign outages_array = outages_array | where_exp: "item", "item.date_end == nil"  %}
 
 {% if outages_array.size > 0 %}
-  <div class="alert alert-error">Service Disruption!</div>
+  <p class="main_notice -big -error">Service Disruption!</p>
 
   {% for outage in outages_array %}
     {% include single_status_message.html item=outage %}
   {% endfor %}
 {% else %}
-  <div class="alert alert-success">All services are available</div>
+  <p class="main_notice -big -success">All services are available</p>
 {% endif %}
 
 {% assign announcements_array = site.data.announcements | where_exp: "item", "item.hide != true"  %}
 
 {% if announcements_array.size > 0 %}
-  <div class="alert alert-warning">Announcements.</div>
+  <p class="main_notice -big -warning">Announcements</p>
 
   {% for announcement in announcements_array %}
     {% include single_status_message.html item=announcement %}
@@ -36,13 +38,13 @@ layout: index
 
 {% endif %}
 
-
 </div>
 
-<p><a href="mailto:{{ site.support_mail }}?subject=Service down"><i class="fa fa-envelope" aria-hidden="true"></i> Is there a service missing? Please contact us.</a>
+<h2> Is there a service missing?</h2>
+
+<p><a href="mailto:{{ site.support_mail }}?subject=Service down"><i class="fa fa-envelope" aria-hidden="true"></i> Please contact us.</a>
 See the <a href="{{ site.baseurl }}{% link history.md %}">History</a> for older messages.</p>
 
 <p><i>Maintenance is regularly scheduled Thursdays between 15:00 and 19:00 German time.</i></p>
 
 {{ content }}
-

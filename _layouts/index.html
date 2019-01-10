@@ -3,98 +3,80 @@
 {%- endcomment -%}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DARIAH-DE">
-    <link rel="alternate" type="application/atom+xml" title="Commits as RSS Feed" href="{{ site.github.repository_url }}/commits/master.atom" />
-    <!-- CSS Imports -->
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="css/application.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="css/bootstrap-customization.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="css/bootstrap-modal.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/dariah_portal.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen, projection" />
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-          <![endif]-->
-    <link rel="shortcut icon" type="image/png" href="img/page_icon.png" />
-    <style>
 
-       p:lang(de) {
-        display: none;
-       }
+<head>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<link rel="stylesheet" href="assets/styles.css">
+	<link rel="alternate" type="application/atom+xml" title="Commits as RSS Feed" href="http://github.com/DARIAH-DE/status/commits/master.atom" />
+	<meta charset="utf-8">
+	<meta name="description" content="{{ page.title }}">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="assets/script.js" defer></script>
+	<title>{{ page.title }}</title>
+</head>
 
-    </style>
-  </head>
-  <body>
-    <div id="content_layout">
-      <div class="span8 main-content-wrapper">
-        <div id="content" class="primary-area">
+<body class="site -no-header">
+	<div class="site_wrap">
+		<div class="logo">
+			<a class="logo_link -small" href="" title="Startseite">
+				<img class="logo_logo -small" src="assets/logos/dariah-de-logo-de.svg" alt="DARIAH-DE">
+				<svg class="logo_logo -spike -small" xmlns="http://www.w3.org/2000/svg" width="518.74" height="246.549" viewBox="0 -12 518.74 246.549">
+					<path d="M52.865 25.768c0-10.093 12.995-16.333 21.549-21.516 6.721 4.093 22.397 11.499 22.4 22.119.004 11.79-4.904 31.006-8.806 31.09-4.246.093-10.111-24.356-13.232-24.292-3.12.066-8.929 24.391-12.845 24.385-4.25-.006-9.066-20.801-9.066-31.786" />
+				</svg>
+			</a>
+		</div>
 
-          {{ content }}
+		<main class="main">
 
-        </div>
-        <div class="row">
-          <a href="https://de.dariah.eu"><div class="central_logo_de"></div></a>
-          <div class="pull-right" style="margin-bottom:5px;margin-right:5px">
-            <a href="{{ site.github.repository_url }}">
-              <span class="">View on GitHub</span>
-              <img width="20px" src="img/GitHub-Mark/PNG/GitHub-Mark-32px.png"></img>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row dfooter footer">
-        <div class="span7">
-          <!--<div class="row">-->
-          <p>Digital Research Infrastructure for the Arts and Humanities.</p>
+		    {{ content }}
+
             <hr/>
             <p>
-              <a href="{{ site.baseurl }}{% link index.md %}">Home</a> &middot;
-              <a href="{{ site.baseurl }}{% link documentation.md %}">Documentation</a> &middot;
-              <a href="{{ site.baseurl }}{% link history.md %}">History</a> &middot;
-              <a href="{{ site.baseurl }}{% link currentdata.md %}">Current data</a> &middot;
-              <a href="{{ site.baseurl }}{% link fulllist.md %}">Dependency List</a> &middot;
-              <a href="{{ site.privacy_policy_url }}">Privacy Policy</a>
-              <a class="pull-right" href="{{ site.impressum_url }}">Imprint</a>
+                <a href="{{ site.baseurl }}{% link index.md %}">Home</a> &nbsp; &nbsp;
+                <a href="{{ site.baseurl }}{% link documentation.md %}">Documentation</a> &nbsp; &nbsp;
+                <a href="{{ site.baseurl }}{% link history.md %}">History</a> &nbsp; &nbsp;
+                <a href="{{ site.baseurl }}{% link currentdata.md %}">Current data</a> &nbsp; &nbsp;
+                <a href="{{ site.baseurl }}{% link fulllist.md %}">Dependency List</a> &nbsp; &nbsp;
+                <a href="{{ site.github.repository_url }}">View on GitHub</a>
+                <!--img width="20px" src="img/GitHub-Mark/PNG/GitHub-Mark-32px.png"/-->
             </p>
-
-          <!--</div>-->
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      $.get('textgrid/repstatus.html', function(data) {
-        var statusHtml = $(data).filter('.repstatus, .status').not('.ok');
-        console.log(statusHtml)
-        $(statusHtml).each(function (id, val) {
-          //$("#repstatus").prepend(val);
-          var status;
-          if($(val).hasClass('warning')) {
-            document.getElementById("TextGridWarning").style.display="";
-            status='<div class="alert alert-warning"><h3>TextGrid Service Warning</h3><p id="TGtext"></p></div>';
-            $("#repstatusWarning").prepend(status);
-          } else if ($(val).hasClass('error')) {
-            document.getElementById("TextGridError").style.display="";
-            status='<div class="alert alert-error">TextGrid Service Error<p id="TGtext"></p></div>';
-            $("#repstatusError").prepend(status);
-          } else if ($(val).hasClass('info')) {
-            document.getElementById("TextGridWarning").style.display="";
-            status='<h3>TextGrid Info</h3><p id="TGtext"></p>';
-            $("#repstatusWarning").prepend(status);
-          }
-          $("#TGtext").prepend(val);
-        });
-      }, "html")
-    });
-    </script>
-  </body>
+        </main>
+	</div>
+	<footer class="footer">
+		<div class="wrap">
+			<div class="footer_left">
+				<div>
+					<p>
+                        <a href="{{ site.impressum_url }}">Imprint</a>
+                        <a href="{{ site.privacy_policy_url }}">Privacy Policy</a>
+                        <a href="{{ site.privacy_contact_url }}">Contact</a>
+					</p>
+				</div>
+				<div>
+					<p> Unless stated otherwise all content of this site are licensed under <a herf="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0-Lizenz</a></p>
+				</div>
+				<p>
+					<a href="https://de.dariah.eu">
+						DARIAH-DE
+						<br>
+						<small>Digital Research Infrastructure for the Arts and Humanities</small>
+					</a>
+				</p>
+			</div>
+			<div class="footer_right">
+				<p>
+					<a href="https://www.bmbf.de/">
+						<img alt="Funded by the Federal Ministry of Education and Research" src="assets/logos/bmbf-logo.svg" height="108">
+					</a>
+				</p>
+				<p>
+					<small>PROJECT NUMBER 01UG1610A TO J</small>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<noscript>
+		<div>This page requires JavaScript, please enable it!</div>
+	</noscript>
+</body>
 </html>
