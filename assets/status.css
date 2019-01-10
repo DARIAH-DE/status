@@ -1,0 +1,10 @@
+.highlighter-rouge, #container {
+	max-width: 720px;
+	margin: 0 auto 12px;
+}
+.highlight {
+	margin: 0;
+}
+.githubimg {
+	display: inline;
+}
