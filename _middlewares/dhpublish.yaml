@@ -1,6 +1,6 @@
 ---
 title: 'DH-publish'
-description: 'The DH-publish service provides publich methods and API for publishing objects to the DARIAH-DE Repository.'
+description: 'The DH-publish service provides methods and API for publishing objects to the DARIAH-DE Repository.'
 website: 'https://repository.de.dariah.eu/doc/services/submodules/kolibri/kolibri-dhpublish-service/docs/index.html'
 teresah_included: true
 dependencies:
