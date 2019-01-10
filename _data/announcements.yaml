@@ -9,6 +9,8 @@
     - '/servers/repository-de-dariah-eu'
     - '/servers/res'
     - '/middlewares/liferay'
+    - '/services/confluence'
+    - '/services/algloss'
 - title: 'System Maintenance'
   date_start: '2018-07-12'
   date_end: '2018-07-03'
