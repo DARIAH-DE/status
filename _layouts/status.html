@@ -18,19 +18,19 @@ layout: index
 {% assign outages_array = outages_array | where_exp: "item", "item.date_end == nil"  %}
 
 {% if outages_array.size > 0 %}
-  <p class="main_notice -big -error">Service Disruption!</p>
+    <p class="main_notice -big -error">Service Disruption!</p>
 
   {% for outage in outages_array %}
     {% include single_status_message.html item=outage %}
   {% endfor %}
 {% else %}
-  <p class="main_notice -big -success">All services are available</p>
+    <p class="main_notice -big -success">All services are available</p>
 {% endif %}
 
 {% assign announcements_array = site.data.announcements | where_exp: "item", "item.hide != true"  %}
 
 {% if announcements_array.size > 0 %}
-  <p class="main_notice -big -warning">Announcements</p>
+    <p class="main_notice -big -warning">Announcements</p>
 
   {% for announcement in announcements_array %}
     {% include single_status_message.html item=announcement %}
