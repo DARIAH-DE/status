@@ -12,11 +12,11 @@ li > p::before {
 	display: none;
 }
 .main_notice.-success {
-	background: rgba(58,111,23,.36);
+	background: rgba(58,151,23,.36);
 }
 .main_notice.-warning {
-    background: rgba(121,73,23,.36);
+    background: rgba(221,221,121,.36);
 }
 .main_notice.-error {
-    background: rgba(121,23,23,.36);
+    background: rgba(221,23,23,.36);
 }
