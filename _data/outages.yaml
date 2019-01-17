@@ -1,4 +1,16 @@
 ---
+- title: 'System Maintenance'
+  description: 'Routine software maintenance will be performed to upgrade the Operating System of {ci, devportal, exist, liferay, pdp, wiki}.de.dariah.eu. This is expected to last from 15-19 CET.'
+  date_start: '2019-01-17'
+  date_end:
+  affected:
+    - '/servers/ref'
+    - '/servers/repository-de-dariah-eu'
+    - '/servers/res'
+    - '/middlewares/liferay'
+    - '/services/confluence'
+    - '/services/algloss'
+    - '/services/pdp'
 - title: 'Geo-Browser storage server maintainance'
   description: 'The DARIAH-DE Geo-Browser storage is currently unavailable due to maintainance.'
   date_start: '2018-09-12 11:30'
