@@ -2,7 +2,7 @@
 - title: 'System Maintenance'
   description: 'Routine software maintenance will be performed to upgrade the Operating System of {ci, devportal, exist, liferay, pdp, wiki}.de.dariah.eu. This is expected to last from 15-19 CET.'
   date_start: '2019-01-17'
-  date_end:
+  date_end: '2019-01-18'
   affected:
     - '/middlewares/liferay'
 - title: 'Geo-Browser storage server maintainance'
