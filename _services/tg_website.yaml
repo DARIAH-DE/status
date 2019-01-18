@@ -1,0 +1,6 @@
+---
+title: 'TextGrid Website'
+teresah_included: false
+dependencies:
+    - '/middlewares/liferay'
+---
