@@ -11,12 +11,52 @@
     - '/services/confluence'
     - '/services/algloss'
     - '/services/pdp'
+- title: 'Geo-Browser storage server maintainance'
+  description: 'The DARIAH-DE Geo-Browser storage is currently unavailable due to maintainance.'
+  date_start: '2018-09-12 11:30'
+  date_end: '2018-09-14 8:00'
+  affected:
+    - '/middlewares/dariah-openstorage'
+- title: 'Geo-Browser storage down'
+  description: 'The DARIAH-DE Geo-Browser storage is currently unavailable due to hardware faults.'
+  date_start: '2018-08-21 12:00'
+  date_end: '2018-08-24 8:00'
+  affected:
+    - '/middlewares/dariah-openstorage'
+- title: 'Website error'
+  description: 'DARIAH-DE Website is currently unavailable due to hardware faults.'
+  date_start: '2018-07-17 15:00'
+  date_end: '2018-07-17 16:30'
+  affected:
+    - '/middlewares/liferay'
+- title: 'System Maintenance'
+  date_start: '2018-07-12'
+  date_end: '2018-07-12'
+  description: 'A host migration will be performed for incinga.de.dariah.eu. This is expected to last from 15-17 CEST.'
 - title: 'Maintenance'
   description: 'Due to unforseen complications during maintenance, many DARIAH services are currently not available.'
   date_start: '2018-07-05 13:00'
   date_end: '2018-07-05 14:30'
   affected:
     - '/middlewares/tgauth'
+- title: 'Network Issues'
+  description: 'Due to network issues, many DARIAH services are affected, [see GWDG news](https://info.gwdg.de/news/stoerung-netzwerk-4/).'
+  date_start: '2018-05-29 16:00'
+  date_end: '2018-05-29 18:30'
+  affected:
+    - '/infrastructure/gwdg-esx'
+    - '/infrastructure/gwdg-cloud'
+- title: 'OTRS Failure'
+  date_start: '2018-02-22'
+  date_end: '2018-02-28'
+  affected:
+    - '/services/otrs'
+- title: 'System Maintenance'
+  date_start: '2018-02-15'
+  date_end: '2018-02-15'
+  description: 'Routine software maintenance will be performed to upgrade the DARIAH Wiki to a newer version. This is expected to last from 15-17 CET on February 15th.'
+  affected:
+    - '/services/confluence'
 - title: 'Performance Issues'
   description: 'Due to hardware issues, performance issues for all DARIAH services are possible [throughout the week](https://info.gwdg.de/news/wartungsarbeiten-netapp/).'
   date_start: '2017-07-24 15:20'
@@ -43,7 +83,6 @@
     most DARIAH-DE Services will not available from July 21 to July 24.'
   date_start: '2017-07-21'
   date_end: '2017-07-24'
-  hide: true
   affected_services:
     - 'DARIAH Repository'
     - 'DARIAH Wiki'
@@ -56,7 +95,6 @@
 - title: 'Filesystem maintenance'
   description: 'On July 4 from 16:00, the file services at the computing center will be updated.'
   date_start: '2017-07-04 16:00'
-  hide: true
   affected_services:
     - 'DARIAH Repository'
     - 'Fontane Notizbücher'
@@ -64,9 +102,14 @@
     - 'TextGrid Laboratory'
     - 'TextGrid Repository'
 - title: 'Maintenance'
+  description: 'Due to unforseen complications during maintenance, many DARIAH services are currently not available.'
+  date_start: '2017-06-22'
+  date_end: '2017-06-27'
+  affected_services:
+    - '/infrastructure/gwdg-cloud'
+- title: 'Maintenance'
   date_start: '2017-06-22'
   date_end: '2017-06-23'
-  hide: true
   affected_services:
     - 'DARIAH-DE Annotation Sandbox'
     - 'Fontane Notizbücher'
