@@ -3,5 +3,5 @@ title: 'Voyant'
 description: 'Voyant Text analysis'
 website: 'https://voyant.de.dariah.eu/'
 dependencies:
-  - '/servers/voyant'
+  - '/infrastructure/gwdg-cloud'
 ---
