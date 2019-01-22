@@ -2,7 +2,7 @@
 - title: 'System Maintenance'
   date_start: '2019-01-24'
   date_end:
-  hide: true
+  hide: false
   description: 'Routine software maintenance will be performed to upgrade the Operating System of {pdp, voyant, icinga}.de.dariah.eu. This is expected to last from 15-19 CET.'
   affected:
     - '/servers/ref'
