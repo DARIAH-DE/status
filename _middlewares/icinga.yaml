@@ -1,0 +1,8 @@
+---
+title: 'DARIAH-DE Icinga Monitoring'
+description: 'DARIAH-DE Monitoring'
+website: 'https://icinga.de.dariah.eu'
+teresah_included: false
+dependencies:
+  - '/servers/icinga'
+---
