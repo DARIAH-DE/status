@@ -1,8 +1,0 @@
----
-title: 'DARIAH-DE PublicStorage'
-description: ''
-website: ''
-dependencies:
-  - '/services/pdp'
-  - '/servers/cdstar'
----
