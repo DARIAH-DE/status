@@ -4,6 +4,6 @@ description: 'DH-crud public provides storage methods and API for the DARIAH-DE 
 website: 'https://repository.de.dariah.eu/doc/services/submodules/tg-crud/service/dhcrud-webapp-public/docs/index.html'
 teresah_included: true
 dependencies:
-  - '/middlewares/dariah-publicstorage'
+  - '/services/dariah-publicstorage'
   - '/servers/repository-de-dariah-eu'
 ---

@@ -4,6 +4,6 @@ description: 'The DARIAH-DE repository allows to save research data sustainably 
 website: 'https://de.dariah.eu/repository'
 teresah_included: false
 dependencies:
-  - '/middlewares/dariah-publicstorage'
+  - '/services/dariah-publicstorage'
   - '/middlewares/dhcrud-public'
 ---
