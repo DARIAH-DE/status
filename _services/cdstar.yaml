@@ -3,6 +3,5 @@ title: 'DARIAH Storage Architecture'
 description: 'Central Storage Architecture'
 website: 'https://cdstar.de.dariah.eu/'
 dependencies:
-  - '/infrastructure/gwdg-esx'
   - '/servers/cdstar'
 ---
