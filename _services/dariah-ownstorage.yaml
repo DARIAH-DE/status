@@ -4,5 +4,5 @@ description: ''
 website: ''
 dependencies:
   - '/services/pdp'
-  - '/middleware/cdstar'
+  - '/middlewares/cdstar'
 ---
