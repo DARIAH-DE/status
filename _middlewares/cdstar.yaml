@@ -1,0 +1,7 @@
+---
+title: 'DARIAH-DE Storage'
+description: 'CDStar'
+website: ''
+dependencies:
+  - '/servers/cdstar'
+---
