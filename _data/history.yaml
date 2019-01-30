@@ -1,5 +1,25 @@
 ---
 - title: 'System Maintenance'
+  date_start: '2019-01-24'
+  date_end: '2019-01-25'
+  description: 'Routine software maintenance will be performed to upgrade the Operating System of {pdp, voyant, icinga}.de.dariah.eu. This is expected to last from 15-19 CET.'
+  affected:
+    - '/servers/icinga'
+    - '/servers/voyant'
+    - '/services/pdp'
+- title: 'System Maintenance'
+  date_start: '2019-01-17'
+  date_end: '2019-01-18'
+  description: 'Routine software maintenance will be performed to upgrade the Operating System of {ci, devportal, exist, liferay, pdp, wiki}.de.dariah.eu. This is expected to last from 15-19 CET.'
+  affected:
+    - '/servers/ref'
+    - '/servers/repository-de-dariah-eu'
+    - '/servers/res'
+    - '/middlewares/liferay'
+    - '/services/confluence'
+    - '/services/algloss'
+    - '/services/pdp'
+- title: 'System Maintenance'
   description: 'Routine software maintenance will be performed to upgrade the Operating System of {ci, devportal, exist, liferay, pdp, wiki}.de.dariah.eu. This is expected to last from 15-19 CET.'
   date_start: '2019-01-17'
   date_end: '2019-01-18'
@@ -78,8 +98,8 @@
     - 'Fontane Notizbücher'
     - 'Geo-Browser'
 - title: 'DARIAH Service Downtime on Saturday, July 22'
-  description: 'Due to maintanance work at the computing center 
-    ([interruption of the power supply](https://info.gwdg.de/news/en/information-interruption-of-the-power-supply-at-the-max-planck-campus-and-fmz/)) 
+  description: 'Due to maintanance work at the computing center
+    ([interruption of the power supply](https://info.gwdg.de/news/en/information-interruption-of-the-power-supply-at-the-max-planck-campus-and-fmz/))
     most DARIAH-DE Services will not available from July 21 to July 24.'
   date_start: '2017-07-21'
   date_end: '2017-07-24'
@@ -114,4 +134,3 @@
     - 'DARIAH-DE Annotation Sandbox'
     - 'Fontane Notizbücher'
     - 'Geo-Browser'
-
