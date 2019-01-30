@@ -1,0 +1,8 @@
+---
+title: 'DARIAH LDAP'
+description: 'Central LDAP system'
+website: 'https://auth2.de.dariah.eu/'
+dependencies:
+  - '/infrastructure/gwdg-esx'
+  - '/servers/auth2'
+---

@@ -1,0 +1,8 @@
+---
+title: 'Verbundsuche'
+description: 'Forschungsverbund Marbach Weimar Wolfenbüttel'
+website: 'https://mww.de.dariah.eu/'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+  - '/servers/mww'
+---
