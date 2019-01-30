@@ -1,6 +1,8 @@
 ---
 title: 'DARIAH-DE PublicStorage'
+description: ''
+website: ''
 dependencies:
-  - '/infrastructure/gwdg-isilon'
+  - '/services/pdp'
   - '/servers/cdstar'
 ---

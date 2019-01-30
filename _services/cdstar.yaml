@@ -1,7 +1,0 @@
----
-title: 'DARIAH Storage Architecture'
-description: 'Central Storage Architecture'
-website: 'https://cdstar.de.dariah.eu/'
-dependencies:
-  - '/servers/cdstar'
----

@@ -1,5 +1,6 @@
 ---
 title: 'cdstar.de.dariah.eu'
 dependencies:
+  - '/infrastructure/gwdg-isilon'
   - '/infrastructure/gwdg-esx'
 ---
