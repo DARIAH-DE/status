@@ -3,4 +3,5 @@ title: 'DARIAH-DE OwnStorage'
 dependencies:
   - '/infrastructure/gwdg-isilon'
   - '/services/pdp'
+  - '/servers/cdstar'
 ---
