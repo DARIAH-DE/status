@@ -1,0 +1,8 @@
+---
+title: 'Dhrepworkshop'
+description: 'Dhrepworkshop'
+website: 'https://dhrepworkshop.de.dariah.eu/'
+dependencies:
+  - '/infrastructure/gwdg-esx'
+  - '/servers/dhrepworkshop'
+---
