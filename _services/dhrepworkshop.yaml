@@ -1,5 +1,5 @@
 ---
-title: 'DARIAH-DE workshop and testing repository services'
+title: 'All DARIAH-DE workshop repository services provided for TESTING'
 description: 'All services provided for DARIAH-DE repository testing and workshop usage including Publikator, OAI-PMH, CRUD, Publish, ...'
 website: 'https://dhrepworkshop.de.dariah.eu/'
 dependencies:
