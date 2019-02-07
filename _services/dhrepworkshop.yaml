@@ -1,8 +1,8 @@
 ---
-title: 'Dhrepworkshop'
-description: 'Dhrepworkshop'
+title: 'DARIAH-DE workshop and testing repository services'
+description: 'All services provided for DARIAH-DE repository testing and workshop usage including Publikator, OAI-PMH, CRUD, Publish, ...'
 website: 'https://dhrepworkshop.de.dariah.eu/'
 dependencies:
-  - '/infrastructure/gwdg-esx'
+  - '/infrastructure/gwdg-cloud'
   - '/servers/dhrepworkshop'
 ---
