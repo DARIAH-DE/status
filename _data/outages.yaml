@@ -1,4 +1,10 @@
 ---
+- title: 'dhrepworkshop.de.dariah.eu is not available at the moment'
+  date_start: '2019-02-07'
+  hide: false
+  description: 'We apologise for the inconvenience!'
+  affected:
+    - '/servers/dhrepworkshop'
 - title: 'System Maintenance'
   date_start: '2019-01-31'
   date_end: '2019-01-31'
