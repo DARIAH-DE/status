@@ -1,6 +1,6 @@
 ---
 title: 'Classicmayans VocBench installation'
-website: ''
+website: 'https://classicmayan.org/vocbench/'
 provider: 'SUB Göttingen'
 dependencies:
   - '/middlewares/mayan-sesame'
