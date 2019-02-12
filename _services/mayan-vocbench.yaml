@@ -1,0 +1,9 @@
+---
+title: 'Classicmayans VocBench installation'
+website: ''
+provider: 'SUB Göttingen'
+dependencies:
+  - '/middlewares/mayan-sesame'
+  - '/middlewares/mayan-fuseki'
+  - '/servers/classicmayan'
+---

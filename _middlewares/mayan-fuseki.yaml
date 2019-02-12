@@ -1,0 +1,7 @@
+---
+title: 'Classicmayans FUSEKI'
+description: 'FUSEKI as triplestore for classicmayan services.'
+website: ''
+dependencies:
+  - '/servers/classicmayan'
+---
