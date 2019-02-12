@@ -1,8 +1,17 @@
 ---
 - title: 'System Maintenance'
-  description: 'Routine software maintenance will be performed to upgrade the Operating System of the TextGrid Repository server (textgridlab.org). This is expected to last from 15-19 CET.'
   date_start: '2019-02-14'
   date_end:
   hide: false
+  description: 'Routine software maintenance will be performed to upgrade the Operating System of the TextGrid Repository server (textgridlab.org). This is expected to last from 15-19 CET.'
   affected:
     - '/servers/textgrid-esx2'
+- title: 'System Maintenance'
+  date_start: '2019-02-07'
+  date_end:
+  hide: false
+  description: 'Routine software maintenance will be performed to upgrade the Operating System of {fontane-nb,fontane-staging,ref,dhrepworkshop}.de.dariah.eu. This is expected to last from 15-19 CET.'
+  affected:
+    - '/servers/ref'
+    - '/services/fontane'
+    - '/servers/dhrepworkshop'
