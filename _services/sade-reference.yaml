@@ -1,0 +1,8 @@
+---
+title: 'SADE Publishers Web Interface'
+description: 'The SADE Publishers web interface. It is build as a demonstrator – a sandbox where you can preview your own content. When you start customizing it will become the engine behind your website to present TEI files of all kind. '
+website: 'https://sade.textgrid.de'
+dependencies:
+  - '/middlewares/tgsearch-public'
+  - '/servers/sade-textgrid-de'
+---
