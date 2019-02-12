@@ -1,5 +1,16 @@
 ---
 - title: 'System Maintenance'
+  description: 'Routine software maintenance will be performed to upgrade the Operating System of {auth2,cdstar,dfa,mww}.de.dariah.eu. This is expected to last from 15-19 CET.'
+  date_start: '2019-01-31'
+  date_end: '2019-01-31'
+  affected:
+    - '/servers/auth2'
+    - '/servers/cdstar'
+    - '/services/dfa'
+    - '/services/mww'
+    - '/services/tgrep'
+    - '/services/tgrep'
+- title: 'System Maintenance'
   description: 'Routine software maintenance will be performed to upgrade the Operating System of {ci, devportal, exist, liferay, pdp, wiki}.de.dariah.eu. This is expected to last from 15-19 CET.'
   date_start: '2019-01-17'
   date_end: '2019-01-18'
