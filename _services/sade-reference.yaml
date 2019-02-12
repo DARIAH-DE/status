@@ -5,4 +5,5 @@ website: 'https://sade.textgrid.de'
 dependencies:
   - '/middlewares/tgsearch-public'
   - '/servers/sade-textgrid-de'
+  - '/servers/textgrid-esx2'
 ---

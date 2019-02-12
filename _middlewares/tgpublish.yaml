@@ -1,0 +1,12 @@
+---
+title: 'TG-publish'
+description: ''
+website: ''
+teresah_included: true
+dependencies:
+  - '/middlewares/tgpid'
+  - '/middlewares/tgauth'
+  - '/middlewares/tgcrud'
+  - '/middlewares/tgsearch-public'
+  - '/middlewares/tgsearch-nonpublic'
+---
