@@ -1,10 +1,11 @@
 ---
-- title: 'dhrepworkshop.de.dariah.eu is not available at the moment'
-  date_start: '2019-02-07'
+- title: 'System Maintenance'
+  date_start: '2019-02-12'
+  date_end:
   hide: false
-  description: 'We apologise for the inconvenience!'
+  description: 'Routine software maintenance will be performed to upgrade the Operating System of the sade.textgrid.de. This is expected to last from 15-19 CET.'
   affected:
-    - '/servers/dhrepworkshop'
+    - '/servers/sade'
 - title: 'System Maintenance'
   date_start: '2019-01-31'
   date_end: '2019-01-31'
