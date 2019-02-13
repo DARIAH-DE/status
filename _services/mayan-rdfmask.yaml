@@ -3,8 +3,8 @@ title: 'Classicmayans RDFMask installation'
 website: ''
 provider: 'SUB Göttingen'
 dependencies:
-  - '/middlewares/mayan-sesame'
   - '/middlewares/mayan-fuseki'
   - '/servers/classicmayan'
   - '/middlewares/tgcrud'
+  - '/services/tglab'
 ---

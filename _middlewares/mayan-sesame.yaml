@@ -1,7 +1,0 @@
----
-title: 'Classicmayans SESAME'
-description: 'SESAME as triplestore for classicmayan services.'
-website: ''
-dependencies:
-  - '/servers/classicmayan'
----
