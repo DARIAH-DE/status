@@ -3,7 +3,5 @@
   date_start: '2019-02-21'
   date_end:
   hide: false
-  description: 'Routine software maintenance will be performed to shift ESX-Machines to a different IP-range. This is expected to last from 15-19 CET.'
+  description: 'Routine software maintenance will be performed to shift ESX-Machines to a different IP-range. This is expected to last from 15-19 CET. Affected systems: {liferay,aaiproxy,auth,cdstar,icinga,pdp,repository,wiki}.de.dariah.eu'
   affected:
-    - 'services/tg_website'
-    - 'servers/auth'
