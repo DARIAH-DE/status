@@ -6,9 +6,6 @@
   description: 'Routine software maintenance will be performed to shift ESX-Machines to a different IP-range. This is expected to last from 15-19 CET.'
   affected:
     - '_services/tg_website'
-    - '_servers/auth'
-    - '_servers/cdstar'
     - '_services/icinga'
     - '_services/pdp'
-    - '_servers/repository-de-dariah-eu'
     - '_services/confluence'
