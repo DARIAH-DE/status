@@ -4,4 +4,5 @@ description: 'A common Wiki for the exchange of all DARIAH users. Specialized wi
 website: 'https://de.dariah.eu/wikis'
 dependencies:
   - '/infrastructure/gwdg-esx'
+  - '/servers/wiki'
 ---
