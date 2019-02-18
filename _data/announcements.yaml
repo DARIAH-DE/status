@@ -10,3 +10,5 @@
     - '/servers/icinga'
     - '/servers/repository-de-dariah-eu'
     - '/servers/pdp'
+    - '/servers/wiki'
+    - '/servers/liferay'
