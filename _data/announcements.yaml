@@ -1,17 +1,9 @@
 ---
 - title: 'System Maintenance'
-  date_start: '2019-02-28'
-  date_end:
-  hide: true
-  description: 'Routine software maintenance will be performed to shift ESX-Machines to a different IP-range. This is expected to last from 15-19 CET. Affected systems: {cdstar,ci,algloss}.de.dariah.eu'
-  affected:
-    - '/servers/cdstar'
-    - '/servers/ci'
-    - '/services/algloss'
-- title: 'System Maintenance'
   date_start: '2019-03-07'
-  date_end:
+  date_end: '2019-03-07'
   hide: false
-  description: 'Due to server maintenance at GWDG on March 7th the PID service for minting new PIDs will not be available for a few minutes. The maintenance will take place between 17:00 and 18:00 CET. See <a href="https://www.pidconsortium.eu/?p=1554">https://www.pidconsortium.eu/?p=1554</a>'
+  description: 'Due to server maintenance at GWDG on March 7th the PID service for minting new PIDs will not be available for a few minutes. The maintenance will take place between 17:00 and 18:00 CET. See <a href="https://www.pidconsortium.eu/?p=1554">PID Consortium page</a> for more info.'
   affected:
     - '/middlewares/tgpid'
+    - '/middlewares/dhpid'

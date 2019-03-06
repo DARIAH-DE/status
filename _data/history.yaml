@@ -1,5 +1,13 @@
 ---
 - title: 'System Maintenance'
+  date_start: '2019-02-28'
+  date_end: '2019-02-28'
+  description: 'Routine software maintenance will be performed to shift ESX-Machines to a different IP-range. This is expected to last from 15-19 CET. Affected systems: {cdstar,ci,algloss}.de.dariah.eu'
+  affected:
+    - '/servers/cdstar'
+    - '/servers/ci'
+    - '/services/algloss'
+- title: 'System Maintenance'
   date_start: '2019-02-12'
   date_end: '2019-02-12'
   description: 'Routine software maintenance will be performed to upgrade the Operating System of the sade.textgrid.de. This is expected to last from 15-19 CET.'
@@ -7,16 +15,14 @@
     - '/servers/sade'
 - title: 'System Maintenance'
   date_start: '2019-02-07'
-  date_end:
-  hide: false
+  date_end: '2019-02-07'
   description: 'Routine software maintenance will be performed to upgrade the Operating System of {fontane-nb,fontane-staging,ref,dhrepworkshop}.de.dariah.eu. This is expected to last from 15-19 CET.'
   affected:
     - '/servers/ref'
     - '/services/fontane'
 - title: 'System Maintenance'
   date_start: '2019-01-31'
-  date_end:
-  hide: true
+  date_end: '2019-01-31'
   description: 'Routine software maintenance will be performed to upgrade the Operating System of {auth2,cdstar,dfa,mww}.de.dariah.eu. This is expected to last from 15-19 CET.'
   affected:
     - '/servers/auth2'
