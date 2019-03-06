@@ -1,7 +1,7 @@
 ---
 title: 'DH-pid'
 description: 'Creates Handle PIDs for the DARIAH-DE Repository.'
-teresah_included: false
+teresah_included: true
 dependencies:
   - '/servers/repository-de-dariah-eu'
 ---
