@@ -5,4 +5,4 @@
   hide: false
   description: 'Due to server maintenance on March 21th the DARIAH-DE Repository services will not be available from 15 to 19 pm.'
   affected:
-    - '/servers/dariah-de-repository'
+    - '/servers/repository-de-dariah-eu'
