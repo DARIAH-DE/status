@@ -1,9 +1,8 @@
 ---
 - title: 'System Maintenance'
-  date_start: '2019-03-07'
-  date_end: '2019-03-07'
+  date_start: '2019-03-21'
+  date_end: '2019-03-21'
   hide: false
-  description: 'Due to server maintenance at GWDG on March 7th the PID service for minting new PIDs will not be available for a few minutes. The maintenance will take place between 17:00 and 18:00 CET. See <a href="https://www.pidconsortium.eu/?p=1554">PID Consortium page</a> for more info.'
+  description: 'Due to server maintenance on March 21th the DARIAH-DE Repository services will not be available from 15 to 19 pm.'
   affected:
-    - '/middlewares/tgpid'
-    - '/middlewares/dhpid'
+    - '/servers/dariah-de-repository'
