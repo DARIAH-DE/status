@@ -1,0 +1,8 @@
+---
+title: 'Data Federation Architecture (CR)'
+description: 'DFA CR'
+website: 'https://dfa.de.dariah.eu/'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+  - '/servers/dfa'
+---

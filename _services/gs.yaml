@@ -1,0 +1,8 @@
+---
+title: 'Data Federation Architecture (Generic Search)'
+description: 'DFA GS'
+website: 'https://dfa.de.dariah.eu/'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+  - '/servers/dfa'
+---

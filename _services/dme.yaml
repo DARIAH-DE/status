@@ -1,0 +1,8 @@
+---
+title: 'Data Federation Architecture (DME)'
+description: 'DFA DME'
+website: 'https://dfa.de.dariah.eu/'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+  - '/servers/dfa'
+---
