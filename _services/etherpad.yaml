@@ -1,6 +1,0 @@
----
-title: 'DARIAH-DE Etherpad'
-teresah_included: false
-dependencies:
-  - '/infrastructure/gwdg-cloud'
----
