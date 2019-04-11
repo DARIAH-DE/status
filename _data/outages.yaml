@@ -6,3 +6,10 @@
   description: 'Due to problems regarding the storage of the TextGrid Repository, all services of TextGrid are temporarily not available'
   affected:
     - '/infrastructure/gwdg-stornext'
+- title: 'DHd blog not available'
+  date_start: '2019-04-11'
+  date_end:
+  hide: false
+  description: 'Due to server problems the DHD-blog is not available at the moment. We apologize for the inconvenience!'
+  affected:
+    - '/services/dhd-blog'
