@@ -1,8 +1,13 @@
 ---
-- title: 'System Maintenance'
-  date_start: '2019-03-21'
+- title: 'textgrid-esx2.gwdg.de'
+  date_start: '2019-04-11'
   date_end:
-  hide: true
-  description: 'Due to server maintenance on March 21th the DARIAH-DE Repository services will not be available from 15 to 19 pm.'
+  hide: false
+  description: 'Due to problems regarding the storage of the TextGrid Repository, all services of TextGrid are temporarily not available'
   affected:
-    - '/servers/repository-de-dariah-eu'
+    - '/servers/textgrid-esx2.gwdg.de'
+    - '/servers/textgrid-esx1.gwdg.de'
+  affected_services:
+    - 'TextGrid Laboratory'
+    - 'TextGrid Repository Portal'
+
