@@ -93,12 +93,6 @@ are listed on the [current data]({{ site.baseurl }}{% link currentdata.md %}) pa
 ## Overview
 {% include network.html %}
 
-## Infrastructure overview (Old ’n’ Obsolete)
-
-A graph providing an overview of the entire infrastructure is provided in this graph:
-
-[![Infrastructure Overview](dariah_infrastructure.gv.png)](dariah_infrastructure.gv.png)
-
 ## TERESAH
 
 The DARIAH-DE Status Jekyll page also includes the page with all DARIAH-DE services to be harvested by [TERESAH](http://teresah.dariah.eu/).

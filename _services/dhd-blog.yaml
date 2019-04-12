@@ -1,6 +1,4 @@
 ---
 title: 'DHd Blog'
 description: 'The DHd Blog website'
-dependencies:
-  - '/servers/dhd-blog'
 ---
