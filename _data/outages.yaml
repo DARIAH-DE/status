@@ -1,8 +1,8 @@
 ---
-- title: 'DHd blog not available'
-  date_start: '2019-04-11'
-  date_end: '2019-04-12'
-  hide: true
-  description: 'Due to server problems the DHD-blog is not available at the moment. We apologize for the inconvenience!'
+- title: 'DARIAH Wiki is not available'
+  date_start: '2019-04-15'
+  date_end: '2019-04-16'
+  hide: false
+  description: 'Due to server problems the DARIAH-Wiki is not available at the moment. We apologize for the inconvenience!'
   affected_services:
-    - '/services/dhd-blog'
+    - '/services/confluence'
