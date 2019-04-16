@@ -1,7 +1,7 @@
 ---
 - title: 'DARIAH Wiki is not available'
   date_start: '2019-04-15'
-  date_end: '2019-04-16'
+  date_end: ''
   hide: false
   description: 'Due to server problems the DARIAH-Wiki is not available at the moment. We apologize for the inconvenience!'
   affected_services:
