@@ -5,4 +5,4 @@
   hide: false
   description: 'Due to server problems the DARIAH-Wiki is not available at the moment. We apologize for the inconvenience!'
   affected_services:
-    - '/servers/wiki'
+    - '/services/wiki'
