@@ -4,5 +4,5 @@
   date_end: '2019-04-17'
   hide: false
   description: 'Due to server problems the DARIAH-Wiki is not available at the moment. We apologize for the inconvenience!'
-  affected_services:
-    - '/services/wiki'
+  affected:
+    - '/servers/wiki'
