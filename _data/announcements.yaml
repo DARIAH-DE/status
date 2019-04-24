@@ -4,7 +4,6 @@
   date_end: '2019-04-25'
   hide: false
   description: 'Routine software maintenance will be performed for the Confluence-Wiki. This is expected to last from 15-17 CEST.'
-  '
   affected_services:
     - '/servers/wiki'
 ---
