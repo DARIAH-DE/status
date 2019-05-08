@@ -5,7 +5,7 @@
   hide: false
   description: 'Due to server maintenance on May 25th the TextGrid Repository and TextGrid Laboratory services will not be available from 15 to 17 pm.'
   affected:
-    - '/servers/esx2'
+    - '/servers/textgrid-esx2'
 ---
 - title: 'DARIAH Wiki maintenance'
   date_start: '2019-04-25'
