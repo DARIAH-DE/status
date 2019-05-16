@@ -1,4 +1,10 @@
 ---
+- title: 'DARIAH Wiki maintenance'
+  date_start: '2019-04-25'
+  date_end: '2019-04-25'
+  description: 'Routine software maintenance will be performed for the Confluence-Wiki. This is expected to last from 15-17 CEST.'
+  affected_services:
+    - '/servers/wiki'
 - title: 'DARIAH Wiki is not available'
   date_start: '2019-04-15'
   date_end: '2019-04-17'
@@ -11,6 +17,12 @@
   description: 'Due to problems regarding the storage of the TextGrid Repository, all services of TextGrid are temporarily not available'
   affected:
     - '/infrastructure/gwdg-stornext'
+- title: 'System Maintenance'
+  date_start: '2019-03-21'
+  date_end: '2019-03-21'
+  description: 'Due to server maintenance on March 21th the DARIAH-DE Repository services will not be available from 15 to 19 pm.'
+  affected:
+    - '/servers/repository-de-dariah-eu'
 - title: 'System Maintenance'
   date_start: '2019-02-14'
   date_end: '2019-02-14'
