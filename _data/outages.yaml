@@ -1,7 +1,7 @@
 ---
-- title: 'TextGrid website and textgridlab.org is not available'
+- title: 'TextGrid website and textgridlab.org not available'
   date_start: '2019-05-16' 
-  date_end: ''
+  date_end: '2019-05-17'
   hide: false
   description: 'Due to missing database links the TextGrid website (textgrid.ifo) and textgridrep.org are not available at the moment. We apologize for the inconvenience!'
   affected:
