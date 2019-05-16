@@ -2,7 +2,7 @@
 - title: 'System Maintenance'
   date_start: '2019-05-16 15:00'
   date_end: '2019-05-16 17:00'
-  hide: false
+  hide: true
   description: 'Due to server maintenance on May 16th the TextGrid Repository, TextGrid Laboratory, CDSTAR and Liferay services will not be available from 15 to 17 pm.'
   affected:
     - '/servers/textgrid-esx2'
