@@ -1,4 +1,10 @@
 ---
+- title: 'DARIAH Wiki is not available'
+  date_start: '2019-04-15'
+  date_end: '2019-04-17'
+  description: 'Due to server problems the DARIAH-Wiki is not available at the moment. We apologize for the inconvenience!'
+  affected:
+    - '/servers/wiki'
 - title: 'textgrid-esx2.gwdg.de'
   date_start: '2019-04-11'
   date_end: '2019-04-11'
