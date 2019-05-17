@@ -37,7 +37,7 @@ Just use the code block below to quickly set outages in ```/_data/outages.yaml``
     - '/infrastructure/gwdg-cloud'
 ```
 
-If you want to, please test the outcome locally, as described below.
+If you want to, please test the outcome locally, as described below. For detailed information please see the [documentation](documentation.md).
 
 
 ## Development
