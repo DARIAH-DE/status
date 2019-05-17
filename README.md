@@ -24,7 +24,7 @@ Than compile with `python3 render_graph.py`.
 
 ## Quickstart for setting outages
 
-Just use the code block below to quickly set outages in ```/_data/outages.yaml```. Note that ```date_end```must NOT be existing in the block (why is that?)! Under ```affected:``` just put in pathes to infrastructure, servers, middleware, and services. Do put in the most basic affected (and not depending on each other) terms only, such as ```- /servers/wiki```, or ```- /infrastructure/gwdg-cloud``` if the wiki server or the cloud infrastructure is down. All dependent services will be listed automatically.
+Just use the code block below to quickly set outages in ```/_data/outages.yaml```. Note that ```date_end``` must NOT be existing in the block (why is that?)! Under ```affected:``` just put in pathes to infrastructure, servers, middleware, and services. Do put in the most basic affected (and not depending on each other) terms only, such as ```- /servers/wiki```, or ```- /infrastructure/gwdg-cloud``` if the wiki server or the cloud infrastructure is down. All dependent services will be listed automatically.
 
 ```
 ---
