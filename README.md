@@ -28,13 +28,13 @@ Just use the code block below to quickly set outages in ```/_data/outages.yaml``
 
 ```
 ---
-- title: 'Something is NOT available'
+- title: 'DARIAH-DE Wiki and GWDG Cloud infrastructure not available'
   date_start: '2019-05-17'
   hide: false
-  description: 'Due to arglblargl the Blubifugi service is not available at the moment. We apologize for the inconvenience!'
+  description: 'Due to some reason the DARIAH-DE Wiki and the GWDG Cloud infrastructure are not available at the moment. We apologize for the inconvenience! Please have a look at <a href="#">THIS PAGE</a> for more information!'
   affected:
-    - '/services/tg_website'
-    - '/services/tgrep'
+    - '/servers/wiki'
+    - '/infrastructure/gwdg-cloud'
 ```
 
 If you want to, please test the outcome locally, as described below.
