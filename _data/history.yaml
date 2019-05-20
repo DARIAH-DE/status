@@ -1,4 +1,11 @@
 ---
+- title: 'TextGrid website and textgridrep.org not available'
+  date_start: '2019-05-16'
+  date_end: '2019-05-20'
+  description: 'Due to missing database links the TextGrid website (textgrid.ifo) and textgridrep.org are not available at the moment. We apologize for the inconvenience!'
+  affected:
+    - '/services/tg_website'
+    - '/services/tgrep'
 - title: 'DARIAH Wiki maintenance'
   date_start: '2019-04-25'
   date_end: '2019-04-25'
