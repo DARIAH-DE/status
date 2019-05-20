@@ -69,9 +69,9 @@ var data = {
 {%- if coll.label != 'posts' -%}
 {%- for item in coll.docs -%}
   {%- if cindex == clength and forloop.last -%}
-    {"id": "{{ item.title | replace: ' ', '.' }}", "group": {{ cindex }}}
+    {"id": "{{ item.title | concat: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}}
   {%- else -%}
-    {"id": "{{ item.title | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{coll.label}}"},
+    {"id": "{{ item.title | concat: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{coll.label}}"},
   {%- endif -%}
 {%- endfor -%}
 {%- endif -%}
@@ -91,12 +91,15 @@ var data = {
           {%- assign depobj = site.servers | where:"id", dep | first -%}
         {%- elsif dep contains '/middlewares/' -%}
           {%- assign depobj = site.middlewares | where:"id", dep | first -%}
+          {%- assign coll = 'middlewares' -%}
         {%- elsif dep contains '/services/' -%}
           {%- assign depobj = site.services | where:"id", dep | first -%}
+          {%- assign coll = 'services' -%}
         {%- elsif dep contains '/infrastructure/' -%}
           {%- assign depobj = site.infrastructure | where:"id", dep | first -%}
+          {%- assign coll = 'infrastructure' -%}
         {%- endif -%}
-        {"source": "{{ item.title | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | replace: ' ', '.' }}", "value": 1}|
+        {"source": "{{ item.title | concat: coll | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | concat: coll | replace: ' ', '.' }}", "value": 1}|
       {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
