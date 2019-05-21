@@ -29,6 +29,7 @@ dependencies:
 ```
 
 The `title` is required for all entries and used in status messages, for servers this should be the `fqdn`.
+Please make sure to use a single title only once per layer.
 
 The fields `description` and `website` are used for the entries in the list harvested by teresah.
 The key `teresah_included` defaults to `true` for services, unless explicitly set to `false`.
