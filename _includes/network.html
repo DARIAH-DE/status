@@ -69,9 +69,9 @@ var data = {
 {%- if coll.label != 'posts' -%}
 {%- for item in coll.docs -%}
   {%- if cindex == clength and forloop.last -%}
-    {"id": "{{ item.title | concat: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}}
+    {"id": "{{ item.title | append: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}}
   {%- else -%}
-    {"id": "{{ item.title | concat: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{coll.label}}"},
+    {"id": "{{ item.title | append: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{coll.label}}"},
   {%- endif -%}
 {%- endfor -%}
 {%- endif -%}
@@ -99,7 +99,7 @@ var data = {
           {%- assign depobj = site.infrastructure | where:"id", dep | first -%}
           {%- assign coll = 'infrastructure' -%}
         {%- endif -%}
-        {"source": "{{ item.title | concat: coll | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | concat: coll | replace: ' ', '.' }}", "value": 1}|
+        {"source": "{{ item.title | append: coll | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | append: coll | replace: ' ', '.' }}", "value": 1}|
       {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
