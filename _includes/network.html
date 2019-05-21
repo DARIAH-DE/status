@@ -89,16 +89,12 @@ var data = {
       {%- for dep in item.dependencies -%}
         {%- if dep contains '/servers/' -%}
           {%- assign depobj = site.servers | where:"id", dep | first -%}
-          {%- assign coll = "servers" -%}
         {%- elsif dep contains '/middlewares/' -%}
           {%- assign depobj = site.middlewares | where:"id", dep | first -%}
-          {%- assign coll = "middlewares" -%}
         {%- elsif dep contains '/services/' -%}
           {%- assign depobj = site.services | where:"id", dep | first -%}
-          {%- assign coll = "services" -%}
         {%- elsif dep contains '/infrastructure/' -%}
           {%- assign depobj = site.infrastructure | where:"id", dep | first -%}
-          {%- assign coll = "infrastructure" -%}
         {%- endif -%}
         {"source": "{{ item.title | append: item.collection | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | append: item.collection | replace: ' ', '.' }}", "value": 1}|
       {%- endfor -%}
