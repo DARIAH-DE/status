@@ -71,7 +71,7 @@ var data = {
   {%- if cindex == clength and forloop.last -%}
     {"id": "{{ item.title | append: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}}
   {%- else -%}
-    {"id": "{{ item.title | append: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{coll.label}}"},
+    {"id": "{{ item.title | append: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{ coll.label }}"},
   {%- endif -%}
 {%- endfor -%}
 {%- endif -%}
@@ -96,7 +96,7 @@ var data = {
         {%- elsif dep contains '/infrastructure/' -%}
           {%- assign depobj = site.infrastructure | where:"id", dep | first -%}
         {%- endif -%}
-        {"source": "{{ item.title | append: item.collection | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | append: item.collection | replace: ' ', '.' }}", "value": 1}|
+        {"source": "{{ item.title | append: item.collection | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | append: depobj.collection | replace: ' ', '.' }}", "value": 1}|
       {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
