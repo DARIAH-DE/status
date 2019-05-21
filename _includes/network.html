@@ -100,7 +100,7 @@ var data = {
           {%- assign depobj = site.infrastructure | where:"id", dep | first -%}
           {%- assign coll = "infrastructure" -%}
         {%- endif -%}
-        {"title:" "{{ item }}", "source": "{{ item.title | append: coll | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | append: coll | replace: ' ', '.' }}", "value": 1}|
+        {"source": "{{ item.title | append: coll | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | append: coll | replace: ' ', '.' }}", "value": 1}|
       {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
