@@ -9,19 +9,6 @@ The status page is powered by [Jekyll](https://jekyllrb.com/) using its features
 
 See the [documentation](documentation.md).
 
-Changes in the data must be reflected in the graph, so make sure to re-compile!
-Make sure to have `graphviz` and the python dependencies from `requirements.txt`, e.g. on Ubuntu:
-``` Bash
-sudo apt-get -y install graphviz
-sudo apt-get -y install python3-all-dev python3-pip
-python3 -m venv myvenv
-source myvenv/bin/activate
-pip3 install -r requirements.txt
-```
-
-Than compile with `python3 render_graph.py`.
-
-
 ## Quickstart for setting outages
 
 Just use the code block below to quickly set outages in ```/_data/outages.yaml```. Note that ```date_end``` must NOT be existing in the block (why is that?). Under ```affected:``` just put in pathes to affected infrastructure, servers, middleware, and services. Do put in the most basic affected (not depending on each other) terms only, such as ```- /servers/wiki```, or ```- /infrastructure/gwdg-cloud``` if the wiki server and the cloud infrastructure are down. All services depending on the affected ones will be listed automatically.
