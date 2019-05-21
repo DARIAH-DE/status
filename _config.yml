@@ -32,5 +32,3 @@ defaults:
       path: ''
     values:
       layout: 'index'
-gems:
-  - liquid-md5

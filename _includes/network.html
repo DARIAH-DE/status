@@ -69,9 +69,9 @@ var data = {
 {%- if coll.label != 'posts' -%}
 {%- for item in coll.docs -%}
   {%- if cindex == clength and forloop.last -%}
-    {"label": "{{ item.title }}", "id": "{{ item.title | append: coll.label | replace: ' ', '.' | md5 }}", "group": {{ cindex }}, "groupLabel": "{{ coll.label }}"}
+    {"label": "{{ item.title }}", "id": "{{ item.title | append: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{ coll.label }}"}
   {%- else -%}
-    {"label": "{{ item.title }}", "id": "{{ item.title | append: coll.label | replace: ' ', '.' | md5 }}", "group": {{ cindex }}, "groupLabel": "{{ coll.label }}"},
+    {"label": "{{ item.title }}", "id": "{{ item.title | append: coll.label | replace: ' ', '.' }}", "group": {{ cindex }}, "groupLabel": "{{ coll.label }}"},
   {%- endif -%}
 {%- endfor -%}
 {%- endif -%}
@@ -96,7 +96,7 @@ var data = {
         {%- elsif dep contains '/infrastructure/' -%}
           {%- assign depobj = site.infrastructure | where:"id", dep | first -%}
         {%- endif -%}
-        {"source": "{{ item.title | append: item.collection | replace: ' ', '.' | md5 }}", "target": "{{ depobj.title | strip | append: depobj.collection | replace: ' ', '.' | md5 }}", "value": 1}|
+        {"source": "{{ item.title | append: item.collection | replace: ' ', '.' }}", "target": "{{ depobj.title | strip | append: depobj.collection | replace: ' ', '.' }}", "value": 1}|
       {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
