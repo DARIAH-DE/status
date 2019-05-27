@@ -1,7 +1,8 @@
 ---
 - title: 'System Maintenance'
   date_start: '2019-05-23 17:00'
-  hide: false
+  date_start: '2019-05-23 19:00'
+  hide: true
   description: 'An online update of the storage system MAY cause minor disruptions when accessing files. GWDG: 201905201013'
   affected:
     - '/infrastructure/gwdg-stornext'
