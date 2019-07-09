@@ -2,7 +2,7 @@
 - title: 'System Maintenance'
   date_start: '2019-07-04 15:00'
   date_end: '2019-07-04 19:00'
-  hide: false
+  hide: true
   description: 'The VMs are updated to the latest version and rebootet'
   affected:
     - '/infrastructure/gwdg-esx'
