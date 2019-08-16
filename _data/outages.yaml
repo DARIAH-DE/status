@@ -1,4 +1,10 @@
 ---
+- title: 'Some DARIAH-DE Services are currently not available'
+  date_start: '2019-08-16'
+  hide: false
+  description: 'Due to infrastructure failure some DARIAH-DE Services are currently not available! We apologize for the inconvenience! Please have a look at the <a href="https://info.gwdg.de/news/update-3-stoerung-speicher-fuer-esx-cluster/">GWDG News</a> for more information!'
+  affected:
+    - '/infrastructure/gwdg-esx'
 - title: 'TextGrid website and textgridrep.org not available'
   date_start: '2019-05-16'
   hide: true
