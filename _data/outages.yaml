@@ -1,7 +1,7 @@
 ---
 - title: 'TextGrid Storage Services are not available'
   date_start: '2019-11-14'
-  hide: false
+  hide: true
   description: 'Due to maintenance the TextGrid storage services are currently not available! We apologize for the inconvenience! Please have a look at <a href="https://info.gwdg.de/news/en/maintenance-group-directories-with-namesuffix-special/">GWDG News</a> for more information!'
   affected:
     - '/infrastructure/gwdg-stornext'
