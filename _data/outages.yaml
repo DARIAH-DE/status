@@ -1,4 +1,10 @@
 ---
+- title: 'TextGrid Storage Services are not available'
+  date_start: '2019-11-14'
+  hide: false
+  description: 'Due to infrastructure failure the TextGrid storage services are currently not available! We apologize for the inconvenience! We already are working on it...'
+  affected:
+    - '/infrastructure/gwdg-stornext'
 - title: 'Some DARIAH-DE Services are currently not available'
   date_start: '2019-08-16'
   hide: true
