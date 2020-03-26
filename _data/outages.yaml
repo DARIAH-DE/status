@@ -1,4 +1,10 @@
 ---
+- title: 'TextGrid Storage Service System Maintenance'
+  date_start: '2020-03-26 15:00'
+  hide: false
+  description: 'Due to Storage maintenance TextGridLab and TextGridRep will not be available. We apologise for the inconvenience!'
+  affected:
+    - '/infrastructure/gwdg-stornext'
 - title: 'TextGrid Storage Services are not available'
   date_start: '2019-11-14'
   hide: true
