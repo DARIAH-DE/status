@@ -6,11 +6,3 @@
   description: 'Due to Storage maintenance TextGridLab and TextGridRep will not be available. We apologise for the inconvenience!'
   affected:
     - '/infrastructure/gwdg-stornext'
-- title: 'System Maintenance'
-  date_start: '2019-07-04 15:00'
-  date_end: '2019-07-04 19:00'
-  hide: true
-  description: 'The VMs are updated to the latest version and rebootet'
-  affected:
-    - '/infrastructure/gwdg-esx'
-    - '/infrastructure/gwdg-cloud'

@@ -1,10 +1,29 @@
 ---
+- title: 'TextGrid Storage Services are not available'
+  date_start: '2019-11-14'
+  date_end: '2019-11-15'
+  description: 'Due to maintenance the TextGrid storage services are currently not available! We apologize for the inconvenience! Please have a look at <a href="https://info.gwdg.de/news/en/maintenance-group-directories-with-namesuffix-special/">GWDG News</a> for more information!'
+  affected:
+    - '/infrastructure/gwdg-stornext'
+- title: 'Some DARIAH-DE Services are currently not available'
+  date_start: '2019-08-16'
+  date_end: '2019-08-17'
+  description: 'Due to infrastructure failure some DARIAH-DE Services are currently not available! We apologize for the inconvenience! Please have a look at the <a href="https://info.gwdg.de/news/update-3-stoerung-speicher-fuer-esx-cluster/">GWDG News</a> for more information!'
+  affected:
+    - '/infrastructure/gwdg-esx'
 - title: 'Some DARIAH-DE Services are currently not available'
   date_start: '2019-08-15'
   date_end: '2019-08-16'
   description: 'Due to infrastructure failure some DARIAH-DE Services are currently not available! We apologize for the inconvenience! Please have a look at the <a href="https://info.gwdg.de/news/update-3-stoerung-speicher-fuer-esx-cluster/">GWDG News</a> for more information!'
   affected:
     - '/infrastructure/gwdg-esx'
+- title: 'System Maintenance'
+  date_start: '2019-07-04 15:00'
+  date_end: '2019-07-04 19:00'
+  description: 'The VMs are updated to the latest version and rebootet'
+  affected:
+    - '/infrastructure/gwdg-esx'
+    - '/infrastructure/gwdg-cloud'
 - title: 'TextGrid website and textgridrep.org not available'
   date_start: '2019-05-16'
   date_end: '2019-05-20'

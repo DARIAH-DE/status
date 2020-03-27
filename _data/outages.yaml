@@ -5,15 +5,3 @@
   description: 'Due to Storage maintenance TextGridLab and TextGridRep will not be available. We apologise for the inconvenience!'
   affected:
     - '/infrastructure/gwdg-stornext'
-- title: 'TextGrid Storage Services are not available'
-  date_start: '2019-11-14'
-  hide: true
-  description: 'Due to maintenance the TextGrid storage services are currently not available! We apologize for the inconvenience! Please have a look at <a href="https://info.gwdg.de/news/en/maintenance-group-directories-with-namesuffix-special/">GWDG News</a> for more information!'
-  affected:
-    - '/infrastructure/gwdg-stornext'
-- title: 'Some DARIAH-DE Services are currently not available'
-  date_start: '2019-08-16'
-  hide: true
-  description: 'Due to infrastructure failure some DARIAH-DE Services are currently not available! We apologize for the inconvenience! Please have a look at the <a href="https://info.gwdg.de/news/update-3-stoerung-speicher-fuer-esx-cluster/">GWDG News</a> for more information!'
-  affected:
-    - '/infrastructure/gwdg-esx'
