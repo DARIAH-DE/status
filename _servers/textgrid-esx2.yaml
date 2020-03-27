@@ -1,6 +1,6 @@
 ---
 title: 'textgrid-esx2.gwdg.de'
 dependencies:
-  - '/infrastructure/gwdg-stornext'
+  - '/infrastructure/gwdg-netapp'
   - '/infrastructure/gwdg-esx'
 ---
