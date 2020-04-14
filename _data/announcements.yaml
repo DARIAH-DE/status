@@ -1,4 +1,12 @@
 ---
+- title: 'DARIAH-DE Website not available'
+  date_start: '2020-04-14 15:00'
+  date_end: '2020-04-15 19:00'
+  hide: true
+  description: 'Diese Seite ist vorübergehend nicht erreichbar. Wir arbeiten bereits an der Behebung des Problems und bitten um Entschuldigung. / This website is temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience.'
+  affected:
+    - '/services/website'
+
 - title: 'System Maintenance'
   date_start: '2020-03-26 15:00'
   date_end: '2020-03-26 19:00'
