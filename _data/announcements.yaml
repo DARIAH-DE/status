@@ -1,9 +1,8 @@
 ---
-- title: 'System Maintenance'
-  date_start: '2020-04-23 15:00'
-  date_end: '2020-04-23 18:00'
-  hide: true
-  description: 'The DARIAH AAI will be migrated to new machines on 2020-04-23, together with a technology switch from Shibboleth to simpleSAMLphp. Services which require a login won`t be available from 15h until 18h.'
+- title: 'Maitenance on TextGrid Repository Website'
+  date_start: '2020-04-24 14:00'
+  date_end: '2020-04-27 19:00'
+  hide: false
+  description: 'Die TextGrid Repository Webseite wird vorübergehend nicht erreichbar sein. Wir bitten um Entschuldigung. / The TextGrid Repository website will be temporarily unavailable. We apologize for any inconvenience.'
   affected:
-    - '/infrastructure/gwdg-esx'
-    - '/infrastructure/gwdg-cloud'
+    - '/services/tgrep'
