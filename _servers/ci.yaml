@@ -2,4 +2,5 @@
 title: 'ci.de.dariah.eu'
 dependencies:
   - '/infrastructure/gwdg-esx'
+  - '/infrastructure/gwdg-stornext'
 ---
