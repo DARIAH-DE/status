@@ -1,5 +1,11 @@
 ---
 - title: 'TextGrid Repository Website not available'
+  date_start: '2020-09-28 11:40'
+  hide: false
+  description: 'Der Autorisierungsserver (PDP) der DARIAH-AAI ist vorübergehend nicht erreichbar. Wir arbeiten bereits an der Behebung des Problems und bitten um Entschuldigung. / The autorization service of the DARIAH AAI is temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience.'
+  affected:
+    - '/services/pdp'
+- title: 'TextGrid Repository Website not available'
   date_start: '2020-04-24 14:00'
   hide: true
   description: 'Die TextGrid Repository Webseite ist vorübergehend nicht erreichbar. Wir arbeiten bereits an der Behebung des Problems und bitten um Entschuldigung. / The TextGrid Repository website is temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience.'
