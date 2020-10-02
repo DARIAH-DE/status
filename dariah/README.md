@@ -7,6 +7,43 @@ You can add your DARIAH Service by looking at the following templates:
   * _includes/embed.html
   * _layouts/embed.html
 
+You then will get status messages in the embed.html such as:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>DARIAH-DE Service Status</title>
+    <link rel="stylesheet" type="text/css" href="/dariah/embed.css"/>
+  </head>
+  <body>
+
+    <div class="geobrowser_status error">
+      <!-- dh_geobrowser_is_actually_affected -->
+      <p lang="en">
+        <b>Authorization Service of the DARIAH AAI temporarily unavailable</b><br/>
+        Effective from <time datetime="2020-10-01 9:00">2020-10-01 9:00</time>.
+        <br/>
+        The authorization service of the DARIAH AAI is temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience.
+      </p>
+    </div>
+
+    <div class="repository_status warning">
+      <!-- dh_repository_is_actually_affected -->
+      <p lang="en">
+        <b>Maitenance on DARIAH-DE Repository Website</b><br/>
+        Effective from <time datetime="2020-10-11 14:00">2020-10-11 14:00</time>.
+       <br/>
+        The DARIAH-DE Repository will be temporarily unavailable. We apologize for any inconvenience!
+      </p>
+    </div>
+
+  </body>
+</html>
+```
+
 Then use JavaScript to embed the DARIAH-DE Error and Warning Status Messages however you like:
 
 ```
