@@ -2,12 +2,12 @@
   Check whether DARIAH-DE services are affacted by an `item` of `itemtyp` outage or announcement and render the output.
 {%- endcomment -%}
 
-
 {% comment %} Load DH services {% endcomment %}
 {% assign publikator = site.services | where:"id", '/services/publikator' | first %}
 {% assign dariah-repository = site.services | where:"id", '/services/dariah-repository' | first %}
 {% assign geobrowser = site.services | where:"id", '/services/geobrowser' | first %}
 
+{% comment %} Capture affected services {% endcomment %}
 {% capture publikator_affected %}
   {% for affected_item in include.item.affected %}
     {% include check_service.html affected_item=affected_item service=publikator %}
@@ -35,9 +35,9 @@
   {%- if dariah-repository_affected contains "yepp" -%}<!-- dh_repository_is_actually_affected -->{% endif -%}
   {%- if geobrowser_affected contains "yepp" -%}<!-- dh_geobrowser_is_actually_affected -->{% endif -%}
   <p lang="en">
-    <b>{{ include.item.title }}</b><br/>
+  <b>{{ include.item.title }}</b><br/>
     {% include timestamp.html %}
     <br/>
-    {{ include.item.description | markdownify | remove: '<p>' | remove: '</p>' }}<br/>
+    {{ include.item.description | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 </div>
