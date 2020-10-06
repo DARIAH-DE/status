@@ -4,16 +4,18 @@ This subdirectory contains status notifications for DARIAH-DE Services. If a ser
 
 For testing please use the URL <https://raw.githubusercontent.com/DARIAH-DE/status/master/dariah/test/embed.html> and do add needed status messages there:
 
-  * ./dariah/test/embed.html
+  * [/dariah/test/embed.html](./test/embed.html)
+
 
 You can add your DARIAH Service by looking at the following template files and extending all necessary passages  (Geo-Browser, Publikator, and DARIAH-DE Repository):
 
-  * ./_includes/embed.html
-  * ./_layouts/embed.html
+  * [/_includes/embed.html](../_includes/embed.html)
+  * [/_layouts/embed.html](../_layouts/embed.html)
+
 
 You then will get status messages in the embed.html such as:
 
-```
+```html
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -50,7 +52,7 @@ You then will get status messages in the embed.html such as:
 
 Then use JavaScript to embed the DARIAH-DE Error and Warning Status Messages however you like (example without using JQuery but a relatively new JavaScript framework):
 
-```
+```javascript
 fetch('https://dariah-de.github.io/status/dariah/embed.html')
     .then(function (response) {
     return response.text();
