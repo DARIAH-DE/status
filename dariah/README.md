@@ -2,7 +2,7 @@
 
 This subdirectory contains status notifications for DARIAH-DE Services. If a service is affected by error or maintenance messages, the HTML file <https://dariah-de.github.io/status/dariah/embed.html> will contain a message for a certain service, such as Geo-Browser, Publikator, and DARIAH-DE Repository.
 
-For testing please use the URL < https://raw.githubusercontent.com/DARIAH-DE/status/master/dariah/test/embed.html> and do add needed status messages there:
+For testing please use the URL <https://raw.githubusercontent.com/DARIAH-DE/status/master/dariah/test/embed.html> and do add needed status messages there:
 
   * ./dariah/test/embed.html
 
