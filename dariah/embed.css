@@ -9,14 +9,14 @@
 }
 .dariah-status-message-error {
   background-color: #fcc;
-  border: 1px solid;
+  border: 1px solid red;
   color: black;
   padding: 12px;
   border-radius: 6px;
 }
 .dariah-status-message-warning {
   background-color: #ffc;
-  border: 1px solid;
+  border: 1px solid orange;
   color: black;
   padding: 12px;
   border-radius: 6px;
