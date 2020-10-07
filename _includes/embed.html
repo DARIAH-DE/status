@@ -29,7 +29,7 @@
 {%- if publikator_affected contains "yepp" -%} publikator_status {% endif -%}
 {%- if dariah-repository_affected contains "yepp" -%} dariah-repository_status {% endif -%}
 {%- if geobrowser_affected contains "yepp" -%} geobrowser_status {% endif -%}
- {{ include.itemtype }}">
+ dariah-status-message-{{ include.itemtype }}">
   {% comment %} machine-readable strings to check affectedness {% endcomment %}
   {%- if publikator_affected contains "yepp" -%}<!-- publikator_is_actually_affected -->{% endif -%}
   {%- if dariah-repository_affected contains "yepp" -%}<!-- dariah-repository_is_actually_affected -->{% endif -%}
