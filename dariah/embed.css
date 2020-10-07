@@ -11,14 +11,14 @@
   background-color: #fcc;
   border: 1px solid red;
   color: black;
-  padding: 8px;
+  padding: 12px;
   border-radius: 8px;
 }
 .dariah-status-message-warning {
   background-color: #ffc;
   border: 1px solid yellow;
   color: black;
-  padding: 8px;
+  padding: 12px;
   border-radius: 8px;
 }
 .dariah-status-message-failed {
@@ -27,7 +27,7 @@
 .dariah-status-message-ok {
   background-color: #cfc;
 /*  display: none; */
-  padding: 8px;
+  padding: 12px;
   border-radius: 8px;
 }
 .dariah-status-message-pending {
