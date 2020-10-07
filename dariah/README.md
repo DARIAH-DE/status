@@ -73,3 +73,9 @@ fetch('https://dariah-de.github.io/status/dariah/embed.html')
     console.warn('ERROR fetching DARIAH-DE status!', err);
 });
 ```
+
+Do not forget to include the CSS styles if needed:
+
+```
+<link rel="stylesheet" href="https://dariah-de.github.io/status/dariah/embed.css">
+```
