@@ -10,6 +10,7 @@
 .error {
   background-color: #fcc !important;
   border: 1px solid red !important;
+  color: black;
   padding: 8px;
   border-radius: 8px;
 }
@@ -17,6 +18,8 @@
   background-color: #ffc !important;
   border: 1px solid yellow !important;
   color: black;
+  padding: 8px;
+  border-radius: 8px;
 }
 .failed {
   border: 2px solid red;
