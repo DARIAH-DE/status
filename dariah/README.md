@@ -76,6 +76,6 @@ fetch('https://dariah-de.github.io/status/dariah/embed.html')
 
 Do not forget to include the CSS styles if needed:
 
-```
+```html
 <link rel="stylesheet" href="https://dariah-de.github.io/status/dariah/embed.css">
 ```
