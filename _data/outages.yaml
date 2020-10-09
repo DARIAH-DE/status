@@ -1,7 +1,8 @@
 ---
 - title: 'Network Maintenance Outage on VM Cluster'
   date_start: '2020-10-08 20:00'
-  hide: false
+  date_end: '2020-10-09 12:20'
+  hide: true
   description: 'Some DARIAH-DE Services are temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience!'
   affected:
     - '/infrastructure/gwdg-esx'
