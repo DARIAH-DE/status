@@ -1,8 +1,10 @@
 ---
-title: 'Datasheet Editor'
+title: 'DARIAH-DE Datasheet Editor'
 description: ''
 website: 'https://geobrowser.de.dariah.eu/edit'
 dependencies:
-  - '/middlewares/dariah-openstorage'
+  - '/middlewares/dariah-ownstorage'
+  - '/middlewares/resources'
+  - '/middlewares/getty'
   - '/servers/ref'
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'GeoServer'
-description: ''
-website: 'http://ref.dariah.eu/geoserver/web/'
+description: 'The GeoServer Geo-Browser is using for displaying historical maps.'
+website: 'https://ref.dariah.eu/geoserver/web/'
 dependencies:
   - '/servers/ref'
 ---
