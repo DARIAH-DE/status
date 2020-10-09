@@ -7,16 +7,3 @@
   affected:
     - '/infrastructure/gwdg-esx'
     - '/servers/auth'
-- title: 'Authorization Service of the DARIAH AAI temporarily unavailable'
-  date_start: '2020-09-28 11:40'
-  date_end:: '2020-10-01 15:43'
-  hide: true
-  description: 'Der Autorisierungsserver (PDP) der DARIAH-AAI ist vorübergehend nicht erreichbar. Wir arbeiten bereits an der Behebung des Problems und bitten um Entschuldigung. / The authorization service of the DARIAH AAI is temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience.'
-  affected:
-    - '/services/pdp'
-- title: 'TextGrid Repository Website not available'
-  date_start: '2020-04-24 14:00'
-  hide: true
-  description: 'Die TextGrid Repository Webseite ist vorübergehend nicht erreichbar. Wir arbeiten bereits an der Behebung des Problems und bitten um Entschuldigung. / The TextGrid Repository website is temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience.'
-  affected:
-    - '/services/tgrep'
