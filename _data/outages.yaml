@@ -1,4 +1,10 @@
 ---
+- title: 'Network Maintenance ESX-Cluster'
+  date_start: '2020-10-09 8:00'
+  hide: false
+  description: 'Some DARIAH-DE services are temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience!'
+  affected:
+    - '/infrastructure/gwdg-esx'
 - title: 'Authorization Service of the DARIAH AAI temporarily unavailable'
   date_start: '2020-09-28 11:40'
   date_end:: '2020-10-01 15:43'
