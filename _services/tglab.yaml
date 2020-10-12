@@ -6,5 +6,4 @@ dependencies:
   - '/middlewares/tgauth'
   - '/middlewares/tgcrud'
   - '/middlewares/tgsearch-nonpublic'
-  - '/servers/textgrid-esx2'
 ---

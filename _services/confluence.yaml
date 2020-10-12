@@ -1,8 +1,7 @@
 ---
-title: 'DARIAH Wiki'
+title: 'DARIAH-DE Wiki'
 description: 'A common Wiki for the exchange of all DARIAH users. Specialized wikis for projects. A separate wiki for you and your colleagues.'
 website: 'https://de.dariah.eu/wikis'
 dependencies:
-  - '/infrastructure/gwdg-esx'
   - '/servers/wiki'
 ---

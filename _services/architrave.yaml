@@ -4,6 +4,6 @@ website: 'https://architrave.eu'
 provider: 'SUB Göttingen'
 dependencies:
   - '/middlewares/tgdigilib'
-  - '/servers/auth'
+  - '/middleware/tgauth'
   - '/servers/architrave'
 ---
