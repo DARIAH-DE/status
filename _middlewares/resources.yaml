@@ -1,0 +1,7 @@
+---
+title: 'Common DARIAH-DE Resources'
+description: 'All common resources many services are referring to, such as JavaScript files, CSS files, and common images'
+website: 'https://res.de.dariah.eu'
+dependencies:
+  - '/servers/res'
+---
