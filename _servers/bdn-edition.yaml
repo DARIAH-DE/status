@@ -1,0 +1,5 @@
+---
+title: 'bdn-edition.de'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+---

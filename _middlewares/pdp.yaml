@@ -1,0 +1,8 @@
+---
+title: 'Policy Decision Point (PDP)'
+description: 'DARIAH AAI - Authorization'
+website: 'https://pdp.de.dariah.eu/'
+dependencies:
+  - '/servers/pdp'
+  - '/middlewares/aai'
+---

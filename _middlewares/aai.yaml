@@ -1,0 +1,7 @@
+---
+title: 'DARIAH AAI Shibboleth'
+description: 'DARIAH AAI - Authentification'
+dependencies:
+  - '/servers/auth'
+  - '/middlewares/dariahldap'
+---
