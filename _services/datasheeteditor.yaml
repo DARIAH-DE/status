@@ -3,8 +3,8 @@ title: 'DARIAH-DE Datasheet Editor'
 description: ''
 website: 'https://geobrowser.de.dariah.eu/edit'
 dependencies:
+  - '/servers/ref'
   - '/middlewares/dariah-ownstorage'
   - '/middlewares/resources'
   - '/middlewares/getty'
-  - '/servers/ref'
 ---

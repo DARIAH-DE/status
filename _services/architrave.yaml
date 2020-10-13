@@ -3,7 +3,7 @@ title: 'ARCHITRAVE Portal'
 website: 'https://architrave.eu'
 provider: 'SUB Göttingen'
 dependencies:
+  - '/servers/architrave'
   - '/middlewares/tgdigilib'
   - '/middleware/tgauth'
-  - '/servers/architrave'
 ---

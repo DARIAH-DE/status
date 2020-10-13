@@ -1,8 +1,10 @@
 ---
-title: 'Data Federation Architecture (DME, CR, GS, Cosmotool)'
-description: 'DME, CR, GS, Cosmotool'
+title: 'DARIAH-DE Data Federation Architecture (DFA)'
+description: 'Generic Search, Collection Registry, Data Modeling Environment, DARIAH-DE Repository'
 website: 'https://dfa.de.dariah.eu/'
 dependencies:
-  - '/infrastructure/gwdg-cloud'
-  - '/servers/dfa'
+  - '/services/dme'
+  - '/services/cr'
+  - '/services/gs'
+  - '/services/dariah-repository'
 ---

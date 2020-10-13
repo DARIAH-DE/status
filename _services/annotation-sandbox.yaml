@@ -2,4 +2,5 @@
 title: 'DARIAH-DE Annotation Sandbox'
 dependencies:
   - '/servers/annotation'
+  - '/middlewares/aai'
 ---

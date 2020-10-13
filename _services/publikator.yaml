@@ -4,7 +4,8 @@ description: ''
 website: 'https://repository.de.dariah.eu/publikator'
 teresah_included: false
 dependencies:
+  - '/servers/repository-de-dariah-eu'
+  - '/middlewares/aai'
   - '/services/dariah-ownstorage'
   - '/services/dhpublish'
-  - '/servers/repository-de-dariah-eu'
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'TG-publish'
 description: 'The TG-publish service provides methods and API for publishing objects to the TextGrid Repository.'
-teresah_included: true
 dependencies:
   - '/middlewares/tgpid'
   - '/middlewares/tgcrud'

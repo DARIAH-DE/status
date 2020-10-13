@@ -4,5 +4,5 @@ description: ''
 website: 'https://cdstar.de.adriah.eu/dariah/'
 dependencies:
   - '/servers/cdstar'
-  - '/servers/pdp'
+  - '/middlewares/pdp'
 ---

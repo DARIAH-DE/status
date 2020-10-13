@@ -1,8 +1,7 @@
 ---
-title: 'Icinga Monitoring'
-description: 'Central Monitoring system'
+title: 'DARIAH-DE Monitoring'
+description: 'Central Icinga monitoring system'
 website: 'https://icinga.de.dariah.eu/'
 dependencies:
-  - '/infrastructure/gwdg-esx'
   - '/servers/icinga'
 ---

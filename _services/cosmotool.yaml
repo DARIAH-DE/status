@@ -1,8 +1,7 @@
 ---
-title: 'Data Federation Architecture (Cosmotool)'
-description: 'DFA Cosmotool'
-website: 'https://dfa.de.dariah.eu/'
+title: 'DARIAH-DE Cosmotool'
+description: 'DARIAH-DE Cosmotool'
+website: 'https://cosmotool.de.dariah.eu/cosmotool/'
 dependencies:
-  - '/infrastructure/gwdg-cloud'
-  - '/servers/dfa'
+  - '/servers/cosmotool'
 ---

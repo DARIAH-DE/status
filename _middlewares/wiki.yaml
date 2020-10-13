@@ -1,8 +1,0 @@
----
-title: 'DARIAH-DE Wiki'
-description: 'DARIAH-DE Wiki'
-website: 'https://wiki.de.dariah.eu'
-teresah_included: false
-dependencies:
-  - '/servers/wiki'
----

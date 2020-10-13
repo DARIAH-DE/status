@@ -3,8 +3,8 @@ title: 'DARIAH-DE Geo-Browser'
 description: 'The DARIAH-DE Geo-Browser is a web-based tool for analyzing and visualizing space-time relations of data and source collections.'
 website: 'https://geobrowser.de.dariah.eu'
 dependencies:
+  - '/servers/ref'
   - '/middlewares/dariah-ownstorage'
   - '/middlewares/geoserver'
   - '/middlewares/resources'
-  - '/servers/ref'
 ---

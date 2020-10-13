@@ -1,8 +1,8 @@
 ---
-title: 'Data Federation Architecture (DME)'
+title: 'DARIAH-DE Data Modeling Environment (DME)'
 description: 'DFA DME'
-website: 'https://dfa.de.dariah.eu/'
+website: 'https://dm.de.dariah.eu'
 dependencies:
-  - '/infrastructure/gwdg-cloud'
   - '/servers/dfa'
+  - '/middlewares/aai'
 ---

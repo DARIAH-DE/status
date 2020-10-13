@@ -3,7 +3,6 @@ title: 'Fontane Notizbücher'
 website: 'https://fontane-nb.dariah.eu/index.html'
 provider: 'SUB Göttingen'
 dependencies:
+  - '/servers/fontane-nb'
   - '/middlewares/tgcrud'
-  - '/infrastructure/gwdg-cloud'
-  - '/servers/res'
 ---

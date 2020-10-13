@@ -3,5 +3,5 @@ title: 'Bibliothek der Neologie - Portal'
 website: 'https://bdn-edition.de'
 provider: 'SUB Göttingen'
 dependencies:
-  - '/infrastructure/gwdg-cloud'
+  - '/servers/bdn-edition'
 ---
