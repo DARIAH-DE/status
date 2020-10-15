@@ -53,7 +53,7 @@ Liquid Exception: Liquid error (line xx): Nesting too deep in fulllist.md
 
 [^1]: Limiting recursion depth doesn't help, as than by the current design all services connected to the cycle would be affected by any outage.
 
-The full list of all resolved dependencies can be found [here]({{ site.baseurl }}{% link fulllist.md %}).
+The full list of all resolved dependencies can be found [here]({{ site.baseurl }}{% link fulllist.me %}).
 
 ## Outages and Announcements
 
