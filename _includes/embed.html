@@ -1,1 +1,43 @@
-<div/>
+{%- comment -%}
+  Check whether DARIAH-DE services are affacted by an `item` of `itemtyp` outage or announcement and render the output.
+{%- endcomment -%}
+
+{% comment %} Load DH services {% endcomment %}
+{% assign publikator = site.services | where:"id", '/services/publikator' | first %}
+{% assign dariah-repository = site.services | where:"id", '/services/dariah-repository' | first %}
+{% assign geobrowser = site.services | where:"id", '/services/geobrowser' | first %}
+
+{% comment %} Capture affected services {% endcomment %}
+{% capture publikator_affected %}
+  {% for affected_item in include.item.affected %}
+    {% include check_service.html affected_item=affected_item service=publikator %}
+  {% endfor %}
+{% endcapture %}
+{% capture dariah-repository_affected %}
+  {% for affected_item in include.item.affected %}
+    {% include check_service.html affected_item=affected_item service=dariah-repository %}
+  {% endfor %}
+{% endcapture %}
+{% capture geobrowser_affected %}
+  {% for affected_item in include.item.affected %}
+    {% include check_service.html affected_item=affected_item service=geobrowser %}
+  {% endfor %}
+{% endcapture %}
+
+{% comment %} Process outage data {% endcomment %}
+<div class="
+{%- if publikator_affected contains "yepp" -%} publikator_status {% endif -%}
+{%- if dariah-repository_affected contains "yepp" -%} dariah-repository_status {% endif -%}
+{%- if geobrowser_affected contains "yepp" -%} geobrowser_status {% endif -%}
+ dariah-status-message-{{ include.itemtype }}">
+  {% comment %} machine-readable strings to check affectedness {% endcomment %}
+  {%- if publikator_affected contains "yepp" -%}<!-- publikator_is_actually_affected -->{% endif -%}
+  {%- if dariah-repository_affected contains "yepp" -%}<!-- dariah-repository_is_actually_affected -->{% endif -%}
+  {%- if geobrowser_affected contains "yepp" -%}<!-- geobrowser_is_actually_affected -->{% endif -%}
+  <p lang="en">
+  <b>{{ include.item.title }}</b><br/>
+    {% include timestamp.html %}
+    <br/>
+    {{ include.item.description | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+</div>

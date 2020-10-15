@@ -5,5 +5,5 @@ website: 'https://repository.de.dariah.eu/doc/services/submodules/tg-crud/servic
 teresah_included: true
 dependencies:
   - '/servers/repository-de-dariah-eu'
-  - '/services/dariah-publicstorage'
+  - '/middlewares/dariah-publicstorage'
 ---

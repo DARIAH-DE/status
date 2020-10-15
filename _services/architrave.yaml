@@ -5,5 +5,5 @@ provider: 'SUB Göttingen'
 dependencies:
   - '/servers/architrave'
   - '/middlewares/tgdigilib'
-  - '/middleware/tgauth'
+  - '/middlewares/tgauth'
 ---
