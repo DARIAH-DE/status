@@ -14,7 +14,7 @@ if [[ $? -gt 0 ]]; then echo "YAML parser not found."; exit; fi;
 echo "  -->  found YAML parser";
 
 # prepare temporary copy of the files
-for FILE in {_infrastructure,_servers,_middlewares,_services}/*.yaml; do
+for FILE in {_data,_infrastructure,_servers,_middlewares,_services}/*.yaml; do
   cp $FILE $FILE.tmp;
   # remove YAML header marker from files
   # NOTE on MAC please use "gsed" instead of "sed"!
@@ -30,7 +30,7 @@ declare -a array=($LIST)
 echo "  -->  the list contains ${#array[@]} items"
 
 # work on the temporary files
-for FILE in {_infrastructure,_servers,_middlewares,_services}/*.tmp; do
+for FILE in {_data,_infrastructure,_servers,_middlewares,_services}/*.tmp; do
   NAME=$(sed -e "s _  g" -e "s \.yaml\.tmp  g" <<< $FILE)
   # give the name at first and print YAML errors then
   echo -n -e "  -->  $NAME:${RED}${BOLD}"
