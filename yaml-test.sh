@@ -33,9 +33,9 @@ echo "  -->  the list contains ${#array[@]} items"
 for FILE in {_infrastructure,_servers,_middlewares,_services}/*.tmp; do
   NAME=$(sed -e "s _  g" -e "s \.yaml\.tmp  g" <<< $FILE)
   # give the name at first and print YAML errors then
-  echo -n -e "$NAME:${RED}${BOLD}"
+  echo -n -e "  -->  $NAME:${RED}${BOLD}"
   DEP=($(yaml get $FILE dependencies));
-  echo "  -->  $NAME: found ${#DEP[@]} dependencies";
+  echo " found ${#DEP[@]} dependencies";
 
   for DEPi in ${DEP[*]}; do
     [[ ${array[*]} =~ "$DEPi" ]] && true || echo -e "       ${RED}${BOLD}$(sed 's/./ /g' <<< $NAME): $DEPi nil.${NORM}${NC}"
