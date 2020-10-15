@@ -35,9 +35,10 @@ for FILE in {_infrastructure,_servers,_middlewares,_services}/*.tmp; do
   # give the name at first and print YAML errors then
   echo -n -e "  -->  $NAME:${RED}${BOLD}"
   DEP=($(yaml get $FILE dependencies));
-  echo " found ${#DEP[@]} dependencies";
+  echo -e "${NORM}${NC} found ${#DEP[@]} dependencies";
 
   for DEPi in ${DEP[*]}; do
+    [[ "$DEPi" =~ ^/.* ]] && true || echo -e "       ${RED}${BOLD}$(sed 's/./ /g' <<< $NAME): $DEPi has no starting slash.${NORM}${NC}"
     [[ ${array[*]} =~ "$DEPi" ]] && true || echo -e "       ${RED}${BOLD}$(sed 's/./ /g' <<< $NAME): $DEPi nil.${NORM}${NC}"
   done;
 
