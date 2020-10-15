@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 # test and validate YAML files for DARIAH-DE status
 # requires YAML CLI parser from npm, do npm install -g yaml-cli
 
@@ -28,8 +28,11 @@ echo "the list contains ${#array[@]} items"
 # work on the temporary files
 for FILE in {_infrastructure,_servers,_middlewares,_services}/*.tmp; do
   NAME=$(sed -e "s _  g" -e "s \.yaml\.tmp  g" <<< $FILE)
+  # give the name at first and print YAML errors then
+  echo -n -e "$NAME:${RED}${BOLD}"
   DEP=($(yaml get $FILE dependencies));
-  echo "$NAME: found ${#DEP[@]} dependencies";
+  # reset terminal font styles for information on dependencies.
+  echo -e "${NORM}${NC} found ${#DEP[@]} dependencies";
   
   for DEPi in ${DEP[*]}; do
     [[ ${array[*]} =~ "$DEPi" ]] && true || echo -e "${RED}${BOLD}$(sed 's/./ /g' <<< $NAME): $DEPi nil.${NORM}${NC}"
