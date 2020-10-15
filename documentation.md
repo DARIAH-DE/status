@@ -41,7 +41,7 @@ If a dependency is listed that does not exist, the following error occurs:
 Liquid Exception: Liquid error (line 6): divided by 0 in fulllist.md
 ```
 
-Then please refer to chapter `debugging` below!
+Then please refer to chapter `Debugging YAML dependencies` below!
 
 
 Dependency cycles, i.e. circular dependencies, are not allowed[^1].
@@ -104,18 +104,8 @@ are listed on the [current data]({{ site.baseurl }}{% link currentdata.md %}) pa
 The DARIAH-DE Status Jekyll page also includes the page with all DARIAH-DE services to be harvested by [TERESAH](http://teresah.dariah.eu/).
 This includes all services except those explicitly excluded and all middlewares that are explicitly included, as long they have a `title`, `description` and `website` element.
 
-## Debugging of
+## Debugging YAML dependencies
 
-To debug failures in your dpendencies, you can debug the yaml files.
-
-1. Installing yaml-cli on your system:
-
-```
-$ sudo npm install -g yaml-cli
-
-# Please be sure that  ~/.npm-global/bin is contained in your path!
-```
-
-2. 
+In case you get `divided by 0` errors, please debug missing YAML file dependencies by using the `yaml-test.sh`script. Please note, that on macs you may have to use `gsed` (and install via brew or macports before) instead of `sed`!
 
 ---
