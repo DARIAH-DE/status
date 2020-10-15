@@ -14,7 +14,6 @@
 {% endcapture %}
 {% capture tgrep_affected %}
   {% for affected_item in include.item.affected %}
-    {% include check_service.html affected_item=affected_item service=tgrep %}
   {% endfor %}
 {% endcapture %}
 

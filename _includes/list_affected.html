@@ -7,11 +7,9 @@
 {%- for affected_item in include.affected -%}
 
   {%- comment %} Make sure the item in the dependency exists {% endcomment -%}
-  {%- include validate_item_exists.html item=affected_item -%}
 
   {%- for service in site.services -%}
 
-    {%- capture service_is_affected %}{% include check_service.html service=service affected_item=affected_item %}{% endcapture -%}
 
     {%- if service_is_affected contains "yepp" -%}
       {%- assign newservice = service.title | split: "; " -%}
