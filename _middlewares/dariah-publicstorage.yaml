@@ -1,6 +1,6 @@
 ---
 title: 'DARIAH-DE PublicStorage'
-description: '' ""
+description: ''
 website: 'https://cdstar.de.adriah.eu/dariah/'
 dependencies:
   - '/servers/cdstar'
