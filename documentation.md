@@ -6,13 +6,13 @@ It is automatically build on commit and deployed if successfully build. In case 
 
 ## The infrastructure and its components
 
-The DARIAH-DE infrastructure is modeled using [Jekyll Collections](https://jekyllrb.com/docs/collections/).
+The DARIAH-DE infrastructure is modelled using [Jekyll Collections](https://jekyllrb.com/docs/collections/).
 The model describes the infrastructure catalogue using four layers:
 
-1. Services
-2. Middlewares
-3. Servers
-4. Infrastructure
+1. Services (Services users are depending on only)
+2. Middlewares (Services/middlewares users AND other services/middlewares are depending on)
+3. Servers (Hosts only)
+4. Infrastructure (Infrastructure hosts are depending on)
 
 Any item is described by a collection entry with the following metadata preamble.
 

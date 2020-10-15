@@ -11,6 +11,7 @@
   {%- assign array_affected = list_affected | split: ";" %}
   affected_services:
   {%- for servicename in array_affected -%}
+    {{ site | jsonify | servicename }}
     {%- if servicename.size > 0 %}
     - '{{ servicename | strip }}'
     {%- endif -%}

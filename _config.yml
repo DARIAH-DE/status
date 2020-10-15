@@ -9,7 +9,8 @@ support_mail: 'support@de.dariah.eu'
 # Build settings
 markdown: kramdown
 highlighter: rouge
-#plugins:
+plugins:
+  - jekyll-debug
 
 collections:
   services:
