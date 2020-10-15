@@ -36,7 +36,7 @@ done;
 echo "${ARROW}copied YAML files to temp files";
 
 # prepare item list
-LIST=$(ls **/*.tmp | sed -e "s _ / g" -e "s \.yaml\.tmp  g")
+LIST=$(ls {_infrastructure,_servers,_middlewares,_services}/*.tmp | sed -e "s _ / g" -e "s \.yaml\.tmp  g")
 # make it a bash array
 declare -a array=($LIST)
 echo "${ARROW}the list contains ${#array[@]} items"
