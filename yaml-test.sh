@@ -60,7 +60,7 @@ for FILE in _data/*.tmp; do
   NAME=$(sed -e "s _  g" -e "s \.yaml\.tmp  g" <<< ${FILE})
   NUM_TOP_LEVEL_ARRAYS=$(grep --count ^\- ${FILE})
   echo -e "${ARROW}${NAME}:${RED}${BOLD}"
-  [[ NUM_TOP_LEVEL_ARRAYS -lt 1 ]] && echo -e "${ORANGE} No item in array." || true
+  [[ NUM_TOP_LEVEL_ARRAYS -lt 1 ]] && echo -e "${ORANGE} No item in array."
   for i in `seq 0 $((NUM_TOP_LEVEL_ARRAYS - 1))`; do
     AFF=($(yaml get ${FILE} ${i}.affected));
     echo -e "${NORM}${NC}${TAB}$(sed 's/./ /g' <<< $NAME) [$((i + 1))]: found ${#AFF[@]} affected items";
