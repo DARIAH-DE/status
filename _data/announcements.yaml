@@ -1,8 +1,8 @@
 ---
-- title: 'Maitenance on TextGrid Repository Website'
-  date_start: '2020-04-24 14:00'
-  date_end: '2020-04-27 19:00'
-  hide: true
-  description: 'Die TextGrid Repository Webseite wird vorübergehend nicht erreichbar sein. Wir bitten um Entschuldigung. / The TextGrid Repository website will be temporarily unavailable. We apologize for any inconvenience.'
+- title: 'short term Maintenance Authorization Service of the DARIAH AAI'
+  date_start: '2020-10-19 16:00'
+  date_end: '2020-10-09 17:00'
+  hide: false
+  description: 'There is a maintenance of the DARIAH AAI. The downtime should be in the minute range'
   affected:
-    - '/services/tgrep'
+    - '/servers/auth'
