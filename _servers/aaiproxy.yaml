@@ -1,0 +1,5 @@
+---
+title: 'aaiproxy.de.dariah.eu'
+dependencies:
+  - '/infrastructure/gwdg-esx'
+---
