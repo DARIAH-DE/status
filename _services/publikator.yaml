@@ -5,7 +5,7 @@ website: 'https://repository.de.dariah.eu/publikator'
 teresah_included: false
 dependencies:
   - '/servers/repository-de-dariah-eu'
-  - '/middlewares/aai'
   - '/middlewares/dariah-ownstorage'
+  - '/middlewares/resources'
   - '/services/dhpublish'
 ---

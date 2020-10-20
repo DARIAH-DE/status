@@ -1,8 +1,9 @@
 ---
 title: 'Fontane Notizbücher'
-website: 'https://fontane-nb.dariah.eu/index.html'
+website: 'https://fontane-nb.dariah.eu'
 provider: 'SUB Göttingen'
 dependencies:
   - '/servers/fontane-nb'
+  - '/middlewares/resources'
   - '/middlewares/tgcrud'
 ---
