@@ -108,4 +108,6 @@ This includes all services except those explicitly excluded and all middlewares 
 
 In case you get `divided by 0` errors, please debug missing YAML file dependencies by using the `yaml-test.sh`script. Please note, that on macs you may have to use `gsed` (and install via brew or macports before) instead of `sed`!
 
+The test will check missing files and missing leading slashes and show ERRORS and WARNINGS. The history.yaml file will only WARN in case of breaking dependencies, it is excluded from the internal code checks due minor relevance for the internal dependency status computations.
+
 ---
