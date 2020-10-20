@@ -4,7 +4,6 @@ description: 'The TextGrid repository is part of the Virtual Research Environmen
 website: 'https://textgridrep.org'
 dependencies:
   - '/servers/res'
-  - '/middlewares/resources'
   - '/middlewares/tgcrud'
   - '/middlewares/tgsearch-public'
   - '/middlewares/tgdigilib'
