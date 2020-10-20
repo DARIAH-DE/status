@@ -3,6 +3,6 @@ title: 'DARIAH AAI Shibboleth'
 description: 'DARIAH AAI - Authentification'
 dependencies:
   - '/servers/auth'
-  - '/servers/aai-proxy'
+  - '/servers/aaiproxy'
   - '/middlewares/dariahldap'
 ---
