@@ -1,7 +1,8 @@
 ---
 title: 'DARIAH-DE Datasheet Editor'
-description: ''
+description: 'The Datasheet Editor can be used to prepare and setup your data to be visualized within the DARIAH-DE Geo-Browser: Table data can be added, geocoordinates can be extracted from place names, and datasets can be shared with the world.'
 website: 'https://geobrowser.de.dariah.eu/edit'
+teresah_included: true
 dependencies:
   - '/servers/ref'
   - '/middlewares/dariah-ownstorage'

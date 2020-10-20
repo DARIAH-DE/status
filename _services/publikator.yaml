@@ -1,8 +1,8 @@
 ---
 title: 'DARIAH-DE Publikator'
-description: ''
+description: 'The entry point for importing collections and data into the DARIAH-DE Repository is the DARIAH-DE Publikator, which allows you to prepare, manage, and finally import your collections into the DARIAH-DE Repository using your favorite internet browser.'
 website: 'https://repository.de.dariah.eu/publikator'
-teresah_included: false
+teresah_included: true
 dependencies:
   - '/servers/repository-de-dariah-eu'
   - '/middlewares/dariah-ownstorage'

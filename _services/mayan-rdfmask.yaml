@@ -2,6 +2,7 @@
 title: 'Classicmayans RDFMask Installation'
 website: ''
 provider: 'SUB Göttingen'
+teresah_included: false
 dependencies:
   - '/servers/classicmayan'
   - '/middlewares/mayan-fuseki'

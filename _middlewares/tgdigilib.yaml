@@ -2,6 +2,7 @@
 title: 'TextGrid Digilib'
 description: 'Open Source Image Manipulation and Delivery Service'
 website: 'http://www.textgridlab.org/doc/services/submodules/tg-digilib/docs/index.html'
+teresah_included: true
 dependencies:
   - '/servers/textgrid-esx2'
   - '/middlewares/tgcrud'

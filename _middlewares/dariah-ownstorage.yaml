@@ -1,6 +1,6 @@
 ---
 title: 'DARIAH-DE OwnStorage'
-description: ''
+description: 'The Storage of DARIAH-DE that only a single user has access to.'
 website: 'https://cdstar.de.adriah.eu/dariah/'
 dependencies:
   - '/servers/cdstar'

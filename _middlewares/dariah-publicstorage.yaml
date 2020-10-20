@@ -1,6 +1,6 @@
 ---
 title: 'DARIAH-DE PublicStorage'
-description: ''
+description: 'The Storage of DARIAH-DE for read-only public access.'
 website: 'https://cdstar.de.adriah.eu/dariah/'
 dependencies:
   - '/servers/cdstar'

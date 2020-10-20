@@ -2,6 +2,7 @@
 title: 'Bibliothek der Neologie - Portal'
 website: 'https://bdn-edition.de'
 provider: 'SUB Göttingen'
+teresah_included: true
 dependencies:
   - '/servers/bdn-edition'
 ---

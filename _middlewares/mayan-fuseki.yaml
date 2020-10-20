@@ -2,6 +2,7 @@
 title: 'Classicmayans FUSEKI'
 description: 'FUSEKI as triplestore for classicmayan services.'
 website: ''
+teresah_included: false
 dependencies:
   - '/servers/classicmayan'
 ---
