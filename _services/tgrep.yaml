@@ -3,6 +3,7 @@ title: 'TextGrid Repository Portal'
 description: 'The TextGrid repository is part of the Virtual Research Environment TextGrid and is provided by DARIAH-DE.'
 website: 'https://textgridrep.org'
 dependencies:
+  - '/servers/res'
   - '/middlewares/resources'
   - '/middlewares/tgcrud'
   - '/middlewares/tgsearch-public'
