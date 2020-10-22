@@ -41,3 +41,8 @@ and
 bundle exec jekyll serve
 ```
 test
+
+## Network
+
+There is an interactive network graph available in the front end at `network.html`.
+This is build automatically and rendered with SigmaJS.
