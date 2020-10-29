@@ -1,8 +1,0 @@
----
-title: 'DARIAH-DE OwnStorage'
-description: ''
-website: ''
-dependencies:
-  - '/services/pdp'
-  - '/middlewares/cdstar'
----

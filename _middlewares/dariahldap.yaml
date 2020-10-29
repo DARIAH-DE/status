@@ -1,5 +1,8 @@
 ---
-title: 'DARIAH LDAP'
+title: 'DARIAH AAI LDAP'
+description: 'The LDAP database underlying the DARIAH AAI.'
+website: 'https://cdstar.de.adriah.eu/dariah/'
+teresah_included: false
 dependencies:
   - '/servers/auth'
 ---

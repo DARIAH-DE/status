@@ -1,0 +1,9 @@
+---
+title: 'DARIAH AAI Shibboleth'
+description: 'DARIAH Authentification & Authorization Infrastructure'
+website: 'https://de.dariah.eu/aai'
+dependencies:
+  - '/servers/auth'
+  - '/servers/aaiproxy'
+  - '/middlewares/dariahldap'
+---

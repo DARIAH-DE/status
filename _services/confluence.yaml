@@ -1,8 +1,10 @@
 ---
-title: 'DARIAH Wiki'
-description: 'A common Wiki for the exchange of all DARIAH users. Specialized wikis for projects. A separate wiki for you and your colleagues.'
+title: 'DARIAH-DE Confluence Wiki'
+description: 'A common Confluence Wiki for the exchange of all DARIAH users. Specialized wikis for projects. A separate wiki for you and your colleagues.'
 website: 'https://de.dariah.eu/wikis'
+teresah_included: false
 dependencies:
-  - '/infrastructure/gwdg-esx'
   - '/servers/wiki'
+  - '/servers/auth'
+  - '/middlewares/dariahldap'
 ---

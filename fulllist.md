@@ -8,10 +8,13 @@ layout: index
 This page lists all dependencies by showing all services affected by outages of infrastructure components.
 
 Additionally, this page detects dependency cycles in the infrastructure data.
-In such a case, the follwing error will occur:
+In such a case, the following error will occur:
+
 ```
 Liquid Exception: Liquid error (line xx): Nesting too deep in fulllist.md
 ```
+
+A complete graph of all dependencies you can find [HERE]({{ site.baseurl }}{% link network.md %})!
 
 {% for coll in site.collections %}
 
@@ -31,5 +34,3 @@ Liquid Exception: Liquid error (line xx): Nesting too deep in fulllist.md
 {% endif %}
 
 {% endfor %}
-
-

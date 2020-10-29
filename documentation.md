@@ -6,13 +6,13 @@ It is automatically build on commit and deployed if successfully build. In case 
 
 ## The infrastructure and its components
 
-The DARIAH-DE infrastructure is modeled using [Jekyll Collections](https://jekyllrb.com/docs/collections/).
+The DARIAH-DE infrastructure is modelled using [Jekyll Collections](https://jekyllrb.com/docs/collections/).
 The model describes the infrastructure catalogue using four layers:
 
-1. Services
-2. Middlewares
-3. Servers
-4. Infrastructure
+1. Services (Services users are depending on only)
+2. Middlewares (Services/middlewares users AND other services/middlewares are depending on)
+3. Servers (Hosts only)
+4. Infrastructure (Infrastructure hosts are depending on)
 
 Any item is described by a collection entry with the following metadata preamble.
 
@@ -40,6 +40,9 @@ If a dependency is listed that does not exist, the following error occurs:
 ```
 Liquid Exception: Liquid error (line 6): divided by 0 in fulllist.md
 ```
+
+Then please refer to chapter `Debugging YAML dependencies` below!
+
 
 Dependency cycles, i.e. circular dependencies, are not allowed[^1].
 Cycles in the dependencies will result in the following error:
@@ -100,5 +103,11 @@ are listed on the [current data]({{ site.baseurl }}{% link currentdata.md %}) pa
 
 The DARIAH-DE Status Jekyll page also includes the page with all DARIAH-DE services to be harvested by [TERESAH](http://teresah.dariah.eu/).
 This includes all services except those explicitly excluded and all middlewares that are explicitly included, as long they have a `title`, `description` and `website` element.
+
+## Debugging YAML dependencies
+
+In case you get `divided by 0` errors, please debug missing YAML file dependencies by using the `yaml-test.sh`script. Please note, that on macs you may have to use `gsed` (and install via brew or macports before) instead of `sed`!
+
+The test will check missing files and missing leading slashes and show ERRORS and WARNINGS. The history.yaml file will only WARN in case of breaking dependencies, it is excluded from the internal code checks due minor relevance for the internal dependency status computations.
 
 ---

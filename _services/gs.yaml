@@ -1,8 +1,7 @@
 ---
-title: 'Data Federation Architecture (Generic Search)'
-description: 'DFA GS'
-website: 'https://dfa.de.dariah.eu/'
+title: 'DARIAH-DE Generic Search (GS)'
+description: 'DARIAH-DE Generic Search (GS)'
+website: 'https://search.de.dariah.eu/'
 dependencies:
-  - '/infrastructure/gwdg-cloud'
   - '/servers/dfa'
 ---

@@ -1,9 +1,10 @@
 ---
 title: 'Fontane Notizbücher'
-website: 'https://fontane-nb.dariah.eu/index.html'
+description: ' Die genetisch-kritische und kommentierte Hybrid-Edition von Theodor Fontanes Notizbüchern ist ein von der Deutschen Forschungsgemeinschaft gefördertes Projekt. Sie entsteht an der Theodor Fontane-Arbeitsstelle der Universität Göttingen und an der Niedersächsischen Staats- und Universitätsbibliothek Göttingen. Aufgrund ihrer komplexen Beschaffenheit galten Fontanes 67 Notizbücher bislang als nicht edierbar. Das Zusammenwirken philologischer und digitaler Methoden sowie die Arbeit in der Virtuellen Forschungsumgebung TextGrid ermöglicht nun die erste kommentierte Gesamtedition.'
+website: 'https://fontane-nb.dariah.eu'
 provider: 'SUB Göttingen'
 dependencies:
+  - '/servers/fontane-nb'
+  - '/middlewares/resources'
   - '/middlewares/tgcrud'
-  - '/infrastructure/gwdg-cloud'
-  - '/servers/res'
 ---

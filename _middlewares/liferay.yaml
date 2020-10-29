@@ -1,8 +1,0 @@
----
-title: 'DARIAH-DE Liferay Portal'
-description: 'DARIAH-DE Website, TextGrid Website, TextGrid Repository'
-website: 'https://de.dariah.eu'
-teresah_included: false
-dependencies:
-  - '/servers/res'
----

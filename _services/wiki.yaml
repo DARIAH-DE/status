@@ -1,8 +1,0 @@
----
-title: 'Confluence Wiki'
-description: 'Confluence Wiki'
-website: 'https://wiki.de.dariah.eu/'
-dependencies:
-  - '/infrastructure/gwdg-esx'
-  - '/servers/wiki'
----

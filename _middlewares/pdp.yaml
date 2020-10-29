@@ -1,8 +1,8 @@
 ---
 title: 'Policy Decision Point (PDP)'
-description: 'Central permission system'
+description: 'DARIAH AAI - Authorization'
 website: 'https://pdp.de.dariah.eu/'
 dependencies:
-  - '/servers/auth'
   - '/servers/pdp'
+  - '/middlewares/aai'
 ---

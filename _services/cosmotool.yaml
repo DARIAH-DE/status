@@ -1,8 +1,7 @@
 ---
-title: 'Data Federation Architecture (Cosmotool)'
-description: 'DFA Cosmotool'
-website: 'https://dfa.de.dariah.eu/'
+title: 'DARIAH-DE CosmoTool'
+description: 'CosmoTool is a digital tool that combines biographical information from different sources into inter- and national movement profiles of historical personalities. This is intended to draw conclusions on characteristics and rules, which can be regarded as international criteria. CosmoTool is based on DARIAH-DE federation architecture and allows the extraction of data from unstructured text.'
+website: 'https://de.dariah.eu/en/web/guest/cosmotool'
 dependencies:
-  - '/infrastructure/gwdg-cloud'
-  - '/servers/dfa'
+  - '/servers/cosmotool'
 ---

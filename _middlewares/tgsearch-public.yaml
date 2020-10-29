@@ -2,6 +2,7 @@
 title: 'TG-search (public)'
 description: 'TextGrid Search Service'
 website: 'https://de.dariah.eu/textgrid'
+teresah_included: true
 dependencies:
   - '/servers/textgrid-esx2'
 ---

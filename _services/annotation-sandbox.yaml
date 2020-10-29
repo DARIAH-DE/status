@@ -1,0 +1,9 @@
+---
+title: 'DARIAH-DE Annotation Sandbox'
+description: 'A toolbox for annotating websites and more using the DARIAH AAI.'
+website: 'https://annotation.de.dariah.eu'
+teresah_included: true
+dependencies:
+  - '/servers/annotation'
+  - '/middlewares/aai'
+---

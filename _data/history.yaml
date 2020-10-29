@@ -29,7 +29,7 @@
     - '/infrastructure/gwdg-cloud'
 - title: 'DARIAH-DE Website not available'
   date_start: '2020-04-14 15:00'
-  date_start: '2020-04-20 15:00'
+  date_end: '2020-04-20 15:00'
   description: 'Diese Seite ist vorübergehend nicht erreichbar. Wir arbeiten bereits an der Behebung des Problems und bitten um Entschuldigung. / This website is temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience.'
   affected:
     - '/services/website'
