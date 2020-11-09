@@ -1,8 +1,9 @@
 ---
-- title: 'short term Maintenance Authorization Service of the DARIAH AAI'
-  date_start: '2020-10-19 16:00'
-  date_end: '2020-10-19 17:00'
-  hide: true
-  description: 'There is a maintenance of the DARIAH AAI. The downtime should be in the minute range'
+- title: 'Maintenance of Datasheet Editor and Geo-Browser'
+  date_start: '2020-11-16 10:00'
+  date_end: '2020-11-16 17:00'
+  hide: false
+  description: 'The Datasheet Editor and Geo-Browser are being updated to release version 3.6. We apologise for the inconvenience and hope you will like the new versions!'
   affected:
-    - '/servers/auth'
+    - '/services/geobrowser'
+    - '/services/datasheeteditor'
