@@ -7,12 +7,11 @@
   affected:
     - '/services/geobrowser'
     - '/services/datasheeteditor'
----
 - title: 'Maintenance of the Cloud-VMs'
   date_start: '2020-12-05'
   date_end: '2020-12-06'
   hide: false
-  description: 'The Cloud-VMs are migrated to a new storage system. The machines and services won't be avaialble then.'
+  description: 'The Cloud-VMs are migrated to a new storage system. The machines and services are not avaialble then.'
   affected:
     - '/infrastructure/gwdg-cloud'
 
