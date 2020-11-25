@@ -3,5 +3,5 @@ title: 'Orte jüdischer Geschichte'
 description: ''
 website: 'https://app-juedische-orte.de.dariah.eu'
 dependencies:
-  - '/_infrastructure/gwdg-cloud'
+  - '/infrastructure/gwdg-cloud'
 ---
