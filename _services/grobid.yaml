@@ -1,0 +1,7 @@
+---
+title: 'GROBID, BibSonomy, Vistory'
+description: ''
+website: ''
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+---
