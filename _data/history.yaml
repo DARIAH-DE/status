@@ -1,4 +1,9 @@
 ---
+- title: 'Technical Issues at the Annotation Sandbox'
+  date_start: '2020-11-04 10:00'
+  description: 'The interface from the Auth Service (PDP) to the Annotation Sandbox is currently dysfunctional. The PDP itself is not affected. We are working to solve the problem as soon as possible.'
+  affected:
+    - '/services/annotation-sandbox'
 - title: 'short term Maintenance Authorization Service of the DARIAH AAI'
   date_start: '2020-10-19 16:00'
   date_end: '2020-10-19 17:00'
