@@ -7,3 +7,11 @@
   affected:
     - '/services/geobrowser'
     - '/services/datasheeteditor'
+- title: 'Maintenance of Confluence Wiki'
+  date_start: '2020-12-17 15:00'
+  date_end: '2020-12-17 18:00'
+  hide: false
+  description: 'The Confluence Wiki is updated to a new version.'
+  affected:
+    - '/services/confluence'
+
