@@ -10,3 +10,9 @@
   affected:
     - '/infrastructure/gwdg-esx'
     - '/servers/auth'
+- title: 'res.de.dariah.eu not available'
+  date_start: '2020-11-04 10:00'
+  description: 'res.de.dariah.eu is currently not available. We are working to solve the problem as soon as possible.'
+  affected:
+    - '/servers/res'
+
