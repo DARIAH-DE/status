@@ -1,4 +1,9 @@
 ---
+- title: 'res.de.dariah.eu not available'
+  date_start: '2021-01-05 10:00'
+  description: 'res.de.dariah.eu is currently not available. We are working to solve the problem as soon as possible.'
+  affected:
+    - '/servers/res'
 - title: 'Maintenance of the Cloud-VMs'
   date_start: '2020-12-05'
   date_end: '2020-12-06'
