@@ -4,7 +4,6 @@
 #
 - title: 'Maintenance of Datasheet Editor and Geo-Browser'
   date_start: '2021-01-14 15:00'
-  date_end: '2021-01-14 19:00'
   hide: false
   description: 'The Datasheet Editor and Geo-Browser are being updated to release version 3.6. We apologise for the inconvenience and hope you will like the new versions!'
   affected:
