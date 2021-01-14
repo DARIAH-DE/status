@@ -1,12 +1,4 @@
 ---
-- title: 'Maintenance of Datasheet Editor and Geo-Browser'
-  date_start: '2021-01-14 15:00'
-  date_end: '2021-01-14 19:00'
-  hide: true
-  description: 'The Datasheet Editor and Geo-Browser are being updated to release version 3.6. We apologise for the inconvenience and hope you will like the new versions!'
-  affected:
-    - '/services/geobrowser'
-    - '/services/datasheeteditor'
 - title: 'Maintenance of Confluence Wiki'
   date_start: '2020-12-17 15:00'
   date_end: '2020-12-17 18:00'
