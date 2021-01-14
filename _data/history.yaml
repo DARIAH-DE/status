@@ -1,4 +1,11 @@
 ---
+- title: 'Maintenance of Datasheet Editor and Geo-Browser'
+  date_start: '2021-01-14 15:00'
+  date_end: '2021-01-14 16:30'
+  description: 'The Datasheet Editor and Geo-Browser are being updated to release version 3.6. We apologise for the inconvenience and hope you will like the new versions!'
+  affected:
+    - '/services/geobrowser'
+    - '/services/datasheeteditor'
 - title: 'res.de.dariah.eu not available'
   date_start: '2021-01-05 10:00'
   description: 'res.de.dariah.eu is currently not available. We are working to solve the problem as soon as possible.'
