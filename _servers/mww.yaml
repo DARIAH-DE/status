@@ -2,4 +2,5 @@
 title: 'mww.de.dariah.eu'
 dependencies:
   - '/infrastructure/gwdg-cloud'
+  - '/infrastructure/gwdg-stornext'
 ---

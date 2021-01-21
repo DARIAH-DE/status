@@ -4,4 +4,5 @@ description: 'DARIAH-DE Generic Search (GS)'
 website: 'https://search.de.dariah.eu/'
 dependencies:
   - '/servers/dfa'
+  - '/infrastructure/gwdg-stornext'
 ---

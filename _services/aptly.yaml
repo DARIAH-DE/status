@@ -1,0 +1,7 @@
+---
+title: 'DARIAH-DE APT Repository'
+description: 'The APT repository of some DARIAH-DE APT packages.'
+teresah_included: false
+dependencies:
+  - '/servers/ci'
+---
