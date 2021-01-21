@@ -76,6 +76,7 @@ digraph {
 		"/infrastructure/gwdg-esx" [label="GWDG ESX Cluster"]
 	}
 	"/services/mww" -> "/infrastructure/gwdg-cloud"
+	"/services/mww" -> "/infrastructure/gwdg-stornext"
 	"/services/mww" -> "/servers/mww"
 	"/services/neologie" -> "/infrastructure/gwdg-cloud"
 	"/services/icinga" -> "/infrastructure/gwdg-esx"
@@ -101,6 +102,7 @@ digraph {
 	"/services/tglab" -> "/middlewares/tgsearch-nonpublic"
 	"/services/tglab" -> "/servers/textgrid-esx2"
 	"/services/dfa" -> "/infrastructure/gwdg-cloud"
+	"/services/dfa" -> "/infrastructure/gwdg-stornext"
 	"/services/dfa" -> "/servers/dfa"
 	"/services/tgrep" -> "/middlewares/liferay"
 	"/services/tgrep" -> "/middlewares/tgcrud"
