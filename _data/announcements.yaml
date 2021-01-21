@@ -1,4 +1,11 @@
 ---
+- title: 'TextGrid Storage Services are not available'
+  date_start: '2021-01-25'
+  date_end: '2021-01-25'
+  hide: false
+  description: 'Due to maintenance some DARIAH storage services are not available!'
+  affected:
+    - '/infrastructure/gwdg-stornext'
 - title: 'Maintenance of Confluence Wiki'
   date_start: '2020-12-17 15:00'
   date_end: '2020-12-17 18:00'
