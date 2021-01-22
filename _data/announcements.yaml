@@ -7,9 +7,9 @@
   affected:
     - '/infrastructure/gwdg-stornext'
 - title: 'Maintenance of Confluence Wiki'
-  date_start: '2020-12-17 15:00'
-  date_end: '2020-12-17 18:00'
-  hide: true
+  date_start: '2021-01-28 15:00'
+  date_end: '2021-01-28 18:00'
+  hide: false
   description: 'The Confluence Wiki is updated to a new version.'
   affected:
     - '/services/confluence'
