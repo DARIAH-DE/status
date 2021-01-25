@@ -1,0 +1,7 @@
+---
+title: 'DARIAH-DE RDF Object TextGridLab Plugin P2 Workspace'
+description: 'Jenkins RDF Object TextGridLab Plugin P2 Workspace'
+website: 'https://ci.de.dariah.eu/jenkins'
+dependencies:
+  - '/services/jenkins'
+---
