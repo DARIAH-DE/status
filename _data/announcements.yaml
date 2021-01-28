@@ -2,14 +2,14 @@
 - title: 'Internal Storage Services are not available'
   date_start: '2021-01-25 08:00'
   date_end: '2021-01-25 16:00'
-  hide: false
+  hide: true
   description: 'Due to storage system maintenance some of the StorNext storage mounts are not available!'
   affected:
     - '/infrastructure/gwdg-stornext'
 - title: 'Maintenance of Confluence Wiki'
   date_start: '2021-01-28 15:00'
   date_end: '2021-01-28 18:00'
-  hide: false
+  hide: true
   description: 'The Confluence Wiki is updated to a new version.'
   affected:
     - '/services/confluence'
