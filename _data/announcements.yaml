@@ -1,4 +1,10 @@
 ---
+- title: 'Outage of DARIAH-AAI'
+  date_start: '2021-02-16 13:00'
+  hide: false
+  description: 'Due to an outage of the DARIAH-AAI services with Single Sign On are not available.
+  affected:
+    - 'middlewares/aai'
 - title: 'Internal Storage Services are not available'
   date_start: '2021-01-25 08:00'
   date_end: '2021-01-25 16:00'
