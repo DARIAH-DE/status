@@ -4,5 +4,5 @@ description: 'The DARIAH-DE AAI Proxy IdP'
 website: 'https://aaiproxy.de.dariah.eu/idp'
 teresah_included: false
 dependencies:
-    - '/servers/aaiproxy'
----
+  - '/servers/aaiproxy'
+ ---
