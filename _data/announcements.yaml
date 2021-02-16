@@ -2,7 +2,7 @@
 - title: 'Outage of DARIAH AAI'
   date_start: '2021-02-16 13:00'
   date_end: 'unknown'
-  hide: false
+  hide: true
   description: 'Due to an outage of the DARIAH-AAI services with Single Sign On are not available.
   affected:
     - '/middlewares/aai'
