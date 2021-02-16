@@ -4,7 +4,7 @@
   hide: false
   description: 'Due to an outage of the DARIAH-AAI services with Single Sign On are not available.
   affected:
-    - 'middlewares/aai'
+    - '/middlewares/aai'
 - title: 'Internal Storage Services are not available'
   date_start: '2021-01-25 08:00'
   date_end: '2021-01-25 16:00'
