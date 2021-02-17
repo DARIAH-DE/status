@@ -1,4 +1,10 @@
 ---
+- title: 'Outage of DARIAH AAI'
+  date_start: '2021-02-16 13:00'
+  date_end: '2021-02-17 10:30'
+  description: 'Due to an outage of the DARIAH-AAI all services with Single Sign On are not available.'
+  affected:
+    - '/middlewares/aai'
 - title: 'Maintenance of Datasheet Editor and Geo-Browser'
   date_start: '2021-01-14 15:00'
   date_end: '2021-01-14 16:30'
