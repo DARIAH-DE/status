@@ -5,6 +5,18 @@
   description: 'Due to an outage of the DARIAH-AAI all services with Single Sign On are not available.'
   affected:
     - '/middlewares/aai'
+- title: 'Maintenance of Confluence Wiki'
+  date_start: '2021-01-28 15:00'
+  date_end: '2021-01-28 18:00'
+  description: 'The Confluence Wiki is updated to a new version.'
+  affected:
+    - '/services/confluence'
+- title: 'Internal Storage Services are not available'
+  date_start: '2021-01-25 08:00'
+  date_end: '2021-01-25 16:00'
+  description: 'Due to storage system maintenance some of the StorNext storage mounts are not available!'
+  affected:
+    - '/infrastructure/gwdg-stornext'
 - title: 'Maintenance of Datasheet Editor and Geo-Browser'
   date_start: '2021-01-14 15:00'
   date_end: '2021-01-14 16:30'
@@ -33,6 +45,13 @@
   date_end: '2020-10-19 17:00'
   description: 'There is a maintenance of the DARIAH AAI. The downtime should be in the minute range'
   affected:
+    - '/servers/auth'
+- title: 'Network Maintenance Outage on VM Cluster'
+  date_start: '2020-10-08 20:00'
+  date_end: '2020-10-09 12:20'
+  description: 'Some DARIAH-DE Services are temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience!'
+  affected:
+    - '/infrastructure/gwdg-esx'
     - '/servers/auth'
 - title: 'Network Maintenance Outage on VM Cluster'
   date_start: '2020-10-08 20:00'
