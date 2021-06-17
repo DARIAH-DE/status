@@ -2,18 +2,10 @@
 #
 # Important: Please remember to copy outages to history.yaml when outage is removed
 #
-- title: 'Network Maintenance Outage on VM Cluster'
-  date_start: '2020-10-08 20:00'
-  date_end: '2020-10-09 12:20'
-  hide: true
-  description: 'Some DARIAH-DE Services are temporarily unavailable. We are currently solving the problem, we apologize for any inconvenience!'
-  affected:
-    - '/infrastructure/gwdg-esx'
-    - '/servers/auth'
 - title: 'System Maintenance'
   date_start: '2021-06-17 15:00'
-#  date_end: '2021-06-17'
+  date_end: '2021-06-17 15:30'
+  hide: true
   description: 'Routine software maintenance will be performed to upgrade the Triplestore of the TextGrid Repository server (textgridlab.org). This is expected to last from 15-16 CET.'
   affected:
     - '/servers/textgrid-esx2'
-    
