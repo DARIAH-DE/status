@@ -16,6 +16,7 @@
 - title: 'System Maintenance'
   date_start: '2021-06-17'
   date_end: '2021-06-17'
+  hide: true
   description: 'Routine software maintenance will be performed to upgrade the Triplestore of the TextGrid Repository server (textgridlab.org). This is expected to last from 15-16 CET.'
   affected:
     - '/servers/textgrid-esx2'
