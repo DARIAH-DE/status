@@ -1,4 +1,10 @@
 ---
+- title: 'TG-crud update'
+  date_start: '2021-06-28 15:00'
+  date_end: '2021-06-28 15:30'
+  description: 'Due to a bugfix release the TG-crud service MAY not be available shortly between 15:00 and 15:30 today.'
+  affected:
+    - '/middlewares/tgcrud'
 - title: 'System Maintenance'
   date_start: '2021-06-17 15:00'
   date_end: '2021-06-17 16:00'
