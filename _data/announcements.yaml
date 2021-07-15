@@ -2,7 +2,7 @@
 - title: 'Short TextGrid service hickups may occur'
   date_start: '2021-07-15 15:00'
   date_end: '2021-07-15 16:00'
-  hide: false
+  hide: true
   description: 'Due to a certificate update the TextGrid server may get some short hickups in authentifiaction issues'
   affected:
     - '/servers/textgrid-esx2'
