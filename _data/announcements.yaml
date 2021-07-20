@@ -1,8 +1,11 @@
 ---
-- title: 'Short TextGrid service hickups may occur'
-  date_start: '2021-07-15 15:00'
-  date_end: '2021-07-15 16:00'
-  hide: true
-  description: 'Due to a certificate update the TextGrid server may get some short hickups in authentifiaction issues'
+- title: 'Short service interruptions may occur'
+  date_start: '2021-07-22 15:00'
+  date_end: '2021-07-22 17:00'
+  hide: false
+  description: 'Due to a certificate update the following server may get some short interruptions in authentifiaction issues'
   affected:
     - '/servers/textgrid-esx2'
+    - '/servers/wiki'
+    - '/servers/pdp'
+    - '/servers/repository-de-dariah-eu'
