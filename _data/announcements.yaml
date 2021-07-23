@@ -2,7 +2,7 @@
 - title: 'Short service interruptions may occur'
   date_start: '2021-07-22 15:00'
   date_end: '2021-07-22 17:00'
-  hide: false
+  hide: true
   description: 'Due to a certificate update short interruptions in authentifiaction issues may occur'
   affected:
     - '/servers/textgrid-esx2'
