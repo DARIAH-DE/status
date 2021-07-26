@@ -1,9 +1,9 @@
 ---
 - title: 'Short service interruptions may occur'
   date_start: '2021-07-29 15:00'
-  date_end: '2021-07-29 17:00'
+  date_end: '2021-07-29 19:00'
   hide: flase
-  description: 'Due to system updates short interruptions in DARIAH may occur'
+  description: 'Due to system updates interruptions in DARIAH services may occur'
   affected:
     - '/infrastructure/gwdg-cloud'
     - '/infrastructure/gwdg-esx'
