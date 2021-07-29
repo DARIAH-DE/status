@@ -2,7 +2,7 @@
 - title: 'Service interruptions may occur'
   date_start: '2021-07-29 15:00'
   date_end: '2021-07-29 19:00'
-  hide: flase
+  hide: true
   description: 'Due to system updates interruptions in DARIAH services may occur'
   affected:
     - '/infrastructure/gwdg-cloud'
