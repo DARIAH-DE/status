@@ -6,4 +6,6 @@ teresah_included: true
 dependencies:
   - '/middlewares/dariah-publicstorage'
   - '/middlewares/dhcrud-public'
+  - '/services/repository-cr'
+  - '/services/repository-search'
 ---
