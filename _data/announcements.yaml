@@ -5,4 +5,4 @@
   hide: false
   description: 'Due to an update of the DARIAH-DE Repository short system interruptions may occur'
   affected:
-    - '/services/dhpublish'
+    - '/services/dariah-repository'
