@@ -5,8 +5,7 @@ website: 'https://repository.de.dariah.eu/doc/services/submodules/kolibri/kolibr
 teresah_included: true
 dependencies:
   - '/servers/repository-de-dariah-eu'
-  - '/middlewares/dariah-ownstorage'
-  - '/middlewares/dariah-publicstorage'
+  - '/services/dariah-repository'
   - '/middlewares/dhpid'
   - '/middlewares/dhcrud-public'
 ---
