@@ -1,0 +1,8 @@
+---
+title: 'DARIAH-DE Repository Collection Registry'
+description: 'An instanz of the DARIAH-DE Collection Registry for the DARIAH-DE Repository only'
+website: 'https://dfa.de.dariah.eu/search-alt/'
+dependencies:
+  - '/servers/dfa'
+  - '/middlewares/aai'
+---

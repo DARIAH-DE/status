@@ -1,0 +1,8 @@
+---
+title: 'DARIAH-DE Repository Search'
+description: 'An instance of the GS for the DARIAH-DE Repository (only)'
+website: 'https://dfa.de.dariah.eu/search-alt/'
+dependencies:
+  - '/servers/dfa'
+  - '/infrastructure/gwdg-stornext'
+---
