@@ -2,7 +2,7 @@
 - title: 'DARIAH-DE Repository Update'
   date_start: '2021-08-26 15:00'
   date_end: '2021-08-26 19:00'
-  hide: false
+  hide: true
   description: 'Due to an update of the DARIAH-DE Repository short system interruptions may occur'
   affected:
     - '/services/dariah-repository'
