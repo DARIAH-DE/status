@@ -1,0 +1,6 @@
+---
+title: 'textgrid-esx1.gwdg.de'
+dependencies:
+  - '/infrastructure/gwdg-netapp'
+  - '/infrastructure/gwdg-esx'
+---

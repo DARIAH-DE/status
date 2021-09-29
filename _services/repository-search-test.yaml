@@ -1,0 +1,7 @@
+---
+title: 'DARIAH-DE Repository Search TEST INSTANCE'
+description: 'An instance of the GS for the DARIAH-DE Repository (only). This is a test instance for demo publication and user testing only!'
+website: 'https://dfatest.de.dariah.eu/search-alt/'
+dependencies:
+  - '/servers/dfa-test'
+---

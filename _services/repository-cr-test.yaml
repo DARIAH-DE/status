@@ -1,0 +1,8 @@
+---
+title: 'DARIAH-DE Repository Collection Registry TEST INSTANCE'
+description: 'An instance of the DARIAH-DE Collection Registry for the DARIAH-DE Repository only. This is the testing instance for test purposes only!'
+website: 'https://dfatest.de.dariah.eu/search-alt/'
+dependencies:
+  - '/servers/dfa-test'
+  - '/middlewares/aai'
+---
