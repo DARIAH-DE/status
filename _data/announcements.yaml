@@ -6,4 +6,4 @@
   description: 'Due to a migration of index data and service updates the DARIAH-DE Repository TEST SYSTEM (dhrepworkshop.de.dariahl.eu) will not be available.'
   affected:
 #    - '/services/dariah-repository-test'
-     - 'servers/dhrepworkshop-de-dariah-eu'
+     - '/servers/dhrepworkshop-de-dariah-eu'
