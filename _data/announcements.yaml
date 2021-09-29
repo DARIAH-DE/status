@@ -1,8 +1,8 @@
 ---
-- title: 'DARIAH-DE Repository Update'
-  date_start: '2021-08-26 15:00'
-  date_end: '2021-08-26 19:00'
-  hide: true
-  description: 'Due to an update of the DARIAH-DE Repository short system interruptions may occur'
+- title: 'DARIAH-DE Repository Test Instance Migration'
+  date_start: '2021-09-30 15:00'
+  date_end: '2021-09-30 19:00'
+  hide: false
+  description: 'Due to a migration of index data and service updates the DARIAH-DE Repository TEST SYSTEM (dhrepworkshop.de.dariahl.eu) will not be availables.'
   affected:
-    - '/services/dariah-repository'
+    - '/services/dariah-repository-test'
