@@ -1,0 +1,8 @@
+---
+title: 'DH-oaipmh TEST INSTANCE'
+description: 'The OAI-PMH Data Provider for the DARIAH-DE Repository. This is the test instance!'
+website: 'https://dhrepworkshop.de.dariah.eu/doc/services/submodules/oai-pmh/docs_dhrep/index.html'
+teresah_included: false
+dependencies:
+  - '/servers/dhrepworkshop-de-dariah-eu'
+---

@@ -1,11 +1,14 @@
 ---
 title: 'DARIAH-DE Repository TEST INSTANCE'
-description: 'The DARIAH-DE repository allows to save research data sustainably and safely, to provide it with metadata, and to find the research data through the generic search. This is a test instance for demo publication and user testing only!'
-website: 'https://de.dariah.eu/repository'
+description: 'The DARIAH-DE Repository allows to save research data sustainably and safely, to provide it with metadata, and to find the research data through the generic search. This is the test instance for demo publication and user testing only!'
+website: 'https://dhrepworkshop.de.dariah.eu'
 teresah_included: false
 dependencies:
-  - '/middlewares/dariah-publicstorage'
-  - '/middlewares/dhcrud-public-test'
+  - '/services/dhcrud-public-test'
+  - '/services/dhoaipmh-test'
+  - '/services/dhpid-test'
+  - '/services/dhpublish-test'
   - '/services/repository-cr-test'
   - '/services/repository-search-test'
+  - '/services/publikator-test'
 ---

@@ -1,0 +1,7 @@
+---
+title: 'DH-pid TEST INSTANCE'
+description: 'Creates Handle PIDs for the DARIAH-DE Repository. This is the test instance!'
+teresah_included: false
+dependencies:
+  - '/servers/dhrepworkshop-de-dariah-eu'
+---

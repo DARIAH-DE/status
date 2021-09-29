@@ -1,0 +1,11 @@
+---
+title: 'DARIAH-DE Publikator TEST INSTANCE'
+description: 'The entry point for importing collections and data into the DARIAH-DE Repository is the DARIAH-DE Publikator, which allows you to prepare, manage, and finally import your collections into the DARIAH-DE Repository using your favorite internet browser. This is the test instance!'
+website: 'https://dhrepworkshop.de.dariah.eu/publikator'
+teresah_included: false
+dependencies:
+  - '/servers/dhrepworkshop-de-dariah-eu'
+  - '/services/dhpublish-test'
+  - '/middlewares/resources'
+  - '/middlewares/dariah-ownstorage'
+---

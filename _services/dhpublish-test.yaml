@@ -1,0 +1,10 @@
+---
+title: 'DH-publish TEST INSTANCE'
+description: 'The DH-publish service provides methods and API for publishing objects to the DARIAH-DE Repository. This is the test instance!'
+website: 'https://dhrepworkshop.de.dariah.eu/doc/services/submodules/kolibri/kolibri-dhpublish-service/docs/index.html'
+teresah_included: false
+dependencies:
+  - '/servers/dhrepworkshop-de-dariah-eu'
+  - '/services/dhpid-test'
+  - '/services/dhcrud-public-test'
+---
