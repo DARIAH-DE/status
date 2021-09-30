@@ -4,7 +4,7 @@
 #
 - title: 'TextGrid Repository Test Instance Migration'
   date_start: '2021-09-30 15:00'
-  hide: false
+  hide: true
   description: 'Due to a migration of index data and service updates the TextGrid Repository TEST SYSTEM (test.textgridlab.org and test.textgridrep.de) will not be available.'
   affected:
      - '/servers/textgrid-esx1'
