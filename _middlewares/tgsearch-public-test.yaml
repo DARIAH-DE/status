@@ -1,0 +1,8 @@
+---
+title: 'TG-search (public) TEST INSTANCE'
+description: 'TextGrid Search Service'
+website: 'https://de.dariah.eu/textgrid'
+teresah_included: false
+dependencies:
+  - '/servers/textgrid-esx1'
+---

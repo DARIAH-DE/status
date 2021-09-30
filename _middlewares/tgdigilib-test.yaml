@@ -1,0 +1,9 @@
+---
+title: 'TextGrid Digilib TEST INSTANCE'
+description: 'Open Source Image Manipulation and Delivery Service. This is the test instance!'
+website: 'https://dev.textgridlab.org/doc/services/submodules/tg-digilib/docs_tgrep/index.html'
+teresah_included: false
+dependencies:
+  - '/servers/textgrid-esx1'
+  - '/middlewares/tgcrud-test'
+---

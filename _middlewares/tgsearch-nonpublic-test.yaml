@@ -1,0 +1,8 @@
+---
+title: 'TG-search (nonpublic) TEST INSTANCE'
+description: 'TextGrid Search Service'
+website: 'https://de.dariah.eu/textgrid'
+dependencies:
+  - '/servers/textgrid-esx2'
+  - '/middlewares/tgauth-test'
+---

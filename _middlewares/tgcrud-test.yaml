@@ -1,0 +1,9 @@
+---
+title: 'TG-crud TEST INSTANCE'
+description: 'TG-crud is the CREATE, RETRIEVE, UPDATE and DELETE service of TextGrid, that is responsible for creating, retrieving, updating, and deleting TextGrid resources, such as TextGrid objects including TextGrid metadata. This is the test instance!'
+website: 'https://dev.textgridlab.org/doc/services/submodules/tg-crud/tgcrud-webapp/docs/index.html'
+teresah_included: false
+dependencies:
+  - '/servers/textgrid-esx1'
+  - '/middlewares/tgauth-test'
+---

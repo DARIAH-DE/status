@@ -1,0 +1,8 @@
+---
+title: 'TG-pid TEST INSTANCE'
+description: 'Creates Handle PIDs for the TextGrid Repository. This is the test instance!'
+website: 'https://dev.textgridlab.org/doc/services/submodules/tg-pid/docs_tgrep/index.html'
+teresah_included: true
+dependencies:
+  - '/servers/textgrid-esx1'
+---

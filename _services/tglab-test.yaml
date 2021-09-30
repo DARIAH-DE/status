@@ -1,0 +1,9 @@
+---
+title: 'TextGrid Laboratory TEST INSTANCE'
+description: 'Open source tools and services to support the entire research process and create digital editions. This is the test instance!'
+website: 'https://de.dariah.eu/textgridlab'
+dependencies:
+  - '/middlewares/tgauth-test'
+  - '/middlewares/tgcrud-test'
+  - '/middlewares/tgsearch-nonpublic-test'
+---

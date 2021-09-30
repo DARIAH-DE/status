@@ -1,0 +1,10 @@
+---
+title: 'TextGrid Repository Portal TEST INSTANCE'
+description: 'The TextGrid Repository is part of the Virtual Research Environment TextGrid and is provided by DARIAH-DE. This is the test instance!'
+website: 'https://textgridrep.org'
+dependencies:
+  - '/servers/res'
+  - '/middlewares/tgcrud-test'
+  - '/middlewares/tgsearch-public-test'
+  - '/middlewares/tgdigilib-test'
+---
