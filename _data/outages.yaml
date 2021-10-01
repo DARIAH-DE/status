@@ -1,11 +1,14 @@
 ---
-#
+###
 # Important: Please remember to copy outages to history.yaml when outage is removed
+###
+# Template:
 #
-- title: 'TextGrid Repository Test Instance Migration'
-  date_start: '2021-09-30 15:00'
-  date_end: '2021-10-01 10:00'
-  hide: true
-  description: 'Due to a migration of index data and service updates the TextGrid Repository TEST SYSTEM (test.textgridlab.org and test.textgridrep.de) will not be available.'
-  affected:
-     - '/servers/textgrid-esx1'
+#- title: 'TextGrid Repository Test Instance Migration'
+#  date_start: '2021-09-30 15:00'
+#  date_end: '2021-10-01 10:00'
+#  hide: true
+#  description: 'Due to a migration of index data and service updates the TextGrid Repository TEST SYSTEM (test.textgridlab.org and test.textgridrep.de) will not be available.'
+#  affected:
+#    - '/servers/textgrid-esx1'
+###
