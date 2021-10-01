@@ -1,5 +1,5 @@
 ---
-title: 'TG-publish TEST INSTANCE'
+title: 'TextGrid Publish Service TEST INSTANCE'
 description: 'The TG-publish service provides methods and API for publishing objects to the TextGrid Repository. This is the test instance!'
 dependencies:
   - '/middlewares/tgpid-test'
