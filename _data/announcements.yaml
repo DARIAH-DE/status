@@ -1,16 +1,17 @@
 ---
-- title: 'DARIAH-DE Repository Test Instance Migration'
+- title: 'DARIAH-DE Repository Migration'
   date_start: '2021-09-30 15:00'
   date_end: '2021-09-30 19:00'
   hide: true
-  description: 'Due to a migration of index data and service updates the DARIAH-DE Repository TEST SYSTEM (dhrepworkshop.de.dariah.eu) will not be available.'
+  description: 'Due to a migration of index data and service updates the DARIAH-DE Repository will not be available.'
   affected:
-     - '/servers/dhrepworkshop-de-dariah-eu'
-- title: 'TextGrid Repository Test Instance Migration'
+     - '/servers/repository-de-dariah-eu'
+- title: 'TextGrid Repository Migration'
   date_start: '2021-09-30 15:00'
   date_end: '2021-09-30 19:00'
   hide: true
-  description: 'Due to a migration of index data and service updates the TextGrid Repository TEST SYSTEM (test.textgridlab.org and test.textgridrep.de) will not be available.'
+  description: 'Due to a migration of index data and service updates the TextGrid Repository will not be available.'
   affected:
-     - '/servers/textgrid-esx1'
+     - '/servers/textgrid-esx2'
+     - '/services/tgrep/'
 ---
