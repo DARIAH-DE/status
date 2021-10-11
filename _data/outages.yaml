@@ -12,3 +12,11 @@
 #  affected:
 #    - '/servers/textgrid-esx1'
 ###
+- title: 'TextGrid Repository Index Migration (Publish and Import Services)'
+  date_start: '2021-10-11 18:00'
+  date_end: '2021-10-18 08:00'
+  hide: false
+  description: 'Due to migration of public index data the publish and import services of the TextGrid Repository will not be available from October 11th to October 18th. Read access will be available all the time, only publishing data will not be possible! We apologise for the inconvenience!'
+  affected:
+    - '/services/tgpublish'
+    - '/middlewares/tgpid'
