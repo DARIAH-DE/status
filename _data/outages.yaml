@@ -1,6 +1,6 @@
 ---
 ###
-# Important: Please remember to copy outages to history.yaml when outage is removed
+# Important: Please remember to copy outages to history.yaml when outage is removed!
 ###
 # Template:
 #
@@ -20,3 +20,11 @@
   affected:
     - '/services/tgpublish'
     - '/middlewares/tgpid'
+- title: 'TextGrid Repository Index Migration'
+  date_start: '2021-10-13 18:00'
+#  date_end: '2021-10-14 20:00'
+  hide: false
+  description: 'Due to migration of index data the TextGrid Repository will not be available from October 13th until October 14th. We apologise for the inconvenience!'
+  affected:
+    - '/servers/textgrid-esx2'
+---
