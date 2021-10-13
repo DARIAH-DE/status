@@ -2,6 +2,7 @@
 title: 'TG-auth* TEST INSTANCE'
 description: 'TG-auth provides access and authorization management methods and API for the TextGrid Laboratory and TextGrid Repository. This is the test instance!'
 website: 'https://dev.textgridlab.org/doc/services/submodules/tg-auth/docs/index.html'
+teresah_included: false
 dependencies:
   - '/servers/textgrid-esx1'
   - '/middlewares/aai'

@@ -2,7 +2,8 @@
 title: 'TG-search (nonpublic) TEST INSTANCE'
 description: 'TextGrid Search Service'
 website: 'https://de.dariah.eu/textgrid'
+teresah_included: false
 dependencies:
-  - '/servers/textgrid-esx2'
+  - '/servers/textgrid-esx1'
   - '/middlewares/tgauth-test'
 ---
