@@ -1,4 +1,10 @@
 ---
+- title: 'DARIAH-DE Repository Index Migration'
+  date_start: '2021-10-14 15:00'
+  date_end: '2021-10-14 16:30'
+  description: 'Due to migration of index data the DARIAH-DE Repository will not be available.'
+  affected:
+    - '/servers/repository-de-dariah-eu'
 - title: 'TextGrid Repository Test Instance Migration'
   date_start: '2021-09-30 15:00'
   date_end: '2021-10-01 10:00'
