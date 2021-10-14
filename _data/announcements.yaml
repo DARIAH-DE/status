@@ -1,9 +1,13 @@
 ---
-- title: 'DARIAH-DE Repository Index Migration'
-  date_start: '2021-10-14 15:00'
-  date_end: '2021-10-14 19:00'
-  hide: false
-  description: 'Due to migration of index data the DARIAH-DE Repository will not be available.'
-  affected:
-    - '/servers/repository-de-dariah-eu'
+###
+# Template:
+#
+#- title: 'DARIAH-DE Repository Index Migration'
+#  date_start: '2021-10-14 15:00'
+#  date_end: '2021-10-14 19:00'
+#  hide: false
+#  description: 'Due to migration of index data the DARIAH-DE Repository will not be available.'
+#  affected:
+#    - '/servers/repository-de-dariah-eu'
+###
 ---
