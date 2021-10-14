@@ -1,4 +1,10 @@
 ---
+- title: 'TextGrid Repository Index Migration'
+  date_start: '2021-10-13 18:00'
+  date_end: '2021-10-14 18:30'
+  description: 'Due to migration of index data the TextGrid Repository will not be available from October 13th, 6pm until October 14th, 8pm. We apologise for the inconvenience!'
+  affected:
+    - '/servers/textgrid-esx2'
 - title: 'DARIAH-DE Repository Index Migration'
   date_start: '2021-10-14 15:00'
   date_end: '2021-10-14 16:30'
