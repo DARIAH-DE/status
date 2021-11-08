@@ -13,3 +13,10 @@
 #    - '/servers/textgrid-esx1'
 ###
 ---
+- title: 'Outage of DARIAH AAI'
+  date_start: '2021-11-06 19:30'
+#  date_end: '2021-02-17 10:30'
+  description: 'Due to an outage of the DARIAH-AAI all services with Single Sign On are not available.'
+  affected:
+    - '/middlewares/aai'
+---
