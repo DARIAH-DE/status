@@ -1,0 +1,5 @@
+---
+title: 'dev.ilanot.org'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+---

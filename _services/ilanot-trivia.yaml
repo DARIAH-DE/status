@@ -1,0 +1,9 @@
+---
+title: 'Ilanot TRIVIA Service'
+teresah_included: false
+dependencies:
+  - '/servers/dev-ilanot-org'
+  - '/middlewares/aai'
+  - '/middlewares/tgcrud'
+  - '/middlewares/tgauth'
+---

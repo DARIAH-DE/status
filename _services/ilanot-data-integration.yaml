@@ -1,0 +1,10 @@
+---
+title: 'Ilanot Data Integration'
+teresah_included: false
+dependencies:
+  - '/servers/dev-ilanot-org'
+  - '/servers/ilanot-org'
+  - '/servers/staging-ilanot-org'
+  - '/middlewares/tgcrud'
+  - '/middlewares/tgauth'
+---

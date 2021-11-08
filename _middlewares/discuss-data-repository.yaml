@@ -1,0 +1,8 @@
+---
+title: 'Discuss Data Repository'
+description: 'Discuss Data (www.discuss-data.net) is a new open repository for storing, sharing and discussing research data with a focus on the post-Soviet states. The platform, launched in September 2020, is funded by the German Research Foundation (DFG) and operated by the Research Centre for East European Studies at the University of Bremen (FSO) and the Göttingen State and University Library (SUB).'
+website: 'https://discuss-data.net'
+dependencies:
+  - '/servers/discuss-data'
+  - '/middlewares/aai'
+---

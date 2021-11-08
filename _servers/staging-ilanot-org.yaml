@@ -1,0 +1,5 @@
+---
+title: 'staging.ilanot.org'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+---

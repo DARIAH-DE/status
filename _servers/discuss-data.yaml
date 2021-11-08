@@ -1,0 +1,5 @@
+---
+title: 'discuss-data.net'
+dependencies:
+  - '/infrastructure/gwdg-esx'
+---
