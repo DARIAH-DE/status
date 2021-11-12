@@ -20,6 +20,6 @@
     - '/services/arabic_latin_glossary'
     - '/services/repository-cr'
     - '/services/repository-search'
-    - '/services/services/confluence'
+    - '/services/confluence'
 
 ---
