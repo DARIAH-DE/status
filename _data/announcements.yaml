@@ -10,11 +10,11 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'Maintenance of DARIAH AAI'
+- title: 'Maintenance of DARIAH AAI and Confluence Wiki'
   date_start: '2021-11-18 15:00'
   date_end: '2021-11-18 19:00'
-  hide: true
-  description: 'Due to maintenance of the DARIAH-AAI all services with Single Sign On are not available for a few minutes.'
+  hide: false
+  description: 'Due to maintenance of the DARIAH-AAI all services with Single Sign On and the Confluence Wiki may have interruptions.'
   affected:
     - '/middlewares/aai'
     - '/services/arabic_latin_glossary'
