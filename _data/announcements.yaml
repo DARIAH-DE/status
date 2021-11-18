@@ -13,7 +13,7 @@
 - title: 'Maintenance of DARIAH AAI and Confluence Wiki'
   date_start: '2021-11-18 15:00'
   date_end: '2021-11-18 19:00'
-  hide: false
+  hide: true
   description: 'Due to maintenance of the DARIAH-AAI all services with Single Sign On and the Confluence Wiki may have interruptions.'
   affected:
     - '/middlewares/aai'
