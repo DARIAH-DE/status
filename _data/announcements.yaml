@@ -10,16 +10,12 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'Maintenance of DARIAH AAI and Confluence Wiki'
-  date_start: '2021-11-18 15:00'
-  date_end: '2021-11-18 19:00'
-  hide: true
-  description: 'Due to maintenance of the DARIAH-AAI all services with Single Sign On and the Confluence Wiki may have interruptions.'
+- title: 'Confluence Wiki'
+  date_start: '2021-11-22 15:00'
+  date_end: 'unknown'
+  hide: false
+  description: 'Outage of the Confluence Wiki'
   affected:
-    - '/middlewares/aai'
-    - '/services/arabic_latin_glossary'
-    - '/services/repository-cr'
-    - '/services/repository-search'
     - '/services/confluence'
 
 ---
