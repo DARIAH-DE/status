@@ -13,7 +13,7 @@
 - title: 'Confluence Wiki'
   date_start: '2021-11-22 15:00'
   date_end: 'unknown'
-  hide: false
+  hide: true
   description: 'Outage of the Confluence Wiki'
   affected:
     - '/services/confluence'
