@@ -12,18 +12,4 @@
 #  affected:
 #    - '/servers/textgrid-esx1'
 ###
-- title: 'Confluence Wiki'
-  date_start: '2021-11-22 15:00'
-  date_end: 'unknown'
-  hide: true
-  description: 'Outage of the Confluence Wiki'
-  affected:
-    - '/services/confluence'
-- title: 'TextGrid Repository Storage Service TG-crud not available for writing'
-  date_start: '2021-11-25 11:45'
-#  date_end: '2021-10-01 10:00'
-  hide: false
-  description: 'TextGrid Repository Storage Service TG-crud is not able to WRITE to the storage DB at the moment. We apologise for the inconvenience and are working on the matter!'
-  affected:
-    - '/middlewares/tgcrud'
 ---
