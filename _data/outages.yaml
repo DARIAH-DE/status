@@ -7,16 +7,9 @@
 #- title: 'TextGrid Repository Test Instance Migration'
 #  date_start: '2021-09-30 15:00'
 #  date_end: '2021-10-01 10:00'
-#  hide: true
+#  hide: false
 #  description: 'Due to a migration of index data and service updates the TextGrid Repository TEST SYSTEM (test.textgridlab.org and test.textgridrep.de) will not be available.'
 #  affected:
 #    - '/servers/textgrid-esx1'
 ###
-- title: 'Due to a network disturbance some services are not available at the moment!'
-  date_start: '2021-12-06 10:27'
-  #date_end: '2021-10-01 10:00'
-  hide: false
-  description: 'Due to a network disturbance some services are not available at the moment. We apologise for the inconvenience! For more information please have a look at the <a href="https://info.gwdg.de/news/stoerung-netzwerkstoerung-2/">GWDG News</a>'
-  affected:
-    - '/middlewares/aai'
 ---
