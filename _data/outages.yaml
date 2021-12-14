@@ -18,6 +18,8 @@
   hide: false
   description: 'Because of the log4shell vulnerability reported recently, some DARIAH-DE services will not be available until required actions have effect. We expect to have all service online again on 14/12/2021 6pm CET.'
   affected:
-    - '/infrastructure/gwdg-cloud'
-    - '/infrastructure/gwdg-esx'
+#    - '/infrastructure/gwdg-cloud'
+#    - '/infrastructure/gwdg-esx'
+    - '/servers/annotation'
+    - '/servers/architrave'
 ---
