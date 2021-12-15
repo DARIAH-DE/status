@@ -27,4 +27,5 @@
   description: 'Because of the log4shell vulnerability reported recently, the DARIAH-DE Annotation Service is not available until required actions have effect.'
   affected:
     - '/servers/annotation'
+    - '/servers/architrave'
 ---
