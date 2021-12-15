@@ -1,0 +1,5 @@
+---
+title: 'mollenhauer-edition.de'
+dependencies:
+  - '/infrastructure/gwdg-cloud'
+---

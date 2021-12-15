@@ -28,4 +28,5 @@
   affected:
     - '/servers/annotation'
     - '/servers/architrave'
+    - '/servers/mollenhauer-edition'
 ---
