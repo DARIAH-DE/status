@@ -14,8 +14,8 @@
 ###
 - title: 'DARIAH-DE Service Outage due to log4shell vulnerability'
   date_start: '2021-12-13 08:00'
-#  date_end: '2021-12-14 18:00'
-  hide: false
+  date_end: '2021-12-22 4:00'
+  hide: true
   description: 'Because of the log4shell vulnerability reported recently, the DARIAH-DE Annotation Service is not available until required actions have effect.'
   affected:
     - '/servers/annotation'
