@@ -4,6 +4,6 @@ description: 'Open Source Image Manipulation and Delivery Service. This is the t
 website: 'https://dev.textgridlab.org/doc/services/submodules/tg-digilib/docs_tgrep/index.html'
 teresah_included: false
 dependencies:
-  - '/servers/textgrid-esx1'
+  - '/servers/test-textgridlab-org'
   - '/middlewares/tgcrud-test'
 ---

@@ -4,5 +4,5 @@ description: 'TextGrid Search Service'
 website: 'https://de.dariah.eu/textgrid'
 teresah_included: false
 dependencies:
-  - '/servers/textgrid-esx1'
+  - '/servers/test-textgridlab-org'
 ---

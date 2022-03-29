@@ -4,5 +4,5 @@ description: 'OAI-PMH Data Provider for the TextGrid Repository. This is the tes
 website: 'https://dev.textgridlab.org/doc/services/submodules/oai-pmh/docs_tgrep/index.html'
 teresah_included: false
 dependencies:
-  - '/servers/textgrid-esx1'
+  - '/servers/test-textgridlab-org'
 ---

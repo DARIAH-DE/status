@@ -4,5 +4,5 @@ description: 'Creates Handle PIDs for the TextGrid Repository. This is the test 
 website: 'https://dev.textgridlab.org/doc/services/submodules/tg-pid/docs_tgrep/index.html'
 teresah_included: true
 dependencies:
-  - '/servers/textgrid-esx1'
+  - '/servers/test-textgridlab-org'
 ---

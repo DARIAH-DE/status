@@ -4,6 +4,6 @@ description: 'TG-auth provides access and authorization management methods and A
 website: 'https://dev.textgridlab.org/doc/services/submodules/tg-auth/docs/index.html'
 teresah_included: false
 dependencies:
-  - '/servers/textgrid-esx1'
+  - '/servers/test-textgridlab-org'
   - '/middlewares/aai'
 ---
