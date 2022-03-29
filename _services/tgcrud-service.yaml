@@ -1,0 +1,9 @@
+---
+title: 'TextGrid CRUD Service'
+description: 'The TG-crud service provides methods and API for publishing objects to the TextGrid Repository.'
+dependencies:
+  - '/middlewares/tgpid'
+  - '/middlewares/tgcrud'
+  - '/middlewares/tgauth'
+  - '/middlewares/ressources'
+---

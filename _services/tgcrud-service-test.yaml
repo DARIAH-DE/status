@@ -1,0 +1,9 @@
+---
+title: 'TextGrid CRUD Service TEST INSTANCE'
+description: 'The TG-crud service provides methods and API for publishing objects to the TextGrid Repository. This is the test instance!'
+dependencies:
+  - '/middlewares/tgpid-test'
+  - '/middlewares/tgcrud-test'
+  - '/middlewares/tgauth-test'
+  - '/middlewares/ressources'
+---
