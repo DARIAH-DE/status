@@ -10,7 +10,7 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'DARIAH-DE Repository Index Migration'
+- title: 'TextGrid Storage Maintenance'
   date_start: '2022-04-02 08:00'
   date_end: '2022-04-03 20:00'
   hide: false
