@@ -4,7 +4,5 @@ description: 'The TG-crud service provides methods and API for publishing object
 dependencies:
   - '/middlewares/tgpid'
   - '/middlewares/tgcrud'
-  - '/middlewares/tgauth'
-  - '/middlewares/ressources'
 ---
 
