@@ -12,11 +12,4 @@
 #  affected:
 #    - '/servers/textgrid-esx1'
 ###
-- title: 'DARIAH-DE Service Outage'
-  date_start: '2022-03-31 10:00'
-#  date_end: ''
-  hide: false
-  description: 'Some of the DARIAH-DE and TextGrid services are not available at the moment. We apologise for the inconvenience!'
-  affected:
-    - '/middlewares/aai'
 ---
