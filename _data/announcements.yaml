@@ -10,11 +10,4 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'TextGrid Storage Maintenance'
-  date_start: '2022-04-02 08:00'
-  date_end: '2022-04-03 20:00'
-  hide: false
-  description: 'Due to storage system maintenance most of the TextGrid services are not available from April 2nd, 8 AM until Aptil 3rd, 8 PM! We apologise for the inconvenience! Please have a look at the <a href="https://info.gwdg.de/news/wartungsarbeiten-umzug-netapp-massenspeichersysteme-teil-2">GWDG News Page</a> for more information.'
-  affected:
-    - '/infrastructure/gwdg-netapp'
 ---
