@@ -16,5 +16,5 @@
   hide: false
   description: 'Due to server maintenance the TextGrid Repository will not be available.'
   affected:
-    - '/servers/testgrid-esx2'
+    - '/servers/textgrid-esx2'
 ---
