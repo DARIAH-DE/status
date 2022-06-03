@@ -14,7 +14,6 @@
 ###
 - title: 'DARIAH-DE Confluence Wiki Maintenance'
   date_start: '2022-06-03 10:45'
-  date_end: '2022-06-04 10:00'
   hide: false
   description: 'Due to a security maintenance the DARIAH-DE Wiki is not available at the moment. We are currently working on the issue, we apologise for the inconvenience!'
   affected:
