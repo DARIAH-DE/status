@@ -1,0 +1,7 @@
+---
+title: 'DARIAH-DE Wiki'
+description: 'The DARIAH-DE Wiki'
+website: 'https://wiki.de.dariah.eu'
+dependencies:
+  - '/servers/wiki'
+---

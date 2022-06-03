@@ -18,5 +18,5 @@
   hide: false
   description: 'Due to a security maintenance the DARIAH-DE Wiki is not available at the moment. We are currently working on the issue, we apologise for the inconvenience!'
   affected:
-    - '/servers/wiki'
+    - '/services/wiki'
 ---
