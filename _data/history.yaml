@@ -1,4 +1,10 @@
 ---
+- title: 'DARIAH-DE AAI (auth)'
+  date_start: '2022-06-06 19:00'
+  date_end: '2022-06-07 11:30'
+  description: 'For unknown reasons the service at auth.de.dariah.eu is unavailable.'
+  affected:
+    - '/middlewares/aai'
 - title: 'TextGrid Storage Maintenance'
   date_start: '2022-04-02 08:00'
   date_end: '2022-04-03 20:00'

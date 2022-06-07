@@ -17,12 +17,4 @@
   description: 'Due to a security maintenance the DARIAH-DE Wiki will not be available until Tuesday, June 6th. We apologise for the inconvenience! For more information, please have a look <a href="https://www.theregister.com/2022/06/03/atlassian_confluence_critical_flaw_attacked/">here</a>.'
   affected:
     - '/services/wiki'
-
-- title: 'DARIAH-DE AAI (auth)'
-  date_start: '2022-06-06 19:00'
-  hide: false
-  description: 'For unknown reasons the service at auth.de.dariah.eu is unavailable.'
-  affected:
-    - '/middlewares/aai'
-
 ---
