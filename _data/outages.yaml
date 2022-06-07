@@ -19,7 +19,7 @@
     - '/services/wiki'
 
 - title: 'DARIAH-DE AAI (auth)'
-  date_start: '2022-06-07 08:00'
+  date_start: '2022-06-06 19:00'
   hide: false
   description: 'For unknown reasons the service at auth.de.dariah.eu is unavailable.'
   affected:
