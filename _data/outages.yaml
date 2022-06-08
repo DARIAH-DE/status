@@ -11,10 +11,4 @@
 #  affected:
 #    - '/servers/textgrid-esx1'
 ###
-- title: 'DARIAH-DE Confluence Wiki Maintenance'
-  date_start: '2022-06-03 10:45'
-  hide: false
-  description: 'Due to a security maintenance the DARIAH-DE Wiki will not be available until Tuesday, June 6th. We apologise for the inconvenience! For more information, please have a look <a href="https://www.theregister.com/2022/06/03/atlassian_confluence_critical_flaw_attacked/">here</a>.'
-  affected:
-    - '/services/wiki'
 ---
