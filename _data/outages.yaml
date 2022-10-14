@@ -17,5 +17,5 @@
   description: 'Due to a some networking problems many DARIAH-DE services are not available at the moment! We apologise for the inconvenience!'
   affected:
     - '/infrastructure/gwdg-esx'
-    - `/infrastructure/gwdg-cloud'
+    - '/infrastructure/gwdg-cloud'
 ---
