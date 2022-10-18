@@ -2,7 +2,6 @@
 - title: 'GWDG Netwotk outage (as it seems)'
   date_start: '2022-10-14 13:00'
   date_end: '2022-10-14 17:00'
-  hide: false
   description: 'Due to a [power outage in Göttingen](https://status.gwdg.de/incidents/56469) many DARIAH-DE services are not available at the moment! We apologise for the inconvenience!'
   affected:
     - '/infrastructure/gwdg-esx'
