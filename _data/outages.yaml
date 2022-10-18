@@ -11,4 +11,10 @@
 #  affected:
 #    - '/servers/textgrid-esx1'
 ###
+- title: 'DARIAH AAI maintenance due to Friday's power outage'
+  date_start: '2021-10-18 14:00'
+  hide: false
+  description: 'Due to the power outage of last friday, the DARIAH AAI is not working for every DARIAH service again. We apologize for the inconvenience!'
+  affected:
+    - '/middlewares/aai'
 ---
