@@ -1,4 +1,10 @@
 ---
+- title: 'DARIAH AAI maintenance due to Fridays power outage'
+  date_start: '2022-10-18 14:00'
+  date_end: '2022-10-19 10:50'
+  description: 'Due to the [power outage in Göttingen](https://status.gwdg.de/incidents/56469) of last friday, the DARIAH AAI is not working for every DARIAH service again. We apologize for the inconvenience!'
+  affected:
+    - '/middlewares/aai'
 - title: 'GWDG Netwotk outage (as it seems)'
   date_start: '2022-10-14 13:00'
   date_end: '2022-10-14 17:00'
