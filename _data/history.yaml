@@ -1,4 +1,11 @@
 ---
+- title: 'Due to network problems some of the DARIAH-DE Services may not be available'
+  date_start: '2022-11-14 12:00'
+  date_end: '2022-11-14 12:30'
+  description: 'Due to network problems some of the DARIAH-DE Services listed below may not available. For more information please see <a href="https://status.gwdg.de">status.gwdg.de</a>.'
+  affected:
+    - '/infrastructure/gwdg-cloud'
+    - '/infrastructure/gwdg-esx'
 - title: 'DARIAH AAI maintenance due to Fridays power outage'
   date_start: '2022-10-18 14:00'
   date_end: '2022-10-19 10:50'
