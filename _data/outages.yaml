@@ -11,4 +11,11 @@
 #  affected:
 #    - '/servers/textgrid-esx1'
 ###
+- title: 'Due to network problems some of the DARIAH-DE Services are not available'
+  date_start: '2022-11-14 12:00'
+  hide: false
+  description: 'Due to network problems some of the DARIAH-DE Services listed below may not available. For more information please see <a href="https://status.gwdg.de">status.gwdg.de</a>.'
+  affected:
+    - '/infrastructure/gwdg-cloud'
+    - '/infrastructure/gwdg-esx'
 ---
