@@ -10,25 +10,4 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'DARIAH AAI Service Maintenance'
-  date_start: '2022-12-01 15:00'
-  date_end: '2022-12-03 17:00'
-  hide: true
-  description: 'Due to DARIAH-DE AAI service maintenance the DARIAH AAI may not always be available on Thu 12/1 between 3 and 5 PM. We apologise for the inconvenience!'
-  affected:
-    - '/middlewares/aai'
-- title: 'DARIAH AAI Service Maintenance'
-  date_start: '2022-12-03 10:00'
-  date_end: '2022-12-03 12:00'
-  hide: true
-  description: 'Due to DARIAH-DE AAI service maintenance the DARIAH AAI may not always be available on Sat 12/3 between 10 and 12 AM, see <a href="https://status.gwdg.de/incidents/61218">GWDG status page</a>. We apologise for the inconvenience!'
-  affected:
-    - '/middlewares/aai'
-- title: 'DARIAH AAI Service Maintenance and Certificate Rollover'
-  date_start: '2022-12-15 15:00'
-  date_end: '2022-12-17 17:00'
-  hide: false
-  description: 'Due to DARIAH-DE AAI service maintenance and Certificate Rollover the DARIAH AAI may not always be available from Thu 15/12 to Sat 17/12 between 3 and 5 PM. We apologise for the inconvenience!'
-  affected:
-    - '/middlewares/aai'
 ---
