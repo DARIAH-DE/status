@@ -16,4 +16,4 @@
   date_end: '2023-02-02 19:00'
   description: 'Due to system updates the CLARIAH-DE Website may not always be available.'
   affected:
-    - '/services/clariah-website'
+    - '/servers/clariah-website'
