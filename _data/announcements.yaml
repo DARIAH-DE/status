@@ -10,7 +10,6 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
----
 - title: 'CLARIAH-DE Website Maintenance'
   date_start: '2023-02-02 15:00'
   date_end: '2023-02-02 19:00'
