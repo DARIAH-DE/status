@@ -10,9 +10,11 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'CLARIAH-DE Website Maintenance'
-  date_start: '2023-02-02 15:00'
-  date_end: '2023-02-02 19:00'
-  description: 'Due to system updates the CLARIAH-DE Website may not always be available.'
+- title: 'DARIAH-DE Server Maintenance'
+  date_start: '2023-02-16 15:00'
+  date_end: '2023-02-16 19:00'
+  description: 'Due to system updates the arabic latin glossary and cdstar service may not always be available.'
   affected:
-    - '/servers/clariah-website'
+    - '/servers/cdstar'
+    - '/services/arabic_latin_glossary'
+
