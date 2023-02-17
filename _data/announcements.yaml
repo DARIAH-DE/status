@@ -11,10 +11,10 @@
 #    - '/servers/repository-de-dariah-eu'
 ###
 - title: 'DARIAH-DE Server Maintenance'
-  date_start: '2023-02-16 15:00'
-  date_end: '2023-02-16 19:00'
-  description: 'Due to system updates the arabic latin glossary and cdstar service may not always be available.'
+  date_start: '2023-02-23 15:00'
+  date_end: '2023-02-23 19:00'
+  description: 'Due to system updates the Confluence Wiki and the AAI service may not always be available.'
   affected:
-    - '/servers/cdstar'
-    - '/services/arabic_latin_glossary'
+    - '/servers/aaiproxy'
+    - '/services/wiki'
 
