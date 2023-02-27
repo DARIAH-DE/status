@@ -10,10 +10,18 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'DARIAH-DE Server Maintenance'
-  date_start: '2023-02-23 15:00'
-  date_end: '2023-02-23 19:00'
-  description: 'Due to system updates the AAI service may not always be available.'
+- title: 'DARIAH-DE Webserver Maintenance'
+  date_start: '2023-03-02 16:00'
+  date_end: '2023-03-02 16:30'
+  description: 'Due to system updates the websites https://de.dariah.eu und https://textgrid.de are not available.'
   affected:
-    - '/servers/aaiproxy'
+    - 'dariah-portal'
+    - 'tg-website'
+- title: 'DARIAH-DE/TextGrid Repository Maintenance'
+  date_start: '2023-03-09 15:00'
+  date_end: '2023-03-09 19:00'
+  description: 'Due to system migrations the repository services may not be available.'
+  affected:
+    - 'dariah-repository'
+    - 'tgrep'
 
