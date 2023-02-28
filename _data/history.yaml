@@ -1,4 +1,16 @@
 ---
+- title: 'DARIAH-DE Server Maintenance'
+  date_start: '2023-02-23 15:00'
+  date_end: '2023-02-23 19:00'
+  description: 'Due to system updates the AAI service may not always be available.'
+  affected:
+    - '/servers/aaiproxy'
+- title: 'TextGrid Test Server System Upgrade'
+  date_start: '2023-02-03 10:00'
+  hide: false
+  description: 'Due to system upgrades the TextGrid Test Server is not available at the moment. We apologise for the inconvenience.'
+  affected:
+    - '/servers/test-textgridlab-org'
 - title: 'DARIAH AAI Service Maintenance'
   date_start: '2022-12-01 15:00'
   date_end: '2022-12-03 17:00'

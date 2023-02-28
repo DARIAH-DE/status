@@ -10,11 +10,27 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
+
 - title: 'DARIAH-DE Server Maintenance'
-  date_start: '2023-02-23 15:00'
-  date_end: '2023-02-23 19:00'
+  date_start: '2023-03-02 15:00'
+  date_end: '2023-03-02 19:00'
   description: 'Due to system updates the following services may not always be available.'
   affected:
     - '/services/dfa'
     - '/services/mww'
+- title: 'DARIAH-DE Webserver Maintenance'
+  date_start: '2023-03-02 16:00'
+  date_end: '2023-03-02 16:30'
+  description: 'Due to system updates the websites https://de.dariah.eu und https://textgrid.de are not available.'
+  affected:
+    - '/services/dariah-portal'
+    - '/services/tg-website'
+- title: 'DARIAH-DE/TextGrid Repository Maintenance'
+  date_start: '2023-03-09 15:00'
+  date_end: '2023-03-09 19:00'
+  description: 'Due to system migrations the repository services may not be available.'
+  affected:
+    - '/servers/repository-de-dariah-eu'
+    - '/servers/textgrid-esx2'
+
 
