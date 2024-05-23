@@ -11,12 +11,6 @@
 #    - '/servers/repository-de-dariah-eu'
 ###
 - title: 'DARIAH-DE/TextGrid Repository Maintenance'
-  date_start: '2024-05-23 15:00'
-  date_end: '2024-05-23 16:00'
-  description: 'Due to system migrations the repository services may not be available.'
-  affected:
-    - '/servers/textgrid-esx2'
-- title: 'DARIAH-DE/TextGrid Repository Maintenance'
   date_start: '2024-05-30 15:00'
   date_end: '2024-05-30 19:00'
   description: 'Due to system migrations the repository services may not be available.'
