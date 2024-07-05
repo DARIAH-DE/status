@@ -10,10 +10,3 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'DARIAH-DE Repository Index Migration'
-  date_start: '2024-07-04 15:00'
-  #date_end: '2024-07-04 17:00'
-  hide: false
-  description: 'Due to migration of index data and server maintenance the DARIAH-DE Repository will not be available.'
-  affected:
-    - '/servers/repository-de-dariah-eu'
