@@ -1,4 +1,10 @@
 ---
+- title: 'DARIAH-DE AAI not available'
+  date_start: '2024-09-23 09:00'
+  date_end: '2024-09-23 11:30'
+  description: 'The DARIAH AAI is not available at the moment. We apoligise for the inconvenience!'
+  affected:
+    - '/middlewares/aai'
 - title: 'DARIAH-DE Repository Index Migration'
   date_start: '2024-07-04 15:00'
   date_end: '2024-07-04 17:00'
