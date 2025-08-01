@@ -11,16 +11,16 @@
 #    - '/servers/repository-de-dariah-eu'
 ###
 - title: 'TextGrid Repository Feature Upgrade'
-  date_start: '2025-07-31 15:00'
-  date_end: '2025-07-31 17:00'
+  date_start: '2025-08-07 15:00'
+  date_end: '2025-08-07 17:00'
   hide: false
-  description: 'Due to a Major TextGrid Repository Feature Upgrade, TG-rep and underling services may not be available.'
+  description: 'Due to a Major TextGrid Repository Feature Upgrade, TG-rep and underling services may not be available. We apologise for the inconvenience.'
   affected:
     - '/servers/textgrid-esx2'
 - title: 'DARIAH-DE Repository Feature Upgrade'
-  date_start: '2025-07-31 15:00'
-  date_end: '2025-07-31 17:00'
+  date_start: '2025-08-07 15:00'
+  date_end: '2025-08-07 17:00'
   hide: false
-  description: 'Due to a Major DARIAH-DE Repository Feature Upgrade, DH-rep and underling services may not be available.'
+  description: 'Due to a Major DARIAH-DE Repository Feature Upgrade, DH-rep and underling services may not be available. We apologise for the inconvenience.'
   affected:
     - '/servers/repository-de-dariah-eu'
