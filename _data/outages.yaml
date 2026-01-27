@@ -20,8 +20,8 @@
     - '/middlewares/aai'
 - title: 'The TextGrid Repository is not available due to unexpected maintenance.'
   date_start: '2026-01-27 11:30'
-#  date_end: '2024-09-23 11:30'
-  hide: false
+  date_end: '2026-01-27 15:30'
+  hide: true
   description: 'We apoligise for the inconvenience!'
   affected:
     - '/servers/textgrid-esx2'
