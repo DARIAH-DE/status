@@ -1,4 +1,10 @@
 ---
+- title: 'DARIAH-DE AAI urgent maintenance today.'
+  date_start: '2026-09-04 10:00'
+  date_end: '2026-09-04 18:00'
+  description: 'DARIAH-DE AAI will get urgend updates today, so outages are expected, ranging from 10-30 minutes.'
+  affected:
+    - '/middlewares/aai'
 - title: 'DARIAH-DE Repository Feature Upgrade'
   date_start: '2025-09-18 15:00'
   date_end: '2025-09-18 17:00'
