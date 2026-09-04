@@ -10,10 +10,11 @@
 #  affected:
 #    - '/servers/repository-de-dariah-eu'
 ###
-- title: 'TextGrid Repository Feature Upgrade'
-  date_start: '2025-08-07 15:00'
-  date_end: '2025-08-07 17:00'
-  hide: true
-  description: 'Due to a Major TextGrid Repository Feature Upgrade, TG-rep and underling services may not be available. We apologise for the inconvenience.'
+- title: 'DARIAH-DE AAI urgent maintenance today.'
+  date_start: '2026-09-04 10:00'
+  date_end: '2026-09-04 18:00'
+  hide: false
+  description: 'DARIAH-DE AAI will get urgend updates today, so outages are expected, ranging from 10-30 minutes.'
   affected:
-    - '/servers/textgrid-esx2'
+    - '/middlewares/aai'
+
