@@ -18,3 +18,11 @@
   description: 'DARIAH-DE AAI will get urgend updates today, so outages are expected, ranging from 10-30 minutes.'
   affected:
     - '/middlewares/aai'
+- title: 'Urgent PDP and TG-auth maintenance.'
+  date_start: '2026-10-21 10:00'
+  hide: false
+  description: 'Due to urgent system maintenance the PDP and TG-auth services will not be available until further notice. We apologise for the inconvenience.'
+  affected:
+    - '/middlewares/pdp'
+    - '/middlewares/tgauth'
+    - '/middlewares/tgauth-test'
