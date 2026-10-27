@@ -28,7 +28,7 @@
     - '/middlewares/tgauth-test'
 - title: 'Urgent PDP maintenance.'
   date_start: '2026-10-21 10:00'
-  hide: false
+  hide: true
   description: 'Due to urgent system maintenance the DARIAH-DE PDP will not be available until further notice. We apologise for the inconvenience.'
   affected:
     - '/middlewares/pdp'
