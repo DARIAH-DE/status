@@ -1,4 +1,10 @@
 ---
+- title: 'DARIAH-DE AAI maintenance'
+  date_start: '2026-11-05 17:00'
+  date_end: '2026-11-05 17:15'
+  description: 'DARIAH-DE AAI is getting some maintenance today, so little hickups are maybe to expect as of 5 pm today.'
+  affected:
+    - '/middlewares/aai'
 - title: 'DARIAH-DE AAI urgent maintenance today.'
   date_start: '2026-09-04 10:00'
   date_end: '2026-09-04 18:00'
