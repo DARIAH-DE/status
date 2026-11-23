@@ -13,7 +13,8 @@
 ###
 - title: 'DARIAH-DE AAI urgent maintenance today'
   date_start: '2026-11-19 17:00'
-  hide: false
+  dyte_end: '2026-11-23 13:00'
+  hide: true
   description: 'DARIAH-DE AAI gets urgend updates today, so outages are expected. We apologise for the inconvenience!'
   affected:
     - '/middlewares/aai'
